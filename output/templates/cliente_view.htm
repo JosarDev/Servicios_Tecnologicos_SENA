@@ -1,0 +1,390 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel cliente view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_Cliente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_Cliente}  r-vertical-field" data-fieldname="id_Cliente" data-signal-error-for="id_Cliente{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_Cliente" data-fieldname="id_Cliente" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_Cliente}">
+		
+		{BEGIN id_Cliente_label}{$label cliente id_Cliente }{END id_Cliente_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_Cliente_value}	</div>
+
+		
+</div>
+
+
+{END id_Cliente_fieldblock}
+											
+{BEGIN TipoCliente_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_TipoCliente}  r-vertical-field" data-fieldname="TipoCliente" data-signal-error-for="TipoCliente{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="TipoCliente" data-fieldname="TipoCliente" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_TipoCliente}">
+		
+		{BEGIN TipoCliente_label}{$label cliente TipoCliente }{END TipoCliente_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$TipoCliente_value}	</div>
+
+		
+</div>
+
+
+{END TipoCliente_fieldblock}
+											
+{BEGIN Num_Identificacion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Num_Identificacion}  r-vertical-field" data-fieldname="Num_Identificacion" data-signal-error-for="Num_Identificacion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Num_Identificacion" data-fieldname="Num_Identificacion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Num_Identificacion}">
+		
+		{BEGIN Num_Identificacion_label}{$label cliente Num_Identificacion }{END Num_Identificacion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Num_Identificacion_value}	</div>
+
+		
+</div>
+
+
+{END Num_Identificacion_fieldblock}
+											
+{BEGIN Nombres_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nombres}  r-vertical-field" data-fieldname="Nombres" data-signal-error-for="Nombres{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Nombres" data-fieldname="Nombres" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Nombres}">
+		
+		{BEGIN Nombres_label}{$label cliente Nombres }{END Nombres_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Nombres_value}	</div>
+
+		
+</div>
+
+
+{END Nombres_fieldblock}
+											
+{BEGIN Apellidos_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Apellidos}  r-vertical-field" data-fieldname="Apellidos" data-signal-error-for="Apellidos{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Apellidos" data-fieldname="Apellidos" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Apellidos}">
+		
+		{BEGIN Apellidos_label}{$label cliente Apellidos }{END Apellidos_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Apellidos_value}	</div>
+
+		
+</div>
+
+
+{END Apellidos_fieldblock}
+											
+{BEGIN Genero_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Genero}  r-vertical-field" data-fieldname="Genero" data-signal-error-for="Genero{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Genero" data-fieldname="Genero" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Genero}">
+		
+		{BEGIN Genero_label}{$label cliente Genero }{END Genero_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Genero_value}	</div>
+
+		
+</div>
+
+
+{END Genero_fieldblock}
+											
+{BEGIN Celular_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Celular}  r-vertical-field" data-fieldname="Celular" data-signal-error-for="Celular{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Celular" data-fieldname="Celular" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Celular}">
+		
+		{BEGIN Celular_label}{$label cliente Celular }{END Celular_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Celular_value}	</div>
+
+		
+</div>
+
+
+{END Celular_fieldblock}
+											
+{BEGIN Correo_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Correo}  r-vertical-field" data-fieldname="Correo" data-signal-error-for="Correo{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="Correo" data-fieldname="Correo" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Correo}">
+		
+		{BEGIN Correo_label}{$label cliente Correo }{END Correo_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Correo_value}	</div>
+
+		
+</div>
+
+
+{END Correo_fieldblock}
+											
+{BEGIN Direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Direccion}  r-vertical-field" data-fieldname="Direccion" data-signal-error-for="Direccion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="Direccion" data-fieldname="Direccion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Direccion}">
+		
+		{BEGIN Direccion_label}{$label cliente Direccion }{END Direccion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Direccion_value}	</div>
+
+		
+</div>
+
+
+{END Direccion_fieldblock}
+											
+{BEGIN NombreEmpresa_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NombreEmpresa}  r-vertical-field" data-fieldname="NombreEmpresa" data-signal-error-for="NombreEmpresa{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field9" {$item_integrated_edit_field9} data-pageid="{$pageid}" data-field="NombreEmpresa" data-fieldname="NombreEmpresa" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_NombreEmpresa}">
+		
+		{BEGIN NombreEmpresa_label}{$label cliente NombreEmpresa }{END NombreEmpresa_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$NombreEmpresa_value}	</div>
+
+		
+</div>
+
+
+{END NombreEmpresa_fieldblock}
+											
+{BEGIN NombreEmprendimiento_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_NombreEmprendimiento}  r-vertical-field" data-fieldname="NombreEmprendimiento" data-signal-error-for="NombreEmprendimiento{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field10" {$item_integrated_edit_field10} data-pageid="{$pageid}" data-field="NombreEmprendimiento" data-fieldname="NombreEmprendimiento" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_NombreEmprendimiento}">
+		
+		{BEGIN NombreEmprendimiento_label}{$label cliente NombreEmprendimiento }{END NombreEmprendimiento_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$NombreEmprendimiento_value}	</div>
+
+		
+</div>
+
+
+{END NombreEmprendimiento_fieldblock}
+											
+{BEGIN fk_id_User_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fk_id_User}  r-vertical-field" data-fieldname="fk_id_User" data-signal-error-for="fk_id_User{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field11" {$item_integrated_edit_field11} data-pageid="{$pageid}" data-field="fk_id_User" data-fieldname="fk_id_User" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fk_id_User}">
+		
+		{BEGIN fk_id_User_label}{$label cliente fk_id_User }{END fk_id_User_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fk_id_User_value}	</div>
+
+		
+</div>
+
+
+{END fk_id_User_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="cliente_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

@@ -1,0 +1,333 @@
+<!doctype html>
+<html  {$html_attrs}>
+	<head>
+				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{$pagetitle}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<base href="{$projectPath}">
+		<link REL="stylesheet" href="styles/default.css?{$wizardBuildKey}" type="text/css">
+	{BEGIN rtlCSS}
+	<link REL="stylesheet" href="styles/defaultRTL.css?{$wizardBuildKey}" type="text/css">
+	{END rtlCSS}
+	{BEGIN styleCSSFiles}
+	<link REL="stylesheet" href="{$stylepath}" type="text/css">
+	{END styleCSSFiles}
+			
+	</head>
+
+	<body class="{$stylename} function-view" >
+	{BEGIN body}
+		{$header}
+		<style>
+			{$containerCss}
+		</style>
+		{$locking}
+		<div class="r-small-page" 
+			data-body-align="center"
+			data-body-width="standard"
+		>
+							{BEGIN top_block}
+<div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="top_c1" data-pageid="{$pageid}"	{$cell_top_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	 
+		<h2 data-itemtype="view_header" data-itemid="view_header" {$item_view_header} data-pageid="{$pageid}" >{$pagetitlelabel laboratorio view}</h2>
+	</div>					</div>
+	</div>		
+{END top_block}
+									{BEGIN above-grid_block}
+<div class="r-form" data-location="above-grid" id="form_above-grid_{$pageid}" data-makeup="small" {$form_above-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
+	class=" r-ori-vert			col-md-12
+	">
+	</div>					</div>
+	</div>		
+{END above-grid_block}
+									{BEGIN grid_block}
+
+
+
+
+ 
+	 
+												<table 
+	data-body-align="center"
+	data-location="grid" id="form_grid_{$pageid}" data-makeup="small" {$form_grid} data-pageid="{$pageid}" 
+	class="r-edit-form" cellpadding="0" cellspacing="0" 
+	{$grid_hiddenattr} 
+		data-form-width="1"
+		
+		data-v-width="4"
+	>
+	<tbody>
+										<tr {$row_grid_0} >
+										
+
+{BEGIN cellblock_grid_c3}
+<td
+	{$cell_grid_c3}
+	class=" r-ori-vert"
+	
+				data-fullwidth
+		
+			data-cellId="grid_c3" data-pageid="{$pageid}"
+		data-v-cell="4"
+		
+>
+	<div edit-form-cell class="clearfix">
+				
+{BEGIN id_Laboratorio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_id_Laboratorio}  r-vertical-field" data-fieldname="id_Laboratorio" data-signal-error-for="id_Laboratorio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field" {$item_integrated_edit_field} data-pageid="{$pageid}" data-field="id_Laboratorio" data-fieldname="id_Laboratorio" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_id_Laboratorio}">
+		
+		{BEGIN id_Laboratorio_label}{$label laboratorio id_Laboratorio }{END id_Laboratorio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$id_Laboratorio_value}	</div>
+
+		
+</div>
+
+
+{END id_Laboratorio_fieldblock}
+											
+{BEGIN Nombre_Laboratorio_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Nombre_Laboratorio}  r-vertical-field" data-fieldname="Nombre_Laboratorio" data-signal-error-for="Nombre_Laboratorio{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field1" {$item_integrated_edit_field1} data-pageid="{$pageid}" data-field="Nombre_Laboratorio" data-fieldname="Nombre_Laboratorio" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Nombre_Laboratorio}">
+		
+		{BEGIN Nombre_Laboratorio_label}{$label laboratorio Nombre_Laboratorio }{END Nombre_Laboratorio_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Nombre_Laboratorio_value}	</div>
+
+		
+</div>
+
+
+{END Nombre_Laboratorio_fieldblock}
+											
+{BEGIN Tipologia_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Tipologia}  r-vertical-field" data-fieldname="Tipologia" data-signal-error-for="Tipologia{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field2" {$item_integrated_edit_field2} data-pageid="{$pageid}" data-field="Tipologia" data-fieldname="Tipologia" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Tipologia}">
+		
+		{BEGIN Tipologia_label}{$label laboratorio Tipologia }{END Tipologia_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Tipologia_value}	</div>
+
+		
+</div>
+
+
+{END Tipologia_fieldblock}
+											
+{BEGIN Descripcion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Descripcion}  r-vertical-field" data-fieldname="Descripcion" data-signal-error-for="Descripcion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field3" {$item_integrated_edit_field3} data-pageid="{$pageid}" data-field="Descripcion" data-fieldname="Descripcion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Descripcion}">
+		
+		{BEGIN Descripcion_label}{$label laboratorio Descripcion }{END Descripcion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Descripcion_value}	</div>
+
+		
+</div>
+
+
+{END Descripcion_fieldblock}
+											
+{BEGIN Direccion_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Direccion}  r-vertical-field" data-fieldname="Direccion" data-signal-error-for="Direccion{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field4" {$item_integrated_edit_field4} data-pageid="{$pageid}" data-field="Direccion" data-fieldname="Direccion" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Direccion}">
+		
+		{BEGIN Direccion_label}{$label laboratorio Direccion }{END Direccion_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Direccion_value}	</div>
+
+		
+</div>
+
+
+{END Direccion_fieldblock}
+											
+{BEGIN Mision_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Mision}  r-vertical-field" data-fieldname="Mision" data-signal-error-for="Mision{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field5" {$item_integrated_edit_field5} data-pageid="{$pageid}" data-field="Mision" data-fieldname="Mision" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Mision}">
+		
+		{BEGIN Mision_label}{$label laboratorio Mision }{END Mision_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Mision_value}	</div>
+
+		
+</div>
+
+
+{END Mision_fieldblock}
+											
+{BEGIN Vision_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_Vision}  r-vertical-field" data-fieldname="Vision" data-signal-error-for="Vision{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field6" {$item_integrated_edit_field6} data-pageid="{$pageid}" data-field="Vision" data-fieldname="Vision" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_Vision}">
+		
+		{BEGIN Vision_label}{$label laboratorio Vision }{END Vision_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$Vision_value}	</div>
+
+		
+</div>
+
+
+{END Vision_fieldblock}
+											
+{BEGIN fk_Codigo_Centro_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fk_Codigo_Centro}  r-vertical-field" data-fieldname="fk_Codigo_Centro" data-signal-error-for="fk_Codigo_Centro{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field7" {$item_integrated_edit_field7} data-pageid="{$pageid}" data-field="fk_Codigo_Centro" data-fieldname="fk_Codigo_Centro" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fk_Codigo_Centro}">
+		
+		{BEGIN fk_Codigo_Centro_label}{$label laboratorio fk_Codigo_Centro }{END fk_Codigo_Centro_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fk_Codigo_Centro_value}	</div>
+
+		
+</div>
+
+
+{END fk_Codigo_Centro_fieldblock}
+											
+{BEGIN fk_id_User_fieldblock}
+
+
+<div class="r-integrated-field form-group clearfix {$fielddispclass_fk_id_User}  r-vertical-field" data-fieldname="fk_id_User" data-signal-error-for="fk_id_User{$id}" data-itemtype="integrated_edit_field" data-itemid="integrated_edit_field8" {$item_integrated_edit_field8} data-pageid="{$pageid}" data-field="fk_id_User" data-fieldname="fk_id_User" data-compact >
+
+	
+	<label class="col-md-offset-3 col-md-6" for="{$labelfor_fk_id_User}">
+		
+		{BEGIN fk_id_User_label}{$label laboratorio fk_id_User }{END fk_id_User_label}
+	</label>
+	<div class="col-md-offset-3 col-md-6" >
+		{$fk_id_User_value}	</div>
+
+		
+</div>
+
+
+{END fk_id_User_fieldblock}
+	
+								</td>
+			{END cellblock_grid_c3}
+								</tr>
+			</tbody></table>
+{END grid_block}
+									{BEGIN below-grid_block}
+<div class="r-form" data-location="below-grid" id="form_below-grid_{$pageid}" data-makeup="small" {$form_below-grid} data-pageid="{$pageid}"
+		data-v-width="4"
+	data-v-margin="1"
+	
+>		
+	 
+		<div class="row">
+			 
+				<div 
+	data-cellId="below-grid_c1" data-pageid="{$pageid}"	{$cell_below-grid_c1}
+	class="			col-md-6
+	">
+	 
+		{BEGIN back_button}
+<span data-itemtype="view_back_list" data-itemid="view_back_list" {$item_view_back_list} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" {$backbutton_attrs} >
+							Volver a la lista			</a>
+</span>
+{END back_button}
+	 
+		{BEGIN close_button}
+<span data-itemtype="view_close" data-itemid="view_close" {$item_view_close} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-default   
+	" href="#" {$closebutton_attrs} >
+							Cerrar ventana			</a>
+</span>
+{END close_button}
+	</div>			 
+				<div 
+	data-cellId="below-grid_c2" data-pageid="{$pageid}"	{$cell_below-grid_c2}
+	class="r-align-right r-ori-vert			col-md-6
+	">
+	 
+		<span data-itemtype="hamburger" data-itemid="hamburger" {$item_hamburger} data-pageid="{$pageid}" data-small data-button-item>
+	<span class="dropdown dropup">
+		<button type="button" title="" class="btn btn-default   dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">		
+										<span class="glyphicon glyphicon-menu-hamburger"></span>
+												<span class="caret"></span>
+		</button>
+		<ul class="dropdown-menu">
+							{BEGIN edit_page_button}
+	<li data-itemtype="view_edit" data-itemid="view_edit" {$item_view_edit} data-pageid="{$pageid}" data-small >
+				<a  href="laboratorio_edit.php?{$editlink}" {$edit_page_button_attrs}  title="" >
+				
+		Editar		
+		</a>
+	</li>
+{END edit_page_button}
+					</ul>
+	</span>
+</span>
+	</div>					</div>
+	</div>		
+{END below-grid_block}
+			</div>
+		{$footer}
+	{END body}
+	</body>
+</html>

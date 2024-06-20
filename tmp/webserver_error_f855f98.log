@@ -1,0 +1,14 @@
+[Thu Jun 20 14:13:42.086731 2024] [core:warn] [pid 8176:tid 388] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:13:42.257613 2024] [mpm_winnt:notice] [pid 8176:tid 388] AH00455: Apache/2.4.54 (Win64) PHP/7.4.30 configured -- resuming normal operations
+[Thu Jun 20 14:13:42.257613 2024] [mpm_winnt:notice] [pid 8176:tid 388] AH00456: Server built: Jul 26 2022 23:58:26
+[Thu Jun 20 14:13:42.257613 2024] [core:notice] [pid 8176:tid 388] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.9\\EmbeddedServer64\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.9/EmbeddedServer64 -d C:\\Program Files\\PHPRunner10.9\\EmbeddedServer64 -f C:\\Projects\\SERVICIOS TECNOL\xc3\x93GICOS\\tmp\\webserver.conf'
+[Thu Jun 20 14:13:42.287503 2024] [mpm_winnt:notice] [pid 8176:tid 388] AH00418: Parent: Created child process 7708
+[Thu Jun 20 14:13:42.583711 2024] [core:warn] [pid 7708:tid 404] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:13:42.603377 2024] [core:warn] [pid 7708:tid 404] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Thu Jun 20 14:13:42.647839 2024] [mpm_winnt:notice] [pid 7708:tid 404] AH00354: Child: Starting 64 worker threads.
+[Thu Jun 20 15:30:28.343838 2024] [mpm_winnt:notice] [pid 8176:tid 388] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Thu Jun 20 15:30:30.354047 2024] [mpm_winnt:notice] [pid 7708:tid 404] AH00364: Child: All worker threads have exited.
+[Thu Jun 20 15:30:30.398958 2024] [mpm_winnt:notice] [pid 8176:tid 388] AH00430: Parent: Child process 7708 exited successfully.
