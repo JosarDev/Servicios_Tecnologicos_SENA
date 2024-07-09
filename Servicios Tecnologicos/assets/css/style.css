@@ -231,7 +231,7 @@ img {
   -webkit-animation: rotating linear 2s infinite;
   animation: rotating linear 2s infinite;
 }
-//hola
+
 .contact-validation-active #success,
 .contact-validation-active #error {
   width: 100%;
