@@ -3236,6 +3236,11 @@ img {
   transition: all 0.3s;
 }
 
+.services-section-font{
+  /*Tamaño de letra sección de servicios*/
+  font-size: 12px;
+}
+
 .services-section .service-grids .grid:hover {
   background-color: #020d26;
 }
