@@ -1541,7 +1541,7 @@ img {
     font-size: 0.53333rem;
     position: absolute;
     right: 6px;
-    top: 90%;
+    top: 41%;
   }
   .site-header #navbar > ul > li .sub-menu li {
     border-bottom: 1px solid #f2f2f2;
@@ -2051,7 +2051,7 @@ img {
     width: 100%;
     position: absolute;
     left: 0;
-    top: 39px;
+    top: 1px;
     z-index: 100;
   }
   .header-style-1 #navbar > ul > li > a, .header-style-2 #navbar > ul > li > a {
