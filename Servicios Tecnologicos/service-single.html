@@ -29,7 +29,11 @@
     <![endif]-->
 
 </head>
-
+    <style>
+        .contenido {
+            display: none;
+        }
+    </style>
 <body>
 
     <!-- start page-wrapper -->
@@ -82,7 +86,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html"><img src="assets/images/logo.png" alt></a>
+                        <a class="navbar-brand" href="index.html"><img src="https://i.ibb.co/7nmNw6q/Marca-ST.png" alt></a>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
                         <button class="close-navbar"><i class="ti-close"></i></button>
@@ -200,6 +204,107 @@
                 <div class="row">
                     <div class="col col-md-9 col-md-push-3">
                         <div class="service-single-content">
+                            
+                            <div id="vt" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Visita Técnica</strong></h3>
+                                </div>
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                        <div class="panel-body">
+
+                                            <label for="Induccion">¿El profesional requiere inducción para ingreso a instalaciones? *</label><br>
+                                            <div class="col-sm-6">
+                                               <select name="Induccion" class="form-control" id="Induccion" onchange="RegistroSofiaPlus()" required>
+                                                    <option value="">Seleccione una opción</option>
+                                                    <option value="Si">Si</option>
+                                                    <option value="No">No</option>
+                                                </select>
+                                                <div id="MostrarSi" style="display: none;"> 
+                                                    <br><label>El servicio incluye:</label>
+                                                    <div class="list-group">
+                                                        <a class="list-group-item">Recibir inducción para ingreso en instalaciones</a>
+                                                        <a class="list-group-item">Recorrido por instalaciones</a>
+                                                        <a class="list-group-item">Asesoria y diagnostico para el servicio</a>
+                                                        <a class="list-group-item">Informe de visita tecnica</a>
+                                                    </div>
+                                                </div>
+                                                <div id="MostrarNo" style="display: none;"> 
+                                                    <br><label>El servicio incluye:</label>
+                                                    <div class="list-group">
+                                                        <a class="list-group-item">Recorrido por instalaciones</a>
+                                                        <a class="list-group-item">Asesoria y diagnostico para el servicio</a>
+                                                        <a class="list-group-item">Informe de visita técnica</a>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading411391">
+                                             <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Valor</a>
+                                             </h5>
+                                          </div>
+                                          <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                            <div class="panel-body">
+                                                <div id="MostrarSiValor" style="display: none;"> $ 120.000</div>
+                                                <div id="MostrarNoValor" style="display: none;"> $ 80.000</div>
+                                                <div id="MostrarSeleccionar" style="display: block;"> Por favor, seleccione una opción en Descripción</div>
+                                            </div> 
+                                        </div>
+                                   </div>
+                                   <!--<div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Panel 3</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">Lorem ipsum dolor sic amet!</div>
+                                      </div>
+                                   </div>-->
+                                    <br><button type="button" class="btn btn-success">Solicitar cotización</button>
+                                    <script type="text/javascript">
+                                        // Función para mostrar u ocultar div select (Registro Sofia) 
+                                        function RegistroSofiaPlus() {
+                                            var selectElement = document.getElementById("Induccion");
+                                            var MostrarSi = document.getElementById("MostrarSi");
+                                            var MostrarNo = document.getElementById("MostrarNo");
+                                            // Verificar la selección actual del usuario
+                                            if (selectElement.value === "Si") {
+                                                // Mostrar
+                                                MostrarSi.style.display = "block";
+                                                MostrarNo.style.display = "none";
+                                                MostrarSiValor.style.display = "block";
+                                                MostrarNoValor.style.display = "none";
+                                                MostrarSeleccionar.style.display = "none";
+                                            } else if (selectElement.value === "No") {
+                                                MostrarNo.style.display = "block";
+                                                MostrarSi.style.display = "none";
+                                                MostrarSiValor.style.display = "none";
+                                                MostrarNoValor.style.display = "block";
+                                                MostrarSeleccionar.style.display = "none";
+                                            } else {
+                                                MostrarSi.style.display = "none";
+                                                MostrarNo.style.display = "none";
+                                                MostrarSiValor.style.display = "none";
+                                                MostrarNoValor.style.display = "none";
+                                                MostrarSeleccionar.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
                             <div class="service-single-img-holder">
                                 <img src="assets/images/service-single/img-1.jpg" alt>
                             </div>
@@ -263,7 +368,10 @@
                                     </div>
                                 </div>
                             </div>                            
-                            <a href="#" class="theme-btn">Get the service</a>                            
+                            <a href="#" class="theme-btn">Get the service</a>
+
+
+                        <!--SWICTH-->                            
                         </div>
                     </div>
                     <div class="col col-md-3 col-md-pull-9">
@@ -406,5 +514,23 @@
 
     <!-- Custom script for this template -->
     <script src="assets/js/script.js"></script>
+    <script type="text/javascript">
+        // Función para obtener los parámetros de la URL
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
+
+        // Obtener el valor de la variable "variable"
+        const variable = getParameterByName('service');
+
+        // Mostrar el contenido correspondiente
+        if (variable === 'visitatecnica') {
+            const elemento = document.getElementById(variable);
+            if (elemento) {
+                elemento.style.display = 'block';
+            }
+        }
+    </script>
 </body>
 </html>
