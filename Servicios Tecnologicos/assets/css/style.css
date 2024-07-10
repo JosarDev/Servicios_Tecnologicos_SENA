@@ -94,7 +94,7 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: "calibri", sans-serif;
   background-color: #fff;
   font-size: 15px;
   font-size: 1rem;
@@ -463,7 +463,7 @@ img {
 
 .theme-btn:after, .theme-btn-s2:after, .submit-btn:after {
   content: "";
-  background: #ff7070;
+  background: #f5f5f5;
   width: 1px;
   height: 100%;
   position: absolute;
@@ -503,8 +503,8 @@ img {
 }
 
 .theme-btn-s2 {
-  background-color: #fff;
-  color: #151222;
+  background-color: #39a900;
+  color: #000;
 }
 
 .theme-btn-s2:after {
@@ -512,7 +512,7 @@ img {
 }
 
 .theme-btn-s2:hover:after {
-  background: #ff7070;
+  background: #f5f5f5;
 }
 
 .submit-btn {
@@ -2047,7 +2047,7 @@ img {
     display: inline-block;
   }
   .header-style-1 .navigation, .header-style-2 .navigation {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f5f5f5;
     width: 100%;
     position: absolute;
     left: 0;
@@ -2058,6 +2058,7 @@ img {
     font-size: 14px;
     font-size: 0.93333rem;
     padding: 40px 15px;
+    color: rgba(0, 0, 0, 0.6);
   }
 }
 
@@ -2592,7 +2593,7 @@ img {
 #0.5	footer
 --------------------------------------------------------------*/
 .site-footer {
-  background-color: #020d26;
+  background-color: #39a900;
   position: relative;
   font-size: 15px;
   overflow: hidden;
@@ -2609,7 +2610,7 @@ img {
 
 .site-footer p,
 .site-footer li {
-  color: #c2c4c8;
+  color: #f5f5f5;
 }
 
 .site-footer .upper-footer {
@@ -2672,7 +2673,7 @@ img {
 
 .site-footer .widget-title h3:before {
   content: "";
-  background: #39a900;
+  background: #f5f5f5;
   width: 60px;
   height: 4px;
   border-radius: 5px;
@@ -2683,7 +2684,7 @@ img {
 
 .site-footer .widget-title h3:after {
   content: "";
-  background: #39a900;
+  background: #f5f5f5;
   width: 15px;
   height: 4px;
   border-radius: 5px;
@@ -2699,6 +2700,28 @@ img {
 .site-footer .about-widget p {
   margin-bottom: 2em;
   line-height: 1.7em;
+  display: -webkit-box;
+    -webkit-line-clamp: 2; /* Número de líneas que se mostrarán */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.site-footer .about-widget p.expanded {
+  -webkit-line-clamp: initial; /* Muestra todo el texto */
+}
+
+#toggleButton {
+  background-color: #f5f5f5; /* Color del botón */
+  color: #000;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#toggleButton:hover {
+  background-color: #39a900; /* Color del botón al pasar el ratón por encima */
 }
 
 .site-footer .about-widget p:last-child {
@@ -2726,10 +2749,10 @@ img {
   display: block;
   font-size: 13px;
   font-size: 0.86667rem;
-  color: #c2c4c8;
+  color: #f5f5f5;
   border-radius: 3px;
   text-align: center;
-  border: 1px solid #c2c4c8;
+  border: 1px solid #f5f5f5;
 }
 
 .site-footer .about-widget .social ul li a:hover {
@@ -2980,7 +3003,7 @@ img {
 }
 
 .site-header .sticky-on {
-  background: #020d26;
+  background: #f5f5f5;
   opacity: 1;
   top: 0;
   visibility: visible;
@@ -3089,7 +3112,7 @@ img {
   }
 }
 
-.features-section .feature-grids p, .features-section-s2 .feature-grids p {
+.features-section .feature-grids p, .features-section-s2 .feature-grids p { 
   margin-bottom: 0;
 }
 

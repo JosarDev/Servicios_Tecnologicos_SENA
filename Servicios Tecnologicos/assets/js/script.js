@@ -2,7 +2,6 @@
 
 	"use strict";
 
-
     /*------------------------------------------
         = ALL ESSENTIAL FUNCTIONS
     -------------------------------------------*/
@@ -33,7 +32,6 @@
 
     toggleMobileNavigation();
 
-
     // Function for toggle class for small menu
     function toggleClassForSmallNav() {
         var windowWidth = window.innerWidth;
@@ -47,7 +45,6 @@
     }
 
     toggleClassForSmallNav();
-
 
     // Function for small menu
     function smallNavFunctionality() {
@@ -75,7 +72,6 @@
 
     smallNavFunctionality();
 
-
     // Parallax background
     function bgParallax() {
         if ($(".parallax").length) {
@@ -94,8 +90,6 @@
             });
         }
     }
-
-
 
     // SLIDER
     var menu = [];
@@ -163,8 +157,21 @@
             $(this).css("background-image", "url(" + $(this).data("background") + ")");
         }
     });
-
-
+    
+    // Evento DOMContentLoaded: Se asegura de que el script se ejecute después de que el DOM esté completamente cargado.
+    document.addEventListener("DOMContentLoaded", function() {
+        const textElement = document.getElementById("about-text");
+        const toggleButton = document.getElementById("toggleButton");
+    
+        toggleButton.addEventListener("click", function() {
+            textElement.classList.toggle("expanded");
+            if (textElement.classList.contains("expanded")) {
+                toggleButton.textContent = "Ver menos";
+            } else {
+                toggleButton.textContent = "Ver más";
+            }
+        });
+    });
 
     /*------------------------------------------
         = HIDE PRELOADER
@@ -178,7 +185,6 @@
         }
     }
 
-
     /*------------------------------------------
         = WOW ANIMATION SETTING
     -------------------------------------------*/
@@ -190,7 +196,6 @@
         live:         true        // default
     });
 
-
     /*------------------------------------------
         = ACTIVE POPUP IMAGE
     -------------------------------------------*/
@@ -201,7 +206,6 @@
             wrapCSS     : "project-fancybox-title-style"
         });
     }
-
 
     /*------------------------------------------
         = POPUP VIDEO
@@ -224,7 +228,6 @@
             return false
         });
     }
-
 
     /*------------------------------------------
         = ACTIVE GALLERY POPUP IMAGE
@@ -249,7 +252,6 @@
             }
         });
     }
-
 
     /*------------------------------------------
         = FUNCTION FORM SORTING GALLERY
@@ -285,7 +287,6 @@
 
     sortingGallery();
 
-
     /*------------------------------------------
         = MASONRY GALLERY SETTING
     -------------------------------------------*/
@@ -304,7 +305,6 @@
     }
 
     // masonryGridSetting();
-
 
     /*------------------------------------------
         = STICKY HEADER
@@ -343,7 +343,6 @@
         lastScrollTop = st;
     }
 
-
     /*------------------------------------------
         = Header search toggle
     -------------------------------------------*/
@@ -364,7 +363,6 @@
         });
     }
 
-
     /*------------------------------------------
         = PROGRESS BAR
     -------------------------------------------*/
@@ -384,8 +382,6 @@
     }
 
     progressBar();
-
-
     
     /*------------------------------------------
         = PARTNERS SLIDER
@@ -418,7 +414,6 @@
         });
     }
 
-
     /*------------------------------------------
         = TESTIMONIALS SLIDER
     -------------------------------------------*/
@@ -431,7 +426,6 @@
             items: 1
         });
     }
-
 
     /*------------------------------------------
         = PROJECTS SLIDER
@@ -470,7 +464,6 @@
         });
     }
 
-
     /*------------------------------------------
         = TESTIMONIALS SLIDER S2    
     -------------------------------------------*/
@@ -497,7 +490,6 @@
         });
     }
 
-
     /*------------------------------------------
         = FUNFACT
     -------------------------------------------*/
@@ -511,7 +503,6 @@
             });
         });
     }
-
 
     /*------------------------------------------
         = POST SLIDER
@@ -529,7 +520,6 @@
         });
     }   
     
-
     /*------------------------------------------
         = CONTACT FORM SUBMISSION
     -------------------------------------------*/
@@ -585,8 +575,6 @@
         });
     }
 
-
-
     /*==========================================================================
         WHEN DOCUMENT LOADING
     ==========================================================================*/
@@ -602,8 +590,6 @@
 
         });
 
-
-
     /*==========================================================================
         WHEN WINDOW SCROLL
     ==========================================================================*/
@@ -614,7 +600,6 @@
         }
 
     });
-
 
     /*==========================================================================
         WHEN WINDOW RESIZE
