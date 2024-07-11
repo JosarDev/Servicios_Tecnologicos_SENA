@@ -174,16 +174,26 @@
                 <div class="row">
                     <div class="col col-md-9 col-md-push-3">
                         <div class="service-single-content">
-                            
-                            <div id="vt" class="contenido">
+
+                            <div id="visitatecnica" class="contenido">
                                 <div class="row">
                                     <h3>Servicio: <strong class="text-muted">Visita Técnica</strong></h3>
                                 </div>
                                 <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183319">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183319" aria-expanded="false" aria-controls="collapse2183319">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183319" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183319">
+                                         <div class="panel-body">Lorem ipsum dolor sic amet!</div>
+                                      </div>
+                                    </div>
                                    <div class="panel panel-default">
                                       <div class="panel-heading" role="tab" id="heading8122873">
                                          <h5 class="panel-title">
-                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">¿Inducción para ingreso a instalaciones?</a>
                                          </h5>
                                       </div>
                                       <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
@@ -191,7 +201,7 @@
 
                                             <label for="Induccion">¿El profesional requiere inducción para ingreso a instalaciones? *</label><br>
                                             <div class="col-sm-6">
-                                               <select name="Induccion" class="form-control" id="Induccion" onchange="RegistroSofiaPlus()" required>
+                                               <select name="Induccion" class="form-control" id="Induccion" onchange="Induccionselect()" required>
                                                     <option value="">Seleccione una opción</option>
                                                     <option value="Si">Si</option>
                                                     <option value="No">No</option>
@@ -226,8 +236,8 @@
                                           </div>
                                           <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
                                             <div class="panel-body">
-                                                <div id="MostrarSiValor" style="display: none;"> $ 120.000</div>
-                                                <div id="MostrarNoValor" style="display: none;"> $ 80.000</div>
+                                                <div id="MostrarSiValor" style="display: none;"><strong class="bg-success"> $ 120.000</strong></div>
+                                                <div id="MostrarNoValor" style="display: none;"><strong class="bg-success"> $ 80.000</strong></div>
                                                 <div id="MostrarSeleccionar" style="display: block;"> Por favor, seleccione una opción en Descripción</div>
                                             </div> 
                                         </div>
@@ -244,8 +254,8 @@
                                    </div>-->
                                     <br><button type="button" class="btn btn-success">Solicitar cotización</button>
                                     <script type="text/javascript">
-                                        // Función para mostrar u ocultar div select (Registro Sofia) 
-                                        function RegistroSofiaPlus() {
+                                        // Función para mostrar u ocultar div select
+                                        function Induccionselect() {
                                             var selectElement = document.getElementById("Induccion");
                                             var MostrarSi = document.getElementById("MostrarSi");
                                             var MostrarNo = document.getElementById("MostrarNo");
@@ -274,6 +284,1072 @@
                                     </script>
                                 </div>
                             </div>
+
+                            <div id="luxometria" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Ensayo de Luxometría</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183319">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183319" aria-expanded="false" aria-controls="collapse2183319">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183319" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183319">
+                                         <div class="panel-body">Lorem ipsum dolor sic amet!</div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Estrategia de medición</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                        <div class="panel-body">
+
+                                            <label for="EstrategiaMedicion">Seleccione una estrategia de medición: *</label><br>
+                                            <div class="col-sm-12">
+                                               <select name="EstrategiaMedicion" class="form-control" id="EstrategiaMedicion" onchange="EstrategiaSelect()" required>
+                                                    <option value="">Seleccione una opción</option>
+                                                    <option value="PuestosTrabajo">Puestos de trabajo</option>
+                                                    <option value="AreaGeneral">Area general: Bodega / Salón / Sala de juntas</option>
+                                                    <option value="Visita">Requiero una visita tecnica para determinar numero de puntos</option>
+                                                </select>
+                                                <div id="MostrarPuestosTrabajo" style="display: none;"> 
+                                                    <div class="col-sm-12"><br>
+                                                        <label for="NumPuestos">Cantidad de puestos de trabajo *</label>
+                                                        <input type="number" id="NumPuestos" name="NumPuestos" class="form-control" min="1" placeholder="Digite cantidad de puestos de trabajo a medir">
+                                                    </div>
+                                                </div>
+                                                <div id="MostrarAreaGeneral" style="display: none;"> 
+                                                    <div class="row"><br>
+                                                        <div class="col-sm-6">
+                                                            <label for="largo">Largo (en metros) *</label>
+                                                            <input type="number" id="largo" name="largo" class="form-control" min="0" placeholder="Digite numero de puestos de trabajo a medir">
+                                                        </div>
+                                                        <div class="col-sm-6">
+                                                            <label for="ancho">Ancho (en metros) *</label>
+                                                            <input type="number" id="ancho" name="ancho" class="form-control" min="0" placeholder="Digite numero de puestos de trabajo a medir">
+                                                        </div>
+                                                    </div><br>
+                                                    <div class="row"><br>
+                                                        <div class="col-sm-12">
+                                                            <label for="ancho">Altura de la luminaria respecto al plano de trabajo (en metros) *</label>
+                                                            <input type="number" id="AlturaLuminaria" name="AlturaLuminaria" class="form-control" min="0" placeholder="Digite numero de puestos de trabajo a medir">
+                                                        </div><br>
+
+                                                        <div class="col-sm-12"><br>
+                                                            <label for="NumPuestos">La cantidad de puntos calculados son: *</label>
+                                                            <input type="number" id="NumPuestos" name="NumPuestos" class="form-control" min="1" readonly>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><br>
+
+                                        </div>
+                                      </div>
+                                    </div>
+                                    <div id="Visita" style="display: none;">
+                                        <div class="panel panel-default">
+                                          <div class="panel-heading" role="tab" id="heading2183316">
+                                             <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Visita Técnica para determinar número de puntos</a>
+                                             </h5>
+                                          </div>
+                                          <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                             <div class="panel-body">
+                                                <label for="Induccion">¿El profesional requiere inducción para ingreso a instalaciones? *</label><br>
+                                                <div class="col-sm-6">
+                                                   <select name="InduccionLux" class="form-control" id="InduccionLux" onchange="InduccionselectLux()" required>
+                                                        <option value="">Seleccione una opción</option>
+                                                        <option value="Si">Si</option>
+                                                        <option value="No">No</option>
+                                                    </select>
+                                                    <div id="MostrarSiLux" style="display: none;"> 
+                                                        <br><label>El servicio incluye:</label>
+                                                        <div class="list-group">
+                                                            <a class="list-group-item">Recibir inducción para ingreso en instalaciones</a>
+                                                            <a class="list-group-item">Recorrido por instalaciones</a>
+                                                            <a class="list-group-item">Asesoria y diagnostico para el servicio</a>
+                                                            <a class="list-group-item">Informe de visita tecnica</a>
+                                                        </div>
+                                                    </div>
+                                                    <div id="MostrarNoLux" style="display: none;"> 
+                                                        <br><label>El servicio incluye:</label>
+                                                        <div class="list-group">
+                                                            <a class="list-group-item">Recorrido por instalaciones</a>
+                                                            <a class="list-group-item">Asesoria y diagnostico para el servicio</a>
+                                                            <a class="list-group-item">Informe de visita técnica</a>
+                                                        </div>
+                                                    </div>
+                                                </div><br>
+
+                                             </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading411391">
+                                             <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Valor unitario</a>
+                                             </h5>
+                                          </div>
+                                          <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                            <div class="panel-body">
+                                                <div id="MostrarValorUni" style="display: none;">
+                                                    <strong>Valor x punto de medición: <strong class="bg-success">$ 30.000</strong></strong><br>
+                                                    <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                                </div>
+                                                <div id="MostrarValorVisita" style="display: none;">
+                                                    <div id="MostrarSiValorLux" style="display: none;">Valor de la visita técnica: $ 120.000</div>
+                                                    <div id="MostrarNoValorLux" style="display: none;">Valor de la visita técnica: $ 80.000</div>
+                                                    <div id="MostrarSeleccionarLux" style="display: block;"> Por favor, seleccione una opción en Descripción</div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+ 
+                                    <br><button type="button" class="btn btn-success">Solicitar cotización</button>
+                                    <script type="text/javascript">
+                                        // Función para mostrar u ocultar div select (LUXOMETRIA) 
+                                        function EstrategiaSelect() {
+                                            var selectElement = document.getElementById("EstrategiaMedicion");
+                                            var MostrarPuestosTrabajo = document.getElementById("MostrarPuestosTrabajo");
+                                            var MostrarAreaGeneral = document.getElementById("MostrarAreaGeneral");
+                                            // Verificar la selección actual del usuario
+                                            if (selectElement.value === "PuestosTrabajo") {
+                                                // Mostrar
+                                                MostrarPuestosTrabajo.style.display = "block";
+                                                MostrarValorUni.style.display = "block";
+                                                MostrarAreaGeneral.style.display = "none";
+                                                Visita.style.display = "none";
+                                                MostrarValorVisita.style.display = "none";
+                                                MostrarSeleccionar.style.display = "none";
+                                            } else if (selectElement.value === "AreaGeneral") {
+                                                MostrarAreaGeneral.style.display = "block";
+                                                MostrarValorUni.style.display = "block";
+                                                MostrarPuestosTrabajo.style.display = "none";
+                                                Visita.style.display = "none";
+                                                MostrarValorVisita.style.display = "none";
+                                                MostrarSeleccionar.style.display = "block";
+                                            } else if (selectElement.value === "Visita") {
+                                                MostrarAreaGeneral.style.display = "none";
+                                                MostrarValorVisita.style.display = "block";
+                                                MostrarPuestosTrabajo.style.display = "none";
+                                                Visita.style.display = "block";
+                                                MostrarSeleccionar.style.display = "none";
+
+                                            } else {
+                                                MostrarPuestosTrabajo.style.display = "none";
+                                                MostrarAreaGeneral.style.display = "none";
+                                                Visita.style.display = "none";
+                                                MostrarSeleccionar.style.display = "block";
+                                            }
+                                        }
+
+                                        //VISITA TECNICA DETERMINAR CANT PUNTOS DE LUXOMETRIA
+                                        function InduccionselectLux() {
+                                            var selectElement = document.getElementById("InduccionLux");
+                                            var MostrarSiLux = document.getElementById("MostrarSiLux");
+                                            var MostrarNoLux = document.getElementById("MostrarNoLux");
+                                            // Verificar la selección actual del usuario
+                                            if (selectElement.value === "Si") {
+                                                // Mostrar
+                                                MostrarSiLux.style.display = "block";
+                                                MostrarNoLux.style.display = "none";
+                                                MostrarSiValorLux.style.display = "block";
+                                                MostrarNoValorLux.style.display = "none";
+                                                MostrarSeleccionarLux.style.display = "none";
+                                            } else if (selectElement.value === "No") {
+                                                MostrarNoLux.style.display = "block";
+                                                MostrarSiLux.style.display = "none";
+                                                MostrarSiValorLux.style.display = "none";
+                                                MostrarNoValorLux.style.display = "block";
+                                                MostrarSeleccionarLux.style.display = "none";
+                                            } else {
+                                                MostrarSiLux.style.display = "none";
+                                                MostrarNoLux.style.display = "none";
+                                                MostrarSiValorLux.style.display = "none";
+                                                MostrarNoValorLux.style.display = "none";
+                                                MostrarSeleccionarLux.style.display = "block";
+                                            }
+                                        }
+                                    </script>
+                                </div>
+                            </div>
+
+                            <div id="sonometria" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Ensayo de Sonometría</strong></h3>
+                                </div>
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183319">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183319" aria-expanded="false" aria-controls="collapse2183319">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183319" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183319">
+                                         <div class="panel-body">Lorem ipsum dolor sic amet!</div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Puntos de medición</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                        <div class="panel-body">
+                                            <div class="col-sm-12">
+                                                <label for="PuntosMedicionSon">Cantidad de puntos de medición *</label>
+                                                <input type="number" id="PuntosMedicionSon" name="PuntosMedicionSon" class="form-control" min="1" placeholder="Digite cantidad de puntos de medición">
+                                            </div>
+                                        </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Valor unitario</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                        <div class="panel-body">
+                                            <strong>Valor x punto de medición: <strong class="bg-success">$ 30.000 </strong></strong><br>
+                                            <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                        </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <div id="dosimetria" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Dosimetría</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">La medición debe realizarse minimo 80% de la jornada laboral</div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Cantidad</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                            <div class="col-sm-12">
+                                                <label for="PuntosMedicionSon">Cantidad *</label>
+                                                <input type="number" id="PuntosMedicionDos" name="PuntosMedicionDos" class="form-control" min="1" placeholder="Digite cantidad de puntos de medición">
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor unitario</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <strong>Valor x punto de medición: <strong class="bg-success">$ 250.000 </strong></strong><br>
+                                            <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <!--ESTRES TERMICO -->
+                            <div id="estres" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Estres térmico</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">La cantidad mínima de puntos a medir es 4</div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Cantidad</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                            <div class="col-sm-12">
+                                                <label for="PuntosMedicionSon">Cantidad *</label>
+                                                <input type="number" id="PuntosMedicionDos" name="PuntosMedicionDos" class="form-control" min="4" placeholder="Digite cantidad de puntos de medición">
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor unitario</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <strong>Valor x punto de medición: <strong class="bg-success">$ 30.000 </strong></strong><br>
+                                            <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <!--VIBRACIONES-->
+                            <div id="vibraciones" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Análisis de vibraciones</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">Descripción del servicio</div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading411391">
+                                             <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Cantidad</a>
+                                             </h5>
+                                        </div>
+                                        <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                            <div class="panel-body">
+                                                <div class="row">
+
+                                                
+                                                    <div class="col-sm-6">
+                                                        <label for="AreaVibraciones">Seleccione area a medir *</label><br>
+                                                        <select name="AreaVibraciones" class="form-control" id="AreaVibraciones" onchange="AreaVibracion()" required>
+                                                            <option value="">Seleccione una opción</option>
+                                                            <option value="Mano">Mano-Brazo</option>
+                                                            <option value="Cuerpo">Cuerpo Entero</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <label for="PuntosMedicionSon">Cantidad *</label>
+                                                        <input type="number" id="PuntosMedicionDos" name="PuntosMedicionDos" class="form-control" min="4" placeholder="Digite cantidad de puntos de medición">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor unitario</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <div id="MostrarManoValor" style="display: none;">
+                                                <strong>Valor x punto de medición (Mano-Brazo): <strong class="bg-success">$ 200.000 </strong></strong><br>
+                                                <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                            </div>
+                                            <div id="MostrarCuerpoValor" style="display: none;">
+                                                <strong>Valor x punto de medición (Mano-Brazo): <strong class="bg-success">$ 300.000 </strong></strong><br>
+                                                <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                            </div>
+                                            <div id="MostrarCuerpoValor" style="display: none;">Seleccione un área a medir</div>
+                                            
+                                            
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                                <script type="text/javascript">
+                                    // Función para mostrar u ocultar div select
+                                    function AreaVibracion() {
+                                        var selectElement = document.getElementById("AreaVibraciones");
+                                        var MostrarManoValor = document.getElementById("MostrarManoValor");
+                                        var MostrarCuerpoValor = document.getElementById("MostrarCuerpoValor");
+                                        // Verificar la selección actual del usuario
+                                        if (selectElement.value === "Mano") {
+                                            // Mostrar
+                                            MostrarManoValor.style.display = "block";
+                                            MostrarCuerpoValor.style.display = "none";
+                                            MostrarSeleccionarVib.style.display = "none";
+                                        } else if (selectElement.value === "Cuerpo") {
+                                            MostrarCuerpoValor.style.display = "block";
+                                            MostrarManoValor.style.display = "none";;
+                                            MostrarSeleccionarVib.style.display = "none";
+                                        } else {
+                                            MostrarCuerpoValor.style.display = "none";
+                                            MostrarManoValor.style.display = "none";;
+                                            MostrarSeleccionarVib.style.display = "block";
+                                        }
+                                    }
+                                </script>
+                            </div>
+                             <!--GASES POR MUESTREO DIRECTO-->
+                            <div id="gases" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Análisis de Gases por Muestreo Directo</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Descripción</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">Descripción del servicio</div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Cantidad</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                            <div class="col-sm-12">
+                                                <label for="CantMedicionGases">Cantidad *</label>
+                                                <input type="number" id="CantMedicionGases" name="CantMedicionGases" class="form-control" min="4" placeholder="Digite cantidad de mediciones de dases">
+                                            </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor unitario</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <strong>Valor x punto de medición: <strong class="bg-success">$ 70.000 </strong></strong><br>
+                                            <strong>Valor del informe técnico: <strong class="bg-success">$ 60.000</strong></strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <!--Autoevaluacion de estandares minimos-->
+                            <div id="autoevaluacion" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Autoevaluación estándares mínimos</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Objetivo</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body"><strong>Evaluar el nivel de cumplimiento de los estándares mínimos del Sistema de Gestión de Seguridad y Salud en el Trabajo, cumpliendo con lo establecido en el decreto 1072 de 2015 y la resolución 0312 de 2019 de acuerdo con su nivel de riesgo y número de trabajadores.</strong></div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Actividades</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">
+                                            <strong>-Autoevaluación de estándares mínimos</strong><br>
+                                            <strong>-Plan de mejoramiento</strong><br>
+                                            <strong>-Asesoria para cargar en la plataforma Fondo de riesgos laborales</strong><br>
+                                            <strong>-Certificación de cumplimiento</strong><br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Alcance</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Dirigido a todo tipo de empresas</strong><br>
+                                           <strong>Visita técnica en las instalaciones del cliente para la evaluación del SGSST de acuerdo con los lineamientos de la ISO 9001:2015 y la ISO 45001:2015</strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Requisitos legales</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Decreto 1072 de 2015, decreto único reglamentario Ministerio de Trabajo</strong><br> 
+                                           <strong>Resolución 0312 de 2019 Estándares Mínimos del Sistema de Gestión de la Seguridad y Salud en el Trabajo</strong>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Características técnicas</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                        <div class="panel-body">
+                                            <div class="table-responsive">           
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Variable</th>
+                                                        <th colspan="3">Descripción</th>
+                                                        <th>Resultado</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td >
+                                                            <div class="card bg-primary text-white">
+                                                                <div class="card-body">
+                                                                    Nivel de cumplimiento del sistema de gestión de seguridad y salud en el trabajo.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="w-25 ">
+                                                            <div class="card bg-secondary text-white ">
+                                                                <div class="card-body">
+                                                                    ESTÁNDARES MÍNIMOS PARA EMPRESAS, EMPLEADORES Y CONTRATANTES CON DIEZ (10) O MENOS TRABAJADORES, CLASIFICADAS CON RIESGO I, II ó III.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="w-25">
+                                                            <div class="card bg-secondary text-white ">
+                                                                <div class="card-body">
+                                                                    ESTÁNDARES MÍNIMOS PARA EMPRESAS DE ONCE (11) A CINCUENTA (50) TRABAJADORES CLASIFICADAS CON RIESGO I, II ó III.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="w-25">
+                                                            <div class="card bg-secondary text-white ">
+                                                                <div class="card-body">
+                                                                    ESTÁNDARES MÍNIMOS PARA EMPRESAS DE MÁS DE CINCUENTA (50) TRABAJADORES CLASIFICADAS CON RIESGO I, II, III, IV ó V Y DE CINCUENTA (50) ó MENOS TRABAJADORES CON RIESGO IV ó V.
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="w-75">
+                                                            <div class="card text-white">
+                                                                <div class="card-body">
+                                                                    <span class="label label-danger">CRÍTICO: Puntaje menor a 60%</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card text-white">
+                                                                <div class="card-body">
+                                                                    <span class="label label-warning">MODERADO: Puntaje entre 60% y 85%</span>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="card text-white">
+                                                                <div class="card-body">
+                                                                    <span class="label label-success">ACEPTABLE: Puntaje mayor a 85%</span>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                      </tr>
+
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <strong>$ 70.000 </strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <!--Diseño SGSST-->
+                            <div id="disenosgsst" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Diseño SGSST</strong></h3>
+                                </div>
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Objetivo</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body"><strong>xxxxx.</strong></div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Actividades</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">
+                                            <strong>-Evaluación inicial del SGSST</strong><br>
+                                            <strong>-Plan de mejoramiento</strong><br>
+                                            <strong>-Certificación de cumplimiento</strong><br>
+                                            <strong>-Manual SGSST</strong><br>
+                                            <strong>-Procesos de acuerdo con estandares de Resolución 0312/2029</strong><br>
+                                            <strong>-Información documentada del SGSST para su implementación</strong><br>
+                                            <strong>-Plantillas SGSST para su implementación</strong><br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Alcance</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Dirigido a todo tipo de empresas</strong><br>
+                                           <strong>Visita técnica en las instalaciones del cliente para diseño del SGSST de acuerdo con los lineamientos de la ISO 9001:2015 y la ISO 45001:2015.</strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Requisitos legales</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Decreto 1072 de 2015, decreto único reglamentario Ministerio de Trabajo</strong><br> 
+                                           <strong>Resolución 0312 de 2019 Estándares Mínimos del Sistema de Gestión de la Seguridad y Salud en el Trabajo</strong>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <div class="table-responsive">           
+                                                <table class="table table-hover">
+                                                    <thead>
+                                                      <tr>
+                                                        <th>Categoría</th>
+                                                        <th>Descripción</th>
+                                                        <th>Valor</th>
+                                                      </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                      <tr>
+                                                        <td>Categoría 1</td>
+                                                        <td>Empresa con 10 o menos trabajadores, Riesgo I, II ó III</td>
+                                                        <td>$ 1.200.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 2</td>
+                                                        <td>Empresa con 10 o menos trabajadores, Riesgo IV ó V</td>
+                                                        <td>$ 1.400.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 3</td>
+                                                        <td>Empresa con 11 a 30 trabajadores, Riesgo I, II ó III</td>
+                                                        <td>$ 1.600.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 4</td>
+                                                        <td>Empresa con 11 a 30 trabajadores, Riesgo IV ó V</td>
+                                                        <td>$ 1.800.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 5</td>
+                                                        <td>Empresa con 31 a 50 trabajadores, Riesgo I, II ó III</td>
+                                                        <td>$ 1.800.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 6</td>
+                                                        <td>Empresa con 31 a 50 trabajadores, Riesgo IV ó V</td>
+                                                        <td>$ 2.000.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 7</td>
+                                                        <td>Empresa con más de 50 trabajadores, Riesgo I, II, III</td>
+                                                        <td>$ 2.000.000</td>
+                                                      </tr>
+                                                      <tr>
+                                                        <td>Categoría 8</td>
+                                                        <td>Empresa con más de 50 trabajadores, Riesgo IV ó V</td>
+                                                        <td>$ 2.200.000</td>
+                                                      </tr>
+                                                    </tbody>
+                                                    </table>
+                                                </div>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+                            <!--Implementación SGSST-->
+                            <div id="implementacionsgsst" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Implementación SGSST</strong></h3>
+                                </div>
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Objetivo</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body"><strong>xxxxx.</strong></div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Actividades</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">
+                                            <strong>-Asignación de responsable del SGSST</strong><br>
+                                            <strong>-Asignación de actividades de implementación</strong><br>
+                                            <strong>-Seguimiento de actividades ejecutadas</strong><br>
+                                            <strong>-2 Capacitaciones</strong><br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Alcance</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Dirigido a todo tipo de empresas</strong><br>
+                                           <strong>Visita técnica en las instalaciones del cliente para implementación del SGSST de acuerdo con los lineamientos de la ISO 9001:2015 y la ISO 45001:2015.</strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Requisitos legales</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Decreto 1072 de 2015, decreto único reglamentario Ministerio de Trabajo</strong><br> 
+                                           <strong>Resolución 0312 de 2019 Estándares Mínimos del Sistema de Gestión de la Seguridad y Salud en el Trabajo</strong>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading2183316">
+                                            <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor</a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                            <div class="panel-body">
+                                                <div class="table-responsive">           
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                          <tr>
+                                                            <th>Categoría</th>
+                                                            <th>Descripción</th>
+                                                            <th>Valor</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <td>Categoría 1</td>
+                                                            <td>Empresa con 10 o menos trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 800.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 2</td>
+                                                            <td>Empresa con 10 o menos trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 1.000.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 3</td>
+                                                            <td>Empresa con 11 a 30 trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 800.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 4</td>
+                                                            <td>Empresa con 11 a 30 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 1.000.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 5</td>
+                                                            <td>Empresa con 31 a 50 trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 800.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 6</td>
+                                                            <td>Empresa con 31 a 50 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 1.000.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 7</td>
+                                                            <td>Empresa con más de 50 trabajadores, Riesgo I, II, III</td>
+                                                            <td>$ 800.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 8</td>
+                                                            <td>Empresa con más de 50 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 1.000.000</td>
+                                                          </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--Seguimiento SGSST-->
+                            <div id="seguimientosgsst" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Seguimiento SG-SST</strong></h3>
+                                </div>
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Objetivo</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body"><strong>xxxxx.</strong></div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Actividades</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">
+                                            <strong>-Asignación de actividades de implementación</strong><br>
+                                            <strong>-Seguimiento de actividades ejecutadas</strong><br>
+                                            <strong>-4 Capacitaciones</strong><br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Alcance</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Dirigido a todo tipo de empresas</strong><br>
+                                           <strong>Visita técnica en las instalaciones del cliente para seguimiento del SG-SST de acuerdo con los lineamientos de la ISO 9001:2015 y la ISO 45001:2015.</strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Requisitos legales</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Decreto 1072 de 2015, decreto único reglamentario Ministerio de Trabajo</strong><br> 
+                                           <strong>Resolución 0312 de 2019 Estándares Mínimos del Sistema de Gestión de la Seguridad y Salud en el Trabajo</strong>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                        <div class="panel-heading" role="tab" id="heading2183316">
+                                            <h5 class="panel-title">
+                                                <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor</a>
+                                            </h5>
+                                        </div>
+                                        <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                            <div class="panel-body">
+                                                <div class="table-responsive">           
+                                                    <table class="table table-hover">
+                                                        <thead>
+                                                          <tr>
+                                                            <th>Categoría</th>
+                                                            <th>Descripción</th>
+                                                            <th>Valor</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr>
+                                                            <td>Categoría 1</td>
+                                                            <td>Empresa con 10 o menos trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 300.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 2</td>
+                                                            <td>Empresa con 10 o menos trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 400.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 3</td>
+                                                            <td>Empresa con 11 a 30 trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 300.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 4</td>
+                                                            <td>Empresa con 11 a 30 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 400.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 5</td>
+                                                            <td>Empresa con 31 a 50 trabajadores, Riesgo I, II ó III</td>
+                                                            <td>$ 300.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 6</td>
+                                                            <td>Empresa con 31 a 50 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 400.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 7</td>
+                                                            <td>Empresa con más de 50 trabajadores, Riesgo I, II, III</td>
+                                                            <td>$ 300.000</td>
+                                                          </tr>
+                                                          <tr>
+                                                            <td>Categoría 8</td>
+                                                            <td>Empresa con más de 50 trabajadores, Riesgo IV ó V</td>
+                                                            <td>$ 400.000</td>
+                                                          </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--Auditoria SGSST-->
+                            <div id="auditoriasgsst" class="contenido">
+                                <div class="row">
+                                    <h3>Servicio: <strong class="text-muted">Auditoria SGSST</strong></h3>
+                                </div>
+
+                                <div class="panel-group" id="accordion7401210" role="tablist" aria-multiselectable="false">
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Objetivo</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body"><strong>xxxxxxxxxxx</strong></div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading8122873">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse8122873" aria-expanded="false" aria-controls="collapse8122873">Actividades</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse8122873" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading8122873">
+                                         <div class="panel-body">
+                                            <strong>-Auditoria</strong><br>
+                                            <strong>-Aplicación de herramienta para Evaluación del sistema de gestión en seguridad y salud en el trabajo</strong><br>
+                                            <strong>-Informe de auditoria</strong><br>
+                                        </div>
+                                      </div>
+                                    </div>
+                                   <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Alcance</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Dirigido a todo tipo de empresas</strong><br>
+                                           <!--<strong>Visita técnica en las instalaciones del cliente para la evaluación del SGSST de acuerdo con los lineamientos de la ISO 9001:2015 y la ISO 45001:2015</strong>-->
+                                         </div>
+                                      </div>
+                                   </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading411391">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse411391" aria-expanded="false" aria-controls="collapse411391">Requisitos legales</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse411391" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading411391">
+                                         <div class="panel-body">
+                                           <strong>Decreto 1072 de 2015, decreto único reglamentario Ministerio de Trabajo</strong><br> 
+                                           <strong>Resolución 0312 de 2019 Estándares Mínimos del Sistema de Gestión de la Seguridad y Salud en el Trabajo</strong>
+                                         </div>
+                                      </div>
+                                    </div>
+                                    <div class="panel panel-default">
+                                      <div class="panel-heading" role="tab" id="heading2183316">
+                                         <h5 class="panel-title">
+                                            <a role="button" data-toggle="collapse" class="accordion-plus-toggle collapsed" data-parent="#accordion7401210" href="#collapse2183316" aria-expanded="false" aria-controls="collapse2183316">Valor</a>
+                                         </h5>
+                                      </div>
+                                      <div id="collapse2183316" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2183316">
+                                         <div class="panel-body">
+                                            <strong>$ 800.000 </strong>
+                                         </div>
+                                      </div>
+                                   </div>
+                                </div>
+                            </div>
+
+                            <!--Seguir Agregando Paneles-->
 
                             <div class="service-single-img-holder">
                                 <img src="assets/images/service-single/img-1.jpg" alt>
@@ -487,15 +1563,21 @@
             return urlParams.get(name);
         }
 
-        // Obtener el valor de la variable "variable"
-        const variable = getParameterByName('service');
+        // Obtener el valor de la variable "service"
+        const service = getParameterByName('service');
 
         // Mostrar el contenido correspondiente
-        if (variable === 'visitatecnica') {
-            const elemento = document.getElementById(variable);
+        if (service) {
+            const elemento = document.getElementById(service);
             if (elemento) {
                 elemento.style.display = 'block';
+            } else {
+                // Mostrar un mensaje de error si no se encuentra el servicio
+                document.body.innerHTML = '<h1>Servicio no encontrado</h1>';
             }
+        } else {
+            // Mostrar un mensaje de error si no se proporciona el parámetro "service"
+            document.body.innerHTML = '<h1>No se ha especificado un servicio</h1>';
         }
     </script>
 </body>
