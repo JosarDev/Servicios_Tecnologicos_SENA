@@ -2073,7 +2073,7 @@ img {
 
 @media (max-width: 991px) {
   .header-style-1 .navigation, .header-style-2 .navigation {
-    background: #313131;
+    background: #f5f5f5;
     padding: 15px;
   }
   .header-style-1 .navbar-header button, .header-style-2 .navbar-header button {
@@ -5254,7 +5254,7 @@ img {
 
 .contact-pg-section .office-info:before {
   content: "";
-  background-color: rgba(255, 94, 20, 0.95);
+  background-color: #39a900;
   width: 100%;
   height: 100%;
   position: absolute;
