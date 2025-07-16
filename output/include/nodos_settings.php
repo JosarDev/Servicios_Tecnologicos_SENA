@@ -28,7 +28,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsnodos["Spanish"]["id_nodo"] = "Id Nodo";
 	$fieldToolTipsnodos["Spanish"]["id_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["id_nodo"] = "";
-	$fieldLabelsnodos["Spanish"]["nom_nodo"] = "Nom Nodo";
+	$fieldLabelsnodos["Spanish"]["nom_nodo"] = "Nombre del Nodo";
 	$fieldToolTipsnodos["Spanish"]["nom_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["nom_nodo"] = "";
 	$fieldLabelsnodos["Spanish"]["id_centro"] = "Id Centro";
@@ -40,16 +40,16 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsnodos["Spanish"]["barrio_nodo"] = "Barrio Nodo";
 	$fieldToolTipsnodos["Spanish"]["barrio_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["barrio_nodo"] = "";
-	$fieldLabelsnodos["Spanish"]["direc_nodo"] = "Direc Nodo";
+	$fieldLabelsnodos["Spanish"]["direc_nodo"] = "Direcció de Nodo";
 	$fieldToolTipsnodos["Spanish"]["direc_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["direc_nodo"] = "";
 	$fieldLabelsnodos["Spanish"]["localidad"] = "Localidad";
 	$fieldToolTipsnodos["Spanish"]["localidad"] = "";
 	$placeHoldersnodos["Spanish"]["localidad"] = "";
-	$fieldLabelsnodos["Spanish"]["img_nodo"] = "Img Nodo";
+	$fieldLabelsnodos["Spanish"]["img_nodo"] = "Imagen del Nodo";
 	$fieldToolTipsnodos["Spanish"]["img_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["img_nodo"] = "";
-	$fieldLabelsnodos["Spanish"]["fecha_reg_nodo"] = "Fecha Reg Nodo";
+	$fieldLabelsnodos["Spanish"]["fecha_reg_nodo"] = "Fecha de Registro";
 	$fieldToolTipsnodos["Spanish"]["fecha_reg_nodo"] = "";
 	$placeHoldersnodos["Spanish"]["fecha_reg_nodo"] = "";
 	if (count($fieldToolTipsnodos["Spanish"]))
@@ -149,7 +149,7 @@ $tdatanodos[".isUseAjaxSuggest"] = true;
 
 
 
-
+			
 
 $tdatanodos[".ajaxCodeSnippetAdded"] = false;
 
@@ -1428,7 +1428,7 @@ $tdatanodos[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -1448,7 +1448,7 @@ $tdatanodos[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 

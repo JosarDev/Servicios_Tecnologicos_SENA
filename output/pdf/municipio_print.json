@@ -209,7 +209,7 @@ pdfDocument = {
 	cellId: 'headcell_field',
 	col:0,
 	row:0,
-			fieldName: 'id',
+			fieldName: 'id_municipio',
 				style: 'headcell',
 		
 		
@@ -223,11 +223,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel municipio id }","hidden":"{$item_hide_simple_grid_field4}","bold":true},
+			{"text":"{$jslabel municipio id_municipio }","hidden":"{$item_hide_simple_grid_field4}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$id_align}',
+              "alignment": '{$id_municipio_align}',
      
       
       },
@@ -236,35 +236,6 @@ pdfDocument = {
 																							{BEGIN cellblock_grid_headcell_field1}
 {
 	cellId: 'headcell_field1',
-	col:0,
-	row:0,
-			fieldName: 'departamento',
-				style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel municipio departamento }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$departamento_align}',
-     
-      
-      },
-
-{END cellblock_grid_headcell_field1}
-																							{BEGIN cellblock_grid_headcell_field2}
-{
-	cellId: 'headcell_field2',
 	col:0,
 	row:0,
 			fieldName: 'municipio',
@@ -281,11 +252,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel municipio municipio }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel municipio municipio }","hidden":"{$item_hide_simple_grid_field5}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$municipio_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field1}
+																							{BEGIN cellblock_grid_headcell_field2}
+{
+	cellId: 'headcell_field2',
+	col:0,
+	row:0,
+			fieldName: 'departamento',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel municipio departamento }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$departamento_align}',
      
       
       },
@@ -334,7 +334,7 @@ pdfDocument = {
 	cellId: 'cell_field',
 	col:0,
 	row:0,
-			fieldName: 'id',
+			fieldName: 'id_municipio',
 				style: 'bodycell',
 		
 		
@@ -348,11 +348,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$id_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
+			{"text":{$id_municipio_pdfvalue},"hidden":"{$item_hide_simple_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$id_align}',
+              "alignment": '{$id_municipio_align}',
      
       
       },
@@ -361,35 +361,6 @@ pdfDocument = {
 																							{BEGIN cellblock_grid_cell_field1}
 {
 	cellId: 'cell_field1',
-	col:0,
-	row:0,
-			fieldName: 'departamento',
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":{$departamento_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$departamento_align}',
-     
-      
-      },
-
-{END cellblock_grid_cell_field1}
-																							{BEGIN cellblock_grid_cell_field2}
-{
-	cellId: 'cell_field2',
 	col:0,
 	row:0,
 			fieldName: 'municipio',
@@ -411,6 +382,35 @@ pdfDocument = {
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$municipio_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field1}
+																							{BEGIN cellblock_grid_cell_field2}
+{
+	cellId: 'cell_field2',
+	col:0,
+	row:0,
+			fieldName: 'departamento',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$departamento_pdfvalue},"hidden":"{$item_hide_simple_grid_field1}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$departamento_align}',
      
       
       },

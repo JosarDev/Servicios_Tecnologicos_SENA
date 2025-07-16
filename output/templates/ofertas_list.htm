@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -477,7 +478,7 @@
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
 				{BEGIN guestloginbutton}
 <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
+	<a type="button" title="" class="btn btn-success   
 	" href="#" {$guestloginlink_attrs} >
 							Conectar			</a>
 </span>
@@ -565,8 +566,8 @@
 		 
 		{BEGIN add_link}
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" {$addlink_attrs} href="ofertas_add.php{$stateLink_full}" >
+	<a type="button" title="" class="btn btn-success   
+	" {$addlink_attrs} href="ofertas_add.php{$stateLink_full}" data-popup >
 							Añadir nuevo			</a>
 </span>
 {END add_link}
@@ -772,7 +773,7 @@
 		{BEGIN id_Oferta_fieldheadercolumn}
 	{BEGIN id_Oferta_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Oferta" data-fieldname="id_Oferta" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Oferta" data-fieldname="id_Oferta" 
 
 			{$id_Oferta_orderlinkattrs}
 	
@@ -806,7 +807,7 @@
 		{BEGIN Imagen_fieldheadercolumn}
 	{BEGIN Imagen_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Imagen" data-fieldname="Imagen" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Imagen" data-fieldname="Imagen" 
 
 			{$Imagen_orderlinkattrs}
 	
@@ -840,7 +841,7 @@
 		{BEGIN Fecha_Inicio_fieldheadercolumn}
 	{BEGIN Fecha_Inicio_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Inicio" data-fieldname="Fecha_Inicio" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Inicio" data-fieldname="Fecha_Inicio" 
 
 			{$Fecha_Inicio_orderlinkattrs}
 	
@@ -874,7 +875,7 @@
 		{BEGIN Fecha_Fin_fieldheadercolumn}
 	{BEGIN Fecha_Fin_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Fin" data-fieldname="Fecha_Fin" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha_Fin" data-fieldname="Fecha_Fin" 
 
 			{$Fecha_Fin_orderlinkattrs}
 	
@@ -908,7 +909,7 @@
 		{BEGIN Valor_Oferta_fieldheadercolumn}
 	{BEGIN Valor_Oferta_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oferta" data-fieldname="Valor_Oferta" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oferta" data-fieldname="Valor_Oferta" 
 
 			{$Valor_Oferta_orderlinkattrs}
 	
@@ -942,7 +943,7 @@
 		{BEGIN fk_id_Servicio_fieldheadercolumn}
 	{BEGIN fk_id_Servicio_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" 
 
 			{$fk_id_Servicio_orderlinkattrs}
 	
@@ -988,7 +989,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
 	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="ofertas_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+	 glyphicon glyphicon-pencil" href="ofertas_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
 				
 								</a>
 </span>
@@ -1140,7 +1141,7 @@
 
 	 
 		{BEGIN Valor_Oferta_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oferta" data-fieldname="Valor_Oferta" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Oferta" data-fieldname="Valor_Oferta" data-default-width >
 {$Valor_Oferta_value}
 </span>
 {END Valor_Oferta_fieldcolumn}	

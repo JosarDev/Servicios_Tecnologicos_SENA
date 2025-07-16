@@ -244,7 +244,6 @@ class ConnectionManager_Base
 	{
 		$connectionsIds = array();
 		$connectionsIds["casos_exito"] = "project_pst_sena_at_localhost";
-		$connectionsIds["centro"] = "project_pst_sena_at_localhost";
 		$connectionsIds["cliente"] = "project_pst_sena_at_localhost";
 		$connectionsIds["cotizacion"] = "project_pst_sena_at_localhost";
 		$connectionsIds["detalles_cotizacion"] = "project_pst_sena_at_localhost";
@@ -255,8 +254,16 @@ class ConnectionManager_Base
 		$connectionsIds["solicitudes"] = "project_pst_sena_at_localhost";
 		$connectionsIds["usuario"] = "project_pst_sena_at_localhost";
 		$connectionsIds["nodos"] = "project_pst_sena_at_localhost";
-		$connectionsIds["municipio"] = "project_pst_sena_at_localhost";
 		$connectionsIds["centros"] = "project_pst_sena_at_localhost";
+		$connectionsIds["tipo_material"] = "project_pst_sena_at_localhost";
+		$connectionsIds["instrumento"] = "project_pst_sena_at_localhost";
+		$connectionsIds["fabricante"] = "project_pst_sena_at_localhost";
+		$connectionsIds["ensayo"] = "project_pst_sena_at_localhost";
+		$connectionsIds["calibracion"] = "project_pst_sena_at_localhost";
+		$connectionsIds["departamento"] = "project_pst_sena_at_localhost";
+		$connectionsIds["tiposervicio"] = "project_pst_sena_at_localhost";
+		$connectionsIds["detalles_servico"] = "project_pst_sena_at_localhost";
+		$connectionsIds["descripcion_servicios"] = "project_pst_sena_at_localhost";
 
 		$this->_tablesConnectionIds = &$connectionsIds;
 	}

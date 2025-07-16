@@ -4,9 +4,6 @@
 [data-cellid="grid_footcell_field1"][data-page="laboratorio_list"][data-cellid="grid_footcell_field1"][data-page="laboratorio_list"][data-cellid="grid_footcell_field1"][data-page="laboratorio_list"] {
   white-space: nowrap;
 }
-[data-cellid="grid_footcell_field2"][data-page="laboratorio_list"][data-cellid="grid_footcell_field2"][data-page="laboratorio_list"][data-cellid="grid_footcell_field2"][data-page="laboratorio_list"] {
-  white-space: nowrap;
-}
 [data-cellid="grid_footcell_field3"][data-page="laboratorio_list"][data-cellid="grid_footcell_field3"][data-page="laboratorio_list"][data-cellid="grid_footcell_field3"][data-page="laboratorio_list"] {
   white-space: nowrap;
 }
@@ -36,6 +33,14 @@
 }
 [data-cellid="grid_cell_details"][data-page="laboratorio_list"][data-cellid="grid_cell_details"][data-page="laboratorio_list"][data-cellid="grid_cell_details"][data-page="laboratorio_list"] {
   white-space: nowrap;
+}
+[data-cellid="grid_footcell_field9"][data-page="laboratorio_list"][data-cellid="grid_footcell_field9"][data-page="laboratorio_list"][data-cellid="grid_footcell_field9"][data-page="laboratorio_list"] {
+  white-space: nowrap;
+}
+[data-page="laboratorio_list"][data-itemid="add"] > .btn {
+  background-color: #39a900;
+  background-image: none;
+  text-shadow: none;
 }
 [data-page="laboratorio_list"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;

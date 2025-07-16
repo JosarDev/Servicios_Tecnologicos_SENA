@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -24,8 +25,8 @@
 		</style>
 		{$locking}
 		<div class="r-small-page" 
-			data-body-align="left"
-			data-body-width="standard"
+			data-body-align="center"
+			data-body-width="full"
 		>
 							{BEGIN top_block}
 <div class="r-form" data-location="top" id="form_top_{$pageid}" data-makeup="small" {$form_top} data-pageid="{$pageid}" >		
@@ -87,26 +88,26 @@
 	{$cell_grid_headcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_class}	"
+		 r-ori-vert		 {$id_municipio_class}	"
 
-			data-field="id"
+			data-field="id_municipio"
 	
 	data-cellId="grid_headcell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN id_fieldheadercolumn}
+		{BEGIN id_municipio_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" 
 
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label municipio id }</span>
+		<span>{$label municipio id_municipio }</span>
 			</span>
 	</span>
-{END id_fieldheadercolumn}
+{END id_municipio_fieldheadercolumn}
 
 	
 	</th>
@@ -117,26 +118,26 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
+		 r-ori-vert		 {$municipio_class}	"
 
-			data-field="departamento"
+			data-field="municipio"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN departamento_fieldheadercolumn}
+		{BEGIN municipio_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="municipio" data-fieldname="municipio" 
 
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label municipio departamento }</span>
+		<span>{$label municipio municipio }</span>
 			</span>
 	</span>
-{END departamento_fieldheadercolumn}
+{END municipio_fieldheadercolumn}
 
 	
 	</th>
@@ -147,26 +148,26 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$municipio_class}	"
+		 r-ori-vert		 {$departamento_class}	"
 
-			data-field="municipio"
+			data-field="departamento"
 	
 	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN municipio_fieldheadercolumn}
+		{BEGIN departamento_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="municipio" data-fieldname="municipio" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" 
 
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label municipio municipio }</span>
+		<span>{$label municipio departamento }</span>
 			</span>
 	</span>
-{END municipio_fieldheadercolumn}
+{END departamento_fieldheadercolumn}
 
 	
 	</th>
@@ -218,19 +219,19 @@
 	{$cell_grid_cell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_class}	"
+		 r-ori-vert		 {$id_municipio_class}	"
 
-			data-field="id"
+			data-field="id_municipio"
 	
 	data-cellId="grid_cell_field" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN id_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id" data-fieldname="id" data-default-width >
-{$id_value}
+		{BEGIN id_municipio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" data-default-width >
+{$id_municipio_value}
 </span>
-{END id_fieldcolumn}	
+{END id_municipio_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field}
 									{BEGIN cellblock_grid_cell_field1}
@@ -239,32 +240,11 @@
 	{$cell_grid_cell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
-
-			data-field="departamento"
-	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN departamento_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" data-default-width >
-{$departamento_value}
-</span>
-{END departamento_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field1}
-									{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
 		 r-ori-vert		 {$municipio_class}	"
 
 			data-field="municipio"
 	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -273,6 +253,27 @@
 {$municipio_value}
 </span>
 {END municipio_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$departamento_class}	"
+
+			data-field="departamento"
+	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN departamento_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" data-default-width >
+{$departamento_value}
+</span>
+{END departamento_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field2}
 									{BEGIN cellblock_grid_cell_field3}
@@ -313,7 +314,7 @@
 	{$cell_grid_footcell_field}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_class}	"
+		 r-ori-vert		 {$id_municipio_class}	"
 
 	
 	data-cellId="grid_footcell_field" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="municipio_print"	
@@ -328,7 +329,7 @@
 	{$cell_grid_footcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
+		 r-ori-vert		 {$municipio_class}	"
 
 	
 	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="municipio_print"	
@@ -343,7 +344,7 @@
 	{$cell_grid_footcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$municipio_class}	"
+		 r-ori-vert		 {$departamento_class}	"
 
 	
 	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="municipio_print"	

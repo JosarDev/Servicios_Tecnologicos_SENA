@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsusuario["Spanish"]["id_User"] = "Id User";
 	$fieldToolTipsusuario["Spanish"]["id_User"] = "";
 	$placeHoldersusuario["Spanish"]["id_User"] = "";
-	$fieldLabelsusuario["Spanish"]["Usuario"] = "Usuario";
+	$fieldLabelsusuario["Spanish"]["Usuario"] = "Ingrese su Usuario o Correo";
 	$fieldToolTipsusuario["Spanish"]["Usuario"] = "";
 	$placeHoldersusuario["Spanish"]["Usuario"] = "";
-	$fieldLabelsusuario["Spanish"]["Password"] = "PASSWORD";
+	$fieldLabelsusuario["Spanish"]["Password"] = "Ingrese su Contraseña";
 	$fieldToolTipsusuario["Spanish"]["Password"] = "";
 	$placeHoldersusuario["Spanish"]["Password"] = "";
 	$fieldLabelsusuario["Spanish"]["Rol"] = "Rol";
@@ -134,7 +134,7 @@ $tdatausuario[".isUseAjaxSuggest"] = true;
 
 
 
-
+			
 
 $tdatausuario[".ajaxCodeSnippetAdded"] = false;
 

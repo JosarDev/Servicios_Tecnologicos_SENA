@@ -31,16 +31,16 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsnoticias["Spanish"]["Imagen"] = "Imagen";
 	$fieldToolTipsnoticias["Spanish"]["Imagen"] = "";
 	$placeHoldersnoticias["Spanish"]["Imagen"] = "";
-	$fieldLabelsnoticias["Spanish"]["Titulo"] = "Titulo";
+	$fieldLabelsnoticias["Spanish"]["Titulo"] = "Título";
 	$fieldToolTipsnoticias["Spanish"]["Titulo"] = "";
 	$placeHoldersnoticias["Spanish"]["Titulo"] = "";
-	$fieldLabelsnoticias["Spanish"]["Fecha_Publicacion"] = "Fecha Publicacion";
+	$fieldLabelsnoticias["Spanish"]["Fecha_Publicacion"] = "Fecha Publicación";
 	$fieldToolTipsnoticias["Spanish"]["Fecha_Publicacion"] = "";
 	$placeHoldersnoticias["Spanish"]["Fecha_Publicacion"] = "";
 	$fieldLabelsnoticias["Spanish"]["Descripcion"] = "Descripcion";
 	$fieldToolTipsnoticias["Spanish"]["Descripcion"] = "";
 	$placeHoldersnoticias["Spanish"]["Descripcion"] = "";
-	$fieldLabelsnoticias["Spanish"]["fk_id_Laboratorio"] = "Fk Id Laboratorio";
+	$fieldLabelsnoticias["Spanish"]["fk_id_Laboratorio"] = "Laboratorio al que pertenece";
 	$fieldToolTipsnoticias["Spanish"]["fk_id_Laboratorio"] = "";
 	$placeHoldersnoticias["Spanish"]["fk_id_Laboratorio"] = "";
 	if (count($fieldToolTipsnoticias["Spanish"]))
@@ -140,7 +140,7 @@ $tdatanoticias[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdatanoticias[".ajaxCodeSnippetAdded"] = false;
 
@@ -724,7 +724,7 @@ $tdatanoticias[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -744,7 +744,7 @@ $tdatanoticias[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 
@@ -1001,7 +1001,7 @@ $tdatanoticias[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1011,6 +1011,34 @@ $tdatanoticias[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "laboratorio";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Laboratorio";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Nombre_Laboratorio";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1025,17 +1053,14 @@ $tdatanoticias[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -1055,7 +1080,7 @@ $tdatanoticias[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

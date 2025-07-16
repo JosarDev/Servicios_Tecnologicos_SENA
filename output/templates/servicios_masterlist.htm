@@ -91,7 +91,7 @@
 	 
 		{BEGIN id_Servicio_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Servicio" data-fieldname="id_Servicio" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Servicio" data-fieldname="id_Servicio" 
 
 	
 	
@@ -111,17 +111,47 @@
 	{$cell_grid_headcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Nombre_Servicio_class}	"
+		 r-ori-vert		 {$Tipolog_a_class}	"
 
-			data-field="Nombre_Servicio"
+			data-field="Tipolog_a"
 	
 	data-cellId="grid_headcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
+		{BEGIN Tipolog_a_fieldheadercolumn}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipolog_a" data-fieldname="Tipología" 
+
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label servicios Tipolog_a }</span>
+			</span>
+	</span>
+{END Tipolog_a_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field1}
+									{BEGIN cellblock_grid_headcell_field2}
+	<th
+	
+	{$cell_grid_headcell_field2}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Nombre_Servicio_class}	"
+
+			data-field="Nombre_Servicio"
+	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
 		{BEGIN Nombre_Servicio_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Servicio" data-fieldname="Nombre_Servicio" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Servicio" data-fieldname="Nombre_Servicio" 
 
 	
 	
@@ -134,36 +164,6 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field1}
-									{BEGIN cellblock_grid_headcell_field2}
-	<th
-	
-	{$cell_grid_headcell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Normatividad_class}	"
-
-			data-field="Normatividad"
-	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Normatividad_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field20" {$item_simple_grid_field20} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Normatividad" data-fieldname="Normatividad" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Normatividad }</span>
-			</span>
-	</span>
-{END Normatividad_fieldheadercolumn}
-
-	
-	</th>
 	{END cellblock_grid_headcell_field2}
 									{BEGIN cellblock_grid_headcell_field3}
 	<th
@@ -171,450 +171,30 @@
 	{$cell_grid_headcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Descripcion_class}	"
+		 r-ori-vert		 {$fk_laboratorio_class}	"
 
-			data-field="Descripcion"
+			data-field="fk_laboratorio"
 	
 	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN Descripcion_fieldheadercolumn}
+		{BEGIN fk_laboratorio_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field21" {$item_simple_grid_field21} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_laboratorio" data-fieldname="fk_laboratorio" 
 
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label servicios Descripcion }</span>
+		<span>{$label servicios fk_laboratorio }</span>
 			</span>
 	</span>
-{END Descripcion_fieldheadercolumn}
+{END fk_laboratorio_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field3}
-									{BEGIN cellblock_grid_headcell_field4}
-	<th
-	
-	{$cell_grid_headcell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Valor_Servicio_class}	"
-
-			data-field="Valor_Servicio"
-	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Valor_Servicio_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field22" {$item_simple_grid_field22} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Servicio" data-fieldname="Valor_Servicio" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Valor_Servicio }</span>
-			</span>
-	</span>
-{END Valor_Servicio_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field4}
-									{BEGIN cellblock_grid_headcell_field5}
-	<th
-	
-	{$cell_grid_headcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$TipoServicio_class}	"
-
-			data-field="TipoServicio"
-	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN TipoServicio_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field23" {$item_simple_grid_field23} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TipoServicio" data-fieldname="TipoServicio" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios TipoServicio }</span>
-			</span>
-	</span>
-{END TipoServicio_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field5}
-									{BEGIN cellblock_grid_headcell_field6}
-	<th
-	
-	{$cell_grid_headcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Instrumento_class}	"
-
-			data-field="Instrumento"
-	
-	data-cellId="grid_headcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Instrumento_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field24" {$item_simple_grid_field24} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Instrumento" data-fieldname="Instrumento" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Instrumento }</span>
-			</span>
-	</span>
-{END Instrumento_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field6}
-									{BEGIN cellblock_grid_headcell_field7}
-	<th
-	
-	{$cell_grid_headcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Fabricante_class}	"
-
-			data-field="Fabricante"
-	
-	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Fabricante_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field25" {$item_simple_grid_field25} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fabricante" data-fieldname="Fabricante" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Fabricante }</span>
-			</span>
-	</span>
-{END Fabricante_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field7}
-									{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Modelo_class}	"
-
-			data-field="Modelo"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Modelo_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field26" {$item_simple_grid_field26} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Modelo" data-fieldname="Modelo" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Modelo }</span>
-			</span>
-	</span>
-{END Modelo_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
-									{BEGIN cellblock_grid_headcell_field9}
-	<th
-	
-	{$cell_grid_headcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Serie_class}	"
-
-			data-field="Serie"
-	
-	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Serie_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field27" {$item_simple_grid_field27} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Serie" data-fieldname="Serie" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Serie }</span>
-			</span>
-	</span>
-{END Serie_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field9}
-									{BEGIN cellblock_grid_headcell_field10}
-	<th
-	
-	{$cell_grid_headcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cog_Interno_class}	"
-
-			data-field="Cog_Interno"
-	
-	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Cog_Interno_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field28" {$item_simple_grid_field28} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cog_Interno" data-fieldname="Cog_Interno" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Cog_Interno }</span>
-			</span>
-	</span>
-{END Cog_Interno_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field10}
-									{BEGIN cellblock_grid_headcell_field11}
-	<th
-	
-	{$cell_grid_headcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$IRPC_class}	"
-
-			data-field="IRPC"
-	
-	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN IRPC_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field29" {$item_simple_grid_field29} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="IRPC" data-fieldname="IRPC" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios IRPC }</span>
-			</span>
-	</span>
-{END IRPC_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field11}
-									{BEGIN cellblock_grid_headcell_field12}
-	<th
-	
-	{$cell_grid_headcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Nom_Material_class}	"
-
-			data-field="Nom_Material"
-	
-	data-cellId="grid_headcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Nom_Material_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field30" {$item_simple_grid_field30} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nom_Material" data-fieldname="Nom_Material" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Nom_Material }</span>
-			</span>
-	</span>
-{END Nom_Material_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field12}
-									{BEGIN cellblock_grid_headcell_field13}
-	<th
-	
-	{$cell_grid_headcell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Material_class}	"
-
-			data-field="Tipo_Material"
-	
-	data-cellId="grid_headcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipo_Material_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field31" {$item_simple_grid_field31} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipo_Material" data-fieldname="Tipo_Material" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Tipo_Material }</span>
-			</span>
-	</span>
-{END Tipo_Material_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field13}
-									{BEGIN cellblock_grid_headcell_field14}
-	<th
-	
-	{$cell_grid_headcell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Report_Results_class}	"
-
-			data-field="Report_Results"
-	
-	data-cellId="grid_headcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Report_Results_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field32" {$item_simple_grid_field32} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Report_Results" data-fieldname="Report_Results" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Report_Results }</span>
-			</span>
-	</span>
-{END Report_Results_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field14}
-									{BEGIN cellblock_grid_headcell_field15}
-	<th
-	
-	{$cell_grid_headcell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cantidad_class}	"
-
-			data-field="Cantidad"
-	
-	data-cellId="grid_headcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Cantidad_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field33" {$item_simple_grid_field33} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cantidad" data-fieldname="Cantidad" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Cantidad }</span>
-			</span>
-	</span>
-{END Cantidad_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field15}
-									{BEGIN cellblock_grid_headcell_field16}
-	<th
-	
-	{$cell_grid_headcell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Probeta_class}	"
-
-			data-field="Tipo_Probeta"
-	
-	data-cellId="grid_headcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipo_Probeta_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field34" {$item_simple_grid_field34} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipo_Probeta" data-fieldname="Tipo_Probeta" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios Tipo_Probeta }</span>
-			</span>
-	</span>
-{END Tipo_Probeta_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field16}
-									{BEGIN cellblock_grid_headcell_field17}
-	<th
-	
-	{$cell_grid_headcell_field17}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$fk_id_Laboratorio_class}	"
-
-			data-field="fk_id_Laboratorio"
-	
-	data-cellId="grid_headcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN fk_id_Laboratorio_fieldheadercolumn}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field35" {$item_simple_grid_field35} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Laboratorio" data-fieldname="fk_id_Laboratorio" 
-
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label servicios fk_id_Laboratorio }</span>
-			</span>
-	</span>
-{END fk_id_Laboratorio_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field17}
 							</tr>
 															
 					{END grid_header}
@@ -678,11 +258,32 @@
 	{$cell_grid_cell_field1}
 	{$recordattrs}
 	class="
+		 r-ori-vert		 {$Tipolog_a_class}	"
+
+			data-field="Tipolog_a"
+	
+	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Tipolog_a_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipolog_a" data-fieldname="Tipología" data-default-width >
+{$Tipolog_a_value}
+</span>
+{END Tipolog_a_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field1}
+									{BEGIN cellblock_grid_cell_field2}
+	<td
+	
+	{$cell_grid_cell_field2}
+	{$recordattrs}
+	class="
 		 r-ori-vert		 {$Nombre_Servicio_class}	"
 
 			data-field="Nombre_Servicio"
 	
-	data-cellId="grid_cell_field1" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -692,27 +293,6 @@
 </span>
 {END Nombre_Servicio_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field1}
-									{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Normatividad_class}	"
-
-			data-field="Normatividad"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Normatividad_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Normatividad" data-fieldname="Normatividad" data-default-width >
-{$Normatividad_value}
-</span>
-{END Normatividad_fieldcolumn}	
-	</td>
 	{END cellblock_grid_cell_field2}
 									{BEGIN cellblock_grid_cell_field3}
 	<td
@@ -720,315 +300,21 @@
 	{$cell_grid_cell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Descripcion_class}	"
+		 r-ori-vert		 {$fk_laboratorio_class}	"
 
-			data-field="Descripcion"
+			data-field="fk_laboratorio"
 	
 	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN Descripcion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" data-default-width >
-{$Descripcion_value}
+		{BEGIN fk_laboratorio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_laboratorio" data-fieldname="fk_laboratorio" data-default-width >
+{$fk_laboratorio_value}
 </span>
-{END Descripcion_fieldcolumn}	
+{END fk_laboratorio_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field3}
-									{BEGIN cellblock_grid_cell_field4}
-	<td
-	
-	{$cell_grid_cell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Valor_Servicio_class}	"
-
-			data-field="Valor_Servicio"
-	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Valor_Servicio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Valor_Servicio" data-fieldname="Valor_Servicio" data-default-width >
-{$Valor_Servicio_value}
-</span>
-{END Valor_Servicio_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field4}
-									{BEGIN cellblock_grid_cell_field5}
-	<td
-	
-	{$cell_grid_cell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$TipoServicio_class}	"
-
-			data-field="TipoServicio"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN TipoServicio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TipoServicio" data-fieldname="TipoServicio" data-default-width >
-{$TipoServicio_value}
-</span>
-{END TipoServicio_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
-									{BEGIN cellblock_grid_cell_field6}
-	<td
-	
-	{$cell_grid_cell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Instrumento_class}	"
-
-			data-field="Instrumento"
-	
-	data-cellId="grid_cell_field6" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Instrumento_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Instrumento" data-fieldname="Instrumento" data-default-width >
-{$Instrumento_value}
-</span>
-{END Instrumento_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field6}
-									{BEGIN cellblock_grid_cell_field7}
-	<td
-	
-	{$cell_grid_cell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Fabricante_class}	"
-
-			data-field="Fabricante"
-	
-	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Fabricante_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fabricante" data-fieldname="Fabricante" data-default-width >
-{$Fabricante_value}
-</span>
-{END Fabricante_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field7}
-									{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Modelo_class}	"
-
-			data-field="Modelo"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Modelo_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Modelo" data-fieldname="Modelo" data-default-width >
-{$Modelo_value}
-</span>
-{END Modelo_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
-									{BEGIN cellblock_grid_cell_field9}
-	<td
-	
-	{$cell_grid_cell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Serie_class}	"
-
-			data-field="Serie"
-	
-	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Serie_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Serie" data-fieldname="Serie" data-default-width >
-{$Serie_value}
-</span>
-{END Serie_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field9}
-									{BEGIN cellblock_grid_cell_field10}
-	<td
-	
-	{$cell_grid_cell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cog_Interno_class}	"
-
-			data-field="Cog_Interno"
-	
-	data-cellId="grid_cell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Cog_Interno_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cog_Interno" data-fieldname="Cog_Interno" data-default-width >
-{$Cog_Interno_value}
-</span>
-{END Cog_Interno_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field10}
-									{BEGIN cellblock_grid_cell_field11}
-	<td
-	
-	{$cell_grid_cell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$IRPC_class}	"
-
-			data-field="IRPC"
-	
-	data-cellId="grid_cell_field11" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN IRPC_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="IRPC" data-fieldname="IRPC" data-default-width >
-{$IRPC_value}
-</span>
-{END IRPC_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field11}
-									{BEGIN cellblock_grid_cell_field12}
-	<td
-	
-	{$cell_grid_cell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Nom_Material_class}	"
-
-			data-field="Nom_Material"
-	
-	data-cellId="grid_cell_field12" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Nom_Material_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nom_Material" data-fieldname="Nom_Material" data-default-width >
-{$Nom_Material_value}
-</span>
-{END Nom_Material_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field12}
-									{BEGIN cellblock_grid_cell_field13}
-	<td
-	
-	{$cell_grid_cell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Material_class}	"
-
-			data-field="Tipo_Material"
-	
-	data-cellId="grid_cell_field13" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipo_Material_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipo_Material" data-fieldname="Tipo_Material" data-default-width >
-{$Tipo_Material_value}
-</span>
-{END Tipo_Material_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field13}
-									{BEGIN cellblock_grid_cell_field14}
-	<td
-	
-	{$cell_grid_cell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Report_Results_class}	"
-
-			data-field="Report_Results"
-	
-	data-cellId="grid_cell_field14" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Report_Results_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Report_Results" data-fieldname="Report_Results" data-default-width >
-{$Report_Results_value}
-</span>
-{END Report_Results_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field14}
-									{BEGIN cellblock_grid_cell_field15}
-	<td
-	
-	{$cell_grid_cell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cantidad_class}	"
-
-			data-field="Cantidad"
-	
-	data-cellId="grid_cell_field15" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Cantidad_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cantidad" data-fieldname="Cantidad" data-default-width >
-{$Cantidad_value}
-</span>
-{END Cantidad_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field15}
-									{BEGIN cellblock_grid_cell_field16}
-	<td
-	
-	{$cell_grid_cell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Probeta_class}	"
-
-			data-field="Tipo_Probeta"
-	
-	data-cellId="grid_cell_field16" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipo_Probeta_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipo_Probeta" data-fieldname="Tipo_Probeta" data-default-width >
-{$Tipo_Probeta_value}
-</span>
-{END Tipo_Probeta_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field16}
-									{BEGIN cellblock_grid_cell_field17}
-	<td
-	
-	{$cell_grid_cell_field17}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$fk_id_Laboratorio_class}	"
-
-			data-field="fk_id_Laboratorio"
-	
-	data-cellId="grid_cell_field17" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN fk_id_Laboratorio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Laboratorio" data-fieldname="fk_id_Laboratorio" data-default-width >
-{$fk_id_Laboratorio_value}
-</span>
-{END fk_id_Laboratorio_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field17}
 							</tr>
 										
 											{END grid_row}
@@ -1076,7 +362,7 @@
 	{$cell_grid_footcell_field1}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Nombre_Servicio_class}	"
+		 r-ori-vert		 {$Tipolog_a_class}	"
 
 	
 	data-cellId="grid_footcell_field1" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
@@ -1091,7 +377,7 @@
 	{$cell_grid_footcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Normatividad_class}	"
+		 r-ori-vert		 {$Nombre_Servicio_class}	"
 
 	
 	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
@@ -1106,7 +392,7 @@
 	{$cell_grid_footcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$Descripcion_class}	"
+		 r-ori-vert		 {$fk_laboratorio_class}	"
 
 	
 	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
@@ -1115,216 +401,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field3}
-									{BEGIN cellblock_grid_footcell_field4}
-	<td
-	
-	{$cell_grid_footcell_field4}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Valor_Servicio_class}	"
-
-	
-	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field4}
-									{BEGIN cellblock_grid_footcell_field5}
-	<td
-	
-	{$cell_grid_footcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$TipoServicio_class}	"
-
-	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field5}
-									{BEGIN cellblock_grid_footcell_field6}
-	<td
-	
-	{$cell_grid_footcell_field6}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Instrumento_class}	"
-
-	
-	data-cellId="grid_footcell_field6" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field6}
-									{BEGIN cellblock_grid_footcell_field7}
-	<td
-	
-	{$cell_grid_footcell_field7}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Fabricante_class}	"
-
-	
-	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field7}
-									{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Modelo_class}	"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
-									{BEGIN cellblock_grid_footcell_field9}
-	<td
-	
-	{$cell_grid_footcell_field9}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Serie_class}	"
-
-	
-	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field9}
-									{BEGIN cellblock_grid_footcell_field10}
-	<td
-	
-	{$cell_grid_footcell_field10}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cog_Interno_class}	"
-
-	
-	data-cellId="grid_footcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field10}
-									{BEGIN cellblock_grid_footcell_field11}
-	<td
-	
-	{$cell_grid_footcell_field11}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$IRPC_class}	"
-
-	
-	data-cellId="grid_footcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field11}
-									{BEGIN cellblock_grid_footcell_field12}
-	<td
-	
-	{$cell_grid_footcell_field12}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Nom_Material_class}	"
-
-	
-	data-cellId="grid_footcell_field12" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field12}
-									{BEGIN cellblock_grid_footcell_field13}
-	<td
-	
-	{$cell_grid_footcell_field13}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Material_class}	"
-
-	
-	data-cellId="grid_footcell_field13" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field13}
-									{BEGIN cellblock_grid_footcell_field14}
-	<td
-	
-	{$cell_grid_footcell_field14}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Report_Results_class}	"
-
-	
-	data-cellId="grid_footcell_field14" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field14}
-									{BEGIN cellblock_grid_footcell_field15}
-	<td
-	
-	{$cell_grid_footcell_field15}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Cantidad_class}	"
-
-	
-	data-cellId="grid_footcell_field15" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field15}
-									{BEGIN cellblock_grid_footcell_field16}
-	<td
-	
-	{$cell_grid_footcell_field16}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipo_Probeta_class}	"
-
-	
-	data-cellId="grid_footcell_field16" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field16}
-									{BEGIN cellblock_grid_footcell_field17}
-	<td
-	
-	{$cell_grid_footcell_field17}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$fk_id_Laboratorio_class}	"
-
-	
-	data-cellId="grid_footcell_field17" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="servicios_masterlist"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field17}
 							</tr>
 					
 					</tfoot>

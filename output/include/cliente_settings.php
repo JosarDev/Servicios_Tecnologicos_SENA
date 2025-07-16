@@ -31,7 +31,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscliente["Spanish"]["TipoCliente"] = "Tipo Cliente";
 	$fieldToolTipscliente["Spanish"]["TipoCliente"] = "";
 	$placeHolderscliente["Spanish"]["TipoCliente"] = "";
-	$fieldLabelscliente["Spanish"]["Num_Identificacion"] = "Num Identificacion";
+	$fieldLabelscliente["Spanish"]["Num_Identificacion"] = "N° de Identificacion (CC - RUT - NIT)";
 	$fieldToolTipscliente["Spanish"]["Num_Identificacion"] = "";
 	$placeHolderscliente["Spanish"]["Num_Identificacion"] = "";
 	$fieldLabelscliente["Spanish"]["Nombres"] = "Nombres";
@@ -49,7 +49,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscliente["Spanish"]["Correo"] = "Correo";
 	$fieldToolTipscliente["Spanish"]["Correo"] = "";
 	$placeHolderscliente["Spanish"]["Correo"] = "";
-	$fieldLabelscliente["Spanish"]["Direccion"] = "Direccion";
+	$fieldLabelscliente["Spanish"]["Direccion"] = "Dirección";
 	$fieldToolTipscliente["Spanish"]["Direccion"] = "";
 	$placeHolderscliente["Spanish"]["Direccion"] = "";
 	$fieldLabelscliente["Spanish"]["NombreEmpresa"] = "Nombre Empresa";
@@ -58,7 +58,7 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscliente["Spanish"]["NombreEmprendimiento"] = "Nombre Emprendimiento";
 	$fieldToolTipscliente["Spanish"]["NombreEmprendimiento"] = "";
 	$placeHolderscliente["Spanish"]["NombreEmprendimiento"] = "";
-	$fieldLabelscliente["Spanish"]["fk_id_User"] = "Fk Id User";
+	$fieldLabelscliente["Spanish"]["fk_id_User"] = "Rol para el Inicio de Sesión";
 	$fieldToolTipscliente["Spanish"]["fk_id_User"] = "";
 	$placeHolderscliente["Spanish"]["fk_id_User"] = "";
 	if (count($fieldToolTipscliente["Spanish"]))
@@ -158,7 +158,7 @@ $tdatacliente[".isUseAjaxSuggest"] = true;
 
 
 
-
+			
 
 $tdatacliente[".ajaxCodeSnippetAdded"] = false;
 
@@ -572,7 +572,7 @@ $tdatacliente[".hideMobileList"] = array();
 	$fdata["GoodName"] = "Num_Identificacion";
 	$fdata["ownerTable"] = "cliente";
 	$fdata["Label"] = GetFieldLabel("cliente","Num_Identificacion");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 
 	
@@ -633,8 +633,7 @@ $tdatacliente[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -649,7 +648,8 @@ $tdatacliente[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=40";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -657,8 +657,7 @@ $tdatacliente[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -1140,7 +1139,7 @@ $tdatacliente[".hideMobileList"] = array();
 	$fdata["GoodName"] = "Celular";
 	$fdata["ownerTable"] = "cliente";
 	$fdata["Label"] = GetFieldLabel("cliente","Celular");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 
 	
@@ -1201,8 +1200,7 @@ $tdatacliente[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -1217,7 +1215,8 @@ $tdatacliente[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=255";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1225,8 +1224,7 @@ $tdatacliente[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -1881,7 +1879,7 @@ $tdatacliente[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1891,6 +1889,34 @@ $tdatacliente[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "usuario";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_User";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Rol";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1905,17 +1931,14 @@ $tdatacliente[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -1935,7 +1958,7 @@ $tdatacliente[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

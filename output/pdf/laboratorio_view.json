@@ -172,9 +172,6 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel laboratorio Nombre_Laboratorio }","bold":true},{"text":{$Nombre_Laboratorio_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel laboratorio Tipologia }","bold":true},{"text":{$Tipologia_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel laboratorio Descripcion }","bold":true},{"text":{$Descripcion_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
@@ -187,7 +184,10 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel laboratorio Vision }","bold":true},{"text":{$Vision_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel laboratorio fk_Codigo_Centro }","bold":true},{"text":{$fk_Codigo_Centro_pdfvalue}}],"margin":[0,0,0,15]},
+			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel laboratorio fk_Regional }","bold":true},{"text":{$fk_Regional_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel laboratorio fk_id_centro }","bold":true},{"text":{$fk_id_centro_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel laboratorio fk_id_User }","bold":true},{"text":{$fk_id_User_pdfvalue}}],"margin":[0,0,0,15]},

@@ -3571,8 +3571,6 @@ function fillProjectEntites()
 		return;
 	$projectEntities[ "casos_exito" ] = array( "url" => "casos_exito", "type" => 0 );
 	$projectEntitiesReverse[ "casos_exito" ] = "casos_exito";
-	$projectEntities[ "centro" ] = array( "url" => "centro", "type" => 0 );
-	$projectEntitiesReverse[ "centro" ] = "centro";
 	$projectEntities[ "cliente" ] = array( "url" => "cliente", "type" => 0 );
 	$projectEntitiesReverse[ "cliente" ] = "cliente";
 	$projectEntities[ "cotizacion" ] = array( "url" => "cotizacion", "type" => 0 );
@@ -3593,10 +3591,26 @@ function fillProjectEntites()
 	$projectEntitiesReverse[ "usuario" ] = "usuario";
 	$projectEntities[ "nodos" ] = array( "url" => "nodos", "type" => 0 );
 	$projectEntitiesReverse[ "nodos" ] = "nodos";
-	$projectEntities[ "municipio" ] = array( "url" => "municipio", "type" => 0 );
-	$projectEntitiesReverse[ "municipio" ] = "municipio";
 	$projectEntities[ "centros" ] = array( "url" => "centros", "type" => 0 );
 	$projectEntitiesReverse[ "centros" ] = "centros";
+	$projectEntities[ "tipo_material" ] = array( "url" => "tipo_material", "type" => 0 );
+	$projectEntitiesReverse[ "tipo_material" ] = "tipo_material";
+	$projectEntities[ "instrumento" ] = array( "url" => "instrumento", "type" => 0 );
+	$projectEntitiesReverse[ "instrumento" ] = "instrumento";
+	$projectEntities[ "fabricante" ] = array( "url" => "fabricante", "type" => 0 );
+	$projectEntitiesReverse[ "fabricante" ] = "fabricante";
+	$projectEntities[ "ensayo" ] = array( "url" => "ensayo", "type" => 0 );
+	$projectEntitiesReverse[ "ensayo" ] = "ensayo";
+	$projectEntities[ "calibracion" ] = array( "url" => "calibracion", "type" => 0 );
+	$projectEntitiesReverse[ "calibracion" ] = "calibracion";
+	$projectEntities[ "departamento" ] = array( "url" => "departamento", "type" => 0 );
+	$projectEntitiesReverse[ "departamento" ] = "departamento";
+	$projectEntities[ "tiposervicio" ] = array( "url" => "tiposervicio", "type" => 0 );
+	$projectEntitiesReverse[ "tiposervicio" ] = "tiposervicio";
+	$projectEntities[ "detalles_servico" ] = array( "url" => "detalles_servico", "type" => 0 );
+	$projectEntitiesReverse[ "detalles_servico" ] = "detalles_servico";
+	$projectEntities[ "descripcion_servicios" ] = array( "url" => "descripcion_servicios", "type" => 0 );
+	$projectEntitiesReverse[ "descripcion_servicios" ] = "descripcion_servicios";
 }
 
 function findTable( $table ) {

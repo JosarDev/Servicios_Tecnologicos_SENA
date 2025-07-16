@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -259,6 +260,32 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Descripcion}</span>
 						</div>
 		{END searchCtrlBlock_Descripcion}
+																{BEGIN searchCtrlBlock_fk_Regional}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fk_Regional}" {$filterRow_attrs_fk_Regional}>
+			<label>{$label laboratorio fk_Regional }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fk_Regional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fk_Regional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fk_Regional}</span>
+						</div>
+		{END searchCtrlBlock_fk_Regional}
+																{BEGIN searchCtrlBlock_fk_id_centro}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_fk_id_centro}" {$filterRow_attrs_fk_id_centro}>
+			<label>{$label laboratorio fk_id_centro }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_fk_id_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_fk_id_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_fk_id_centro}</span>
+						</div>
+		{END searchCtrlBlock_fk_id_centro}
 																{BEGIN searchCtrlBlock_id_Laboratorio}
 
 
@@ -285,19 +312,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_fk_id_User}</span>
 						</div>
 		{END searchCtrlBlock_fk_id_User}
-																{BEGIN searchCtrlBlock_fk_Codigo_Centro}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_fk_Codigo_Centro}" {$filterRow_attrs_fk_Codigo_Centro}>
-			<label>{$label laboratorio fk_Codigo_Centro }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_fk_Codigo_Centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_fk_Codigo_Centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_fk_Codigo_Centro}</span>
-						</div>
-		{END searchCtrlBlock_fk_Codigo_Centro}
 																{BEGIN searchCtrlBlock_Vision}
 
 
@@ -311,19 +325,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Vision}</span>
 						</div>
 		{END searchCtrlBlock_Vision}
-																{BEGIN searchCtrlBlock_Tipologia}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_Tipologia}" {$filterRow_attrs_Tipologia}>
-			<label>{$label laboratorio Tipologia }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_Tipologia}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_Tipologia}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Tipologia}</span>
-						</div>
-		{END searchCtrlBlock_Tipologia}
 																{BEGIN searchCtrlBlock_Nombre_Laboratorio}
 
 
@@ -516,7 +517,7 @@
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
 				{BEGIN guestloginbutton}
 <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
+	<a type="button" title="" class="btn btn-success   
 	" href="#" {$guestloginlink_attrs} >
 							Conectar			</a>
 </span>
@@ -603,9 +604,9 @@
 		{BEGIN firstAboveGridCell}
 		 
 		{BEGIN add_link}
-<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" {$addlink_attrs} href="laboratorio_add.php{$stateLink_full}" >
+<span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-page="laboratorio_list" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" {$addlink_attrs} href="laboratorio_add.php{$stateLink_full}" data-popup >
 							Añadir nuevo			</a>
 </span>
 {END add_link}
@@ -767,9 +768,6 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Nombre_Laboratorio"]:before {
 		content: "{$label laboratorio Nombre_Laboratorio}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Tipologia"]:before {
-		content: "{$label laboratorio Tipologia}";
-	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Descripcion"]:before {
 		content: "{$label laboratorio Descripcion}";
 	}
@@ -782,8 +780,11 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Vision"]:before {
 		content: "{$label laboratorio Vision}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fk_Codigo_Centro"]:before {
-		content: "{$label laboratorio fk_Codigo_Centro}";
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fk_Regional"]:before {
+		content: "{$label laboratorio fk_Regional}";
+	}
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fk_id_centro"]:before {
+		content: "{$label laboratorio fk_id_centro}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="fk_id_User"]:before {
 		content: "{$label laboratorio fk_id_User}";
@@ -872,7 +873,7 @@
 		{BEGIN id_Laboratorio_fieldheadercolumn}
 	{BEGIN id_Laboratorio_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Laboratorio" data-fieldname="id_Laboratorio" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Laboratorio" data-fieldname="id_Laboratorio" 
 
 			{$id_Laboratorio_orderlinkattrs}
 	
@@ -906,7 +907,7 @@
 		{BEGIN Nombre_Laboratorio_fieldheadercolumn}
 	{BEGIN Nombre_Laboratorio_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Laboratorio" data-fieldname="Nombre_Laboratorio" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Laboratorio" data-fieldname="Nombre_Laboratorio" 
 
 			{$Nombre_Laboratorio_orderlinkattrs}
 	
@@ -923,40 +924,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field1}
-									{BEGIN cellblock_grid_headcell_field2}
-	<th
-	
-	{$cell_grid_headcell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipologia_class}	"
-
-			data-field="Tipologia"
-	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipologia_fieldheadercolumn}
-	{BEGIN Tipologia_fieldheader}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipologia" data-fieldname="Tipologia" 
-
-			{$Tipologia_orderlinkattrs}
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label laboratorio Tipologia }</span>
-					{$arrow_icon_Tipologia}
-			</span>
-	</span>
-	{END Tipologia_fieldheader}
-{END Tipologia_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field2}
 									{BEGIN cellblock_grid_headcell_field3}
 	<th
 	
@@ -974,7 +941,7 @@
 		{BEGIN Descripcion_fieldheadercolumn}
 	{BEGIN Descripcion_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label3" {$item_grid_field_label3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
 
 			{$Descripcion_orderlinkattrs}
 	
@@ -1008,7 +975,7 @@
 		{BEGIN Direccion_fieldheadercolumn}
 	{BEGIN Direccion_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Direccion" data-fieldname="Direccion" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label4" {$item_grid_field_label4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Direccion" data-fieldname="Direccion" 
 
 			{$Direccion_orderlinkattrs}
 	
@@ -1042,7 +1009,7 @@
 		{BEGIN Mision_fieldheadercolumn}
 	{BEGIN Mision_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Mision" data-fieldname="Mision" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label5" {$item_grid_field_label5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Mision" data-fieldname="Mision" 
 
 			{$Mision_orderlinkattrs}
 	
@@ -1076,7 +1043,7 @@
 		{BEGIN Vision_fieldheadercolumn}
 	{BEGIN Vision_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Vision" data-fieldname="Vision" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label6" {$item_grid_field_label6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Vision" data-fieldname="Vision" 
 
 			{$Vision_orderlinkattrs}
 	
@@ -1099,30 +1066,30 @@
 	{$cell_grid_headcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$fk_Codigo_Centro_class}	"
+		 r-ori-vert		 {$fk_Regional_class}	"
 
-			data-field="fk_Codigo_Centro"
+			data-field="fk_Regional"
 	
 	data-cellId="grid_headcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN fk_Codigo_Centro_fieldheadercolumn}
-	{BEGIN fk_Codigo_Centro_fieldheader}
+		{BEGIN fk_Regional_fieldheadercolumn}
+	{BEGIN fk_Regional_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_Codigo_Centro" data-fieldname="fk_Codigo_Centro" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label9" {$item_grid_field_label9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_Regional" data-fieldname="fk_Regional" 
 
-			{$fk_Codigo_Centro_orderlinkattrs}
+			{$fk_Regional_orderlinkattrs}
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label laboratorio fk_Codigo_Centro }</span>
-					{$arrow_icon_fk_Codigo_Centro}
+		<span>{$label laboratorio fk_Regional }</span>
+					{$arrow_icon_fk_Regional}
 			</span>
 	</span>
-	{END fk_Codigo_Centro_fieldheader}
-{END fk_Codigo_Centro_fieldheadercolumn}
+	{END fk_Regional_fieldheader}
+{END fk_Regional_fieldheadercolumn}
 
 	
 	</th>
@@ -1133,18 +1100,52 @@
 	{$cell_grid_headcell_field8}
 	{$recordattrs}
 	class="
+		 r-ori-vert		 {$fk_id_centro_class}	"
+
+			data-field="fk_id_centro"
+	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN fk_id_centro_fieldheadercolumn}
+	{BEGIN fk_id_centro_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label7" {$item_grid_field_label7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_centro" data-fieldname="fk_id_centro" 
+
+			{$fk_id_centro_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label laboratorio fk_id_centro }</span>
+					{$arrow_icon_fk_id_centro}
+			</span>
+	</span>
+	{END fk_id_centro_fieldheader}
+{END fk_id_centro_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field9}
+	<th
+	
+	{$cell_grid_headcell_field9}
+	{$recordattrs}
+	class="
 		 r-ori-vert		 {$fk_id_User_class}	"
 
 			data-field="fk_id_User"
 	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
 		{BEGIN fk_id_User_fieldheadercolumn}
 	{BEGIN fk_id_User_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_User" data-fieldname="fk_id_User" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label8" {$item_grid_field_label8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_User" data-fieldname="fk_id_User" 
 
 			{$fk_id_User_orderlinkattrs}
 	
@@ -1160,7 +1161,7 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field8}
+	{END cellblock_grid_headcell_field9}
 							</tr>
 																				
 					{END grid_header}
@@ -1190,7 +1191,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
 	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="laboratorio_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+	 glyphicon glyphicon-pencil" href="laboratorio_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
 				
 								</a>
 </span>
@@ -1257,73 +1258,23 @@
 	>
 
 	 
-		{BEGIN dtables_link}
-	<a 
-		data-itemtype="grid_alldetails_link" data-itemid="grid_alldetails_link" {$item_grid_alldetails_link} data-pageid="{$pageid}" data-record-id="{$recId}" 
-		{$dtables_link_attrs} 
-		class="{$dtables_link_class}" 
-		title="Mostrar detalles"
-				
-	>
-					<span class="glyphicon glyphicon-th-list"></span>
-					</a>
-{END dtables_link}
-	 
+			 
 		
-		
-	{BEGIN servicios_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
-	<a  {$servicios_link_attrs} data-short-details="servicios"
-		class="{$servicios_dlink_class}" 
-		title="{$caption servicios }"			>
-								
-									{BEGIN servicios_childcount}
-				<span class="details-badge badge servicios_badge" {$servicios_childnumber_attr}>
-					{$servicios_childnumber}				
-				</span>
-				{END servicios_childcount}
-						</a>
-	</span>
-	{END servicios_dtable_link}
-
-
-	 
-		
-		
-	{BEGIN noticias_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link1" {$item_grid_details_link1} data-pageid="{$pageid}" data-record-id="{$recId}">
-	<a  {$noticias_link_attrs} data-short-details="noticias"
-		class="{$noticias_dlink_class}" 
-		title="{$caption noticias }"			>
-								
-									{BEGIN noticias_childcount}
-				<span class="details-badge badge noticias_badge" {$noticias_childnumber_attr}>
-					{$noticias_childnumber}				
-				</span>
-				{END noticias_childcount}
-						</a>
-	</span>
-	{END noticias_dtable_link}
-
-
-	 
-		
-		
-	{BEGIN casos_exito_dtable_link}
-	<span data-itemtype="grid_details_link" data-itemid="grid_details_link2" {$item_grid_details_link2} data-pageid="{$pageid}" data-record-id="{$recId}">
-	<a  {$casos_exito_link_attrs} data-short-details="casos_exito"
-		class="{$casos_exito_dlink_class}" 
-		title="{$caption casos_exito }"			>
-								
-									{BEGIN casos_exito_childcount}
-				<span class="details-badge badge casos_exito_badge" {$casos_exito_childnumber_attr}>
-					{$casos_exito_childnumber}				
-				</span>
-				{END casos_exito_childcount}
-						</a>
-	</span>
-	{END casos_exito_dtable_link}
-
+	{BEGIN dtables_link}
+				<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+		<a 
+			{$servicios_link_attrs} 
+			class="{$dtables_link_class} details-badge badge servicios_badge" 
+			title="Mostrar detalles"
+						
+		>
+							<span class="glyphicon glyphicon-th-list"></span>
+									<span class="{$servicios_cntspan_class}" {$servicios_childnumber_attr}>
+				{$servicios_childnumber}				
+			</span>
+		</a>
+		</span>
+	{END dtables_link}
 
 	
 	</td>
@@ -1343,7 +1294,7 @@
 
 	 
 		{BEGIN id_Laboratorio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field" {$item_simple_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Laboratorio" data-fieldname="id_Laboratorio" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Laboratorio" data-fieldname="id_Laboratorio" data-default-width >
 {$id_Laboratorio_value}
 </span>
 {END id_Laboratorio_fieldcolumn}	
@@ -1364,33 +1315,12 @@
 
 	 
 		{BEGIN Nombre_Laboratorio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field1" {$item_simple_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Laboratorio" data-fieldname="Nombre_Laboratorio" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Nombre_Laboratorio" data-fieldname="Nombre_Laboratorio" data-default-width >
 {$Nombre_Laboratorio_value}
 </span>
 {END Nombre_Laboratorio_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field1}
-									{BEGIN cellblock_grid_cell_field2}
-	<td
-	
-	{$cell_grid_cell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipologia_class}	"
-
-			data-field="Tipologia"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Tipologia_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Tipologia" data-fieldname="Tipologia" data-default-width >
-{$Tipologia_value}
-</span>
-{END Tipologia_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field2}
 									{BEGIN cellblock_grid_cell_field3}
 	<td
 	
@@ -1406,7 +1336,7 @@
 
 	 
 		{BEGIN Descripcion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field3" {$item_simple_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field3" {$item_grid_field3} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" data-default-width >
 {$Descripcion_value}
 </span>
 {END Descripcion_fieldcolumn}	
@@ -1427,7 +1357,7 @@
 
 	 
 		{BEGIN Direccion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field4" {$item_simple_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Direccion" data-fieldname="Direccion" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field4" {$item_grid_field4} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Direccion" data-fieldname="Direccion" data-default-width >
 {$Direccion_value}
 </span>
 {END Direccion_fieldcolumn}	
@@ -1448,7 +1378,7 @@
 
 	 
 		{BEGIN Mision_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Mision" data-fieldname="Mision" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field5" {$item_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Mision" data-fieldname="Mision" data-default-width >
 {$Mision_value}
 </span>
 {END Mision_fieldcolumn}	
@@ -1469,7 +1399,7 @@
 
 	 
 		{BEGIN Vision_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field6" {$item_simple_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Vision" data-fieldname="Vision" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field6" {$item_grid_field6} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Vision" data-fieldname="Vision" data-default-width >
 {$Vision_value}
 </span>
 {END Vision_fieldcolumn}	
@@ -1481,19 +1411,19 @@
 	{$cell_grid_cell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$fk_Codigo_Centro_class}	"
+		 r-ori-vert		 {$fk_Regional_class}	"
 
-			data-field="fk_Codigo_Centro"
+			data-field="fk_Regional"
 	
 	data-cellId="grid_cell_field7" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN fk_Codigo_Centro_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_Codigo_Centro" data-fieldname="fk_Codigo_Centro" data-default-width >
-{$fk_Codigo_Centro_value}
+		{BEGIN fk_Regional_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field9" {$item_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_Regional" data-fieldname="fk_Regional" data-default-width >
+{$fk_Regional_value}
 </span>
-{END fk_Codigo_Centro_fieldcolumn}	
+{END fk_Regional_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
 									{BEGIN cellblock_grid_cell_field8}
@@ -1502,21 +1432,42 @@
 	{$cell_grid_cell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$fk_id_User_class}	"
+		 r-ori-vert		 {$fk_id_centro_class}	"
 
-			data-field="fk_id_User"
+			data-field="fk_id_centro"
 	
 	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
+		{BEGIN fk_id_centro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field7" {$item_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_centro" data-fieldname="fk_id_centro" data-default-width >
+{$fk_id_centro_value}
+</span>
+{END fk_id_centro_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field9}
+	<td
+	
+	{$cell_grid_cell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$fk_id_User_class}	"
+
+			data-field="fk_id_User"
+	
+	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
 		{BEGIN fk_id_User_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_User" data-fieldname="fk_id_User" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field8" {$item_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_User" data-fieldname="fk_id_User" data-default-width >
 {$fk_id_User_value}
 </span>
 {END fk_id_User_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field8}
+	{END cellblock_grid_cell_field9}
 							</tr>
 											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
 				
@@ -1534,20 +1485,17 @@
 	>
 
 	 
-					<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
-	data-orders="servicios,noticias,casos_exito"
-			data-details-servicios			data-details-noticias			data-details-casos_exito	>
+				<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="servicios,noticias"
+			data-details-servicios			data-details-noticias	>
 		<span data-details-inside data-short-table="servicios">
 			</span>
 		<span data-details-inside data-short-table="noticias">
-			</span>
-		<span data-details-inside data-short-table="casos_exito">
 			</span>
 		<div data-details-preview>
 	</div>
 </div>
 	 
-			 
 			
 	</td>
 	{END cellblock_grid_cell_dpreview}
@@ -1637,21 +1585,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field1}
-									{BEGIN cellblock_grid_footcell_field2}
-	<td
-	
-	{$cell_grid_footcell_field2}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Tipologia_class}	"
-
-	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="laboratorio_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field2}
 									{BEGIN cellblock_grid_footcell_field3}
 	<td
 	
@@ -1718,7 +1651,7 @@
 	{$cell_grid_footcell_field7}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$fk_Codigo_Centro_class}	"
+		 r-ori-vert		 {$fk_Regional_class}	"
 
 	
 	data-cellId="grid_footcell_field7" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="laboratorio_list"	
@@ -1733,7 +1666,7 @@
 	{$cell_grid_footcell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$fk_id_User_class}	"
+		 r-ori-vert		 {$fk_id_centro_class}	"
 
 	
 	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="laboratorio_list"	
@@ -1742,6 +1675,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field9}
+	<td
+	
+	{$cell_grid_footcell_field9}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$fk_id_User_class}	"
+
+	
+	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="laboratorio_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field9}
 							</tr>
 					
 					</tfoot>

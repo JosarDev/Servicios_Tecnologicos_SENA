@@ -1,3 +1,13 @@
+[data-page="centros_edit"][data-itemid="edit_save"] > .btn {
+  background-color: #39a900;
+  background-image: none;
+  text-shadow: none;
+}
+[data-page="centros_edit"][data-itemid="loginform_login"] > .btn {
+  background-color: #39a900;
+  background-image: none;
+  text-shadow: none;
+}
 [data-page="centros_edit"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;
 }

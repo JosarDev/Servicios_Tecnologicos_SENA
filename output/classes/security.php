@@ -1025,17 +1025,7 @@ class Security
 	public static function _staticRestrictedPages( $table ) {
 		$group = Security::getUserGroup();
 		if( $group == "Cliente" )	{
-			if( $table == "casos_exito" )
-			{
-				$ret = array();
-				$ret[ "add" ] = true;
-				$ret[ "edit" ] = true;
-				$ret[ "export" ] = true;
-				$ret[ "import" ] = true;
-				$ret[ "print" ] = true;
-				return $ret;
-			}
-			if( $table == "centro" )
+			if( $table == "calibracion" )
 			{
 				$ret = array();
 				$ret[ "add" ] = true;
@@ -1048,7 +1038,7 @@ class Security
 				$ret[ "view" ] = true;
 				return $ret;
 			}
-			if( $table == "centros" )
+			if( $table == "casos_exito" )
 			{
 				$ret = array();
 				$ret[ "add" ] = true;
@@ -1056,6 +1046,19 @@ class Security
 				$ret[ "export" ] = true;
 				$ret[ "import" ] = true;
 				$ret[ "print" ] = true;
+				return $ret;
+			}
+			if( $table == "centros" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
 				return $ret;
 			}
 			if( $table == "cliente" )
@@ -1084,7 +1087,85 @@ class Security
 				$ret[ "view" ] = true;
 				return $ret;
 			}
+			if( $table == "departamento" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "descripcion_servicios" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
 			if( $table == "detalles_cotizacion" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "detalles_servico" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "ensayo" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "fabricante" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "instrumento" )
 			{
 				$ret = array();
 				$ret[ "add" ] = true;
@@ -1105,19 +1186,6 @@ class Security
 				$ret[ "export" ] = true;
 				$ret[ "import" ] = true;
 				$ret[ "print" ] = true;
-				return $ret;
-			}
-			if( $table == "municipio" )
-			{
-				$ret = array();
-				$ret[ "add" ] = true;
-				$ret[ "edit" ] = true;
-				$ret[ "export" ] = true;
-				$ret[ "import" ] = true;
-				$ret[ "list" ] = true;
-				$ret[ "print" ] = true;
-				$ret[ "search" ] = true;
-				$ret[ "view" ] = true;
 				return $ret;
 			}
 			if( $table == "nodos" )
@@ -1172,6 +1240,32 @@ class Security
 				$ret[ "print" ] = true;
 				return $ret;
 			}
+			if( $table == "tipo_material" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "tiposervicio" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
 			if( $table == "usuario" )
 			{
 				$ret = array();
@@ -1188,6 +1282,198 @@ class Security
 			return array();
 		}
 		if( $group == "LabAdmin" )	{
+			if( $table == "calibracion" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "casos_exito" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "centros" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "cliente" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "print" ] = true;
+				return $ret;
+			}
+			if( $table == "cotizacion" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "departamento" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "detalles_cotizacion" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "ensayo" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "fabricante" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "instrumento" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "nodos" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "noticias" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "ofertas" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "tipo_material" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
+			if( $table == "usuario" )
+			{
+				$ret = array();
+				$ret[ "add" ] = true;
+				$ret[ "edit" ] = true;
+				$ret[ "export" ] = true;
+				$ret[ "import" ] = true;
+				$ret[ "list" ] = true;
+				$ret[ "print" ] = true;
+				$ret[ "search" ] = true;
+				$ret[ "view" ] = true;
+				return $ret;
+			}
 			return array();
 		}
 		if( $group == "SuperAdmin" )	{

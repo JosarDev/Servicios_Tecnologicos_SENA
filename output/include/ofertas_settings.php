@@ -37,10 +37,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsofertas["Spanish"]["Fecha_Fin"] = "Fecha Fin";
 	$fieldToolTipsofertas["Spanish"]["Fecha_Fin"] = "";
 	$placeHoldersofertas["Spanish"]["Fecha_Fin"] = "";
-	$fieldLabelsofertas["Spanish"]["Valor_Oferta"] = "Valor Oferta";
+	$fieldLabelsofertas["Spanish"]["Valor_Oferta"] = "Valor de Oferta";
 	$fieldToolTipsofertas["Spanish"]["Valor_Oferta"] = "";
 	$placeHoldersofertas["Spanish"]["Valor_Oferta"] = "";
-	$fieldLabelsofertas["Spanish"]["fk_id_Servicio"] = "Fk Id Servicio";
+	$fieldLabelsofertas["Spanish"]["fk_id_Servicio"] = "Servicio que esta en Oferta";
 	$fieldToolTipsofertas["Spanish"]["fk_id_Servicio"] = "";
 	$placeHoldersofertas["Spanish"]["fk_id_Servicio"] = "";
 	if (count($fieldToolTipsofertas["Spanish"]))
@@ -140,7 +140,7 @@ $tdataofertas[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdataofertas[".ajaxCodeSnippetAdded"] = false;
 
@@ -586,7 +586,7 @@ $tdataofertas[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -606,7 +606,7 @@ $tdataofertas[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 
@@ -726,7 +726,7 @@ $tdataofertas[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -746,7 +746,7 @@ $tdataofertas[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 
@@ -1004,7 +1004,7 @@ $tdataofertas[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1014,6 +1014,34 @@ $tdataofertas[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "servicios";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Servicio";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Nombre_Servicio";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1028,17 +1056,14 @@ $tdataofertas[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -1058,7 +1083,7 @@ $tdataofertas[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

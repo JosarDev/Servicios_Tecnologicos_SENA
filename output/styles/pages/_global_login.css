@@ -1,5 +1,17 @@
+[data-page="_global_login"][data-itemid="username"] {
+  color: #000000;
+}
+[data-page="_global_login"][data-itemid="password"] {
+  color: #000000;
+}
 [data-page="_global_login"][data-itemid="login-logo"] {
   font-size: 24px;
+}
+[data-page="_global_login"][data-itemid="edit_field_label"][data-page="_global_login"][data-itemid="edit_field_label"][data-page="_global_login"][data-itemid="edit_field_label"][data-page="_global_login"][data-itemid="edit_field_label"] {
+  color: #000000;
+}
+[data-page="_global_login"][data-itemid="edit_field_label2"][data-page="_global_login"][data-itemid="edit_field_label2"][data-page="_global_login"][data-itemid="edit_field_label2"][data-page="_global_login"][data-itemid="edit_field_label2"] {
+  color: #000000;
 }
 [data-page="_global_login"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;

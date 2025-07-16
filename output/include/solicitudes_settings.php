@@ -40,18 +40,18 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelssolicitudes["Spanish"]["Cantidad"] = "Cantidad";
 	$fieldToolTipssolicitudes["Spanish"]["Cantidad"] = "";
 	$placeHolderssolicitudes["Spanish"]["Cantidad"] = "";
-	$fieldLabelssolicitudes["Spanish"]["Descripcion"] = "Descripcion";
-	$fieldToolTipssolicitudes["Spanish"]["Descripcion"] = "";
-	$placeHolderssolicitudes["Spanish"]["Descripcion"] = "";
 	$fieldLabelssolicitudes["Spanish"]["TipoSolicitud"] = "Tipo Solicitud";
 	$fieldToolTipssolicitudes["Spanish"]["TipoSolicitud"] = "";
 	$placeHolderssolicitudes["Spanish"]["TipoSolicitud"] = "";
-	$fieldLabelssolicitudes["Spanish"]["fk_id_Servicio"] = "Fk Id Servicio";
+	$fieldLabelssolicitudes["Spanish"]["fk_id_Servicio"] = "Seleccione el Servicio a solicitar";
 	$fieldToolTipssolicitudes["Spanish"]["fk_id_Servicio"] = "";
 	$placeHolderssolicitudes["Spanish"]["fk_id_Servicio"] = "";
-	$fieldLabelssolicitudes["Spanish"]["fk_id_Cliente"] = "Fk Id Cliente";
+	$fieldLabelssolicitudes["Spanish"]["fk_id_Cliente"] = "Cliente que realiza la Solicitud";
 	$fieldToolTipssolicitudes["Spanish"]["fk_id_Cliente"] = "";
 	$placeHolderssolicitudes["Spanish"]["fk_id_Cliente"] = "";
+	$fieldLabelssolicitudes["Spanish"]["Observaciones"] = "Observaciones";
+	$fieldToolTipssolicitudes["Spanish"]["Observaciones"] = "";
+	$placeHolderssolicitudes["Spanish"]["Observaciones"] = "";
 	if (count($fieldToolTipssolicitudes["Spanish"]))
 		$tdatasolicitudes[".isUseToolTips"] = true;
 }
@@ -149,7 +149,7 @@ $tdatasolicitudes[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdatasolicitudes[".ajaxCodeSnippetAdded"] = false;
 
@@ -174,7 +174,7 @@ $tdatasolicitudes[".googleLikeFields"][] = "Fecha";
 $tdatasolicitudes[".googleLikeFields"][] = "Hora";
 $tdatasolicitudes[".googleLikeFields"][] = "Estado";
 $tdatasolicitudes[".googleLikeFields"][] = "Cantidad";
-$tdatasolicitudes[".googleLikeFields"][] = "Descripcion";
+$tdatasolicitudes[".googleLikeFields"][] = "Observaciones";
 $tdatasolicitudes[".googleLikeFields"][] = "TipoSolicitud";
 $tdatasolicitudes[".googleLikeFields"][] = "fk_id_Servicio";
 $tdatasolicitudes[".googleLikeFields"][] = "fk_id_Cliente";
@@ -211,7 +211,7 @@ $tdatasolicitudes[".strOrderBy"] = $tstrOrderBy;
 $tdatasolicitudes[".orderindexes"] = array();
 
 
-$tdatasolicitudes[".sqlHead"] = "SELECT id_Solicitudes,  	Fecha,  	Hora,  	Estado,  	Cantidad,  	Descripcion,  	TipoSolicitud,  	fk_id_Servicio,  	fk_id_Cliente";
+$tdatasolicitudes[".sqlHead"] = "SELECT id_Solicitudes,  	Fecha,  	Hora,  	Estado,  	Cantidad,  	Observaciones,  	TipoSolicitud,  	fk_id_Servicio,  	fk_id_Cliente";
 $tdatasolicitudes[".sqlFrom"] = "FROM solicitudes";
 $tdatasolicitudes[".sqlWhereExpr"] = "";
 $tdatasolicitudes[".sqlTail"] = "";
@@ -460,7 +460,7 @@ $tdatasolicitudes[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -480,7 +480,7 @@ $tdatasolicitudes[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 
@@ -968,14 +968,14 @@ $tdatasolicitudes[".hideMobileList"] = array();
 
 	$tdatasolicitudes["Cantidad"] = $fdata;
 		$tdatasolicitudes[".searchableFields"][] = "Cantidad";
-//	Descripcion
+//	Observaciones
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 6;
-	$fdata["strName"] = "Descripcion";
-	$fdata["GoodName"] = "Descripcion";
+	$fdata["strName"] = "Observaciones";
+	$fdata["GoodName"] = "Observaciones";
 	$fdata["ownerTable"] = "solicitudes";
-	$fdata["Label"] = GetFieldLabel("solicitudes","Descripcion");
+	$fdata["Label"] = GetFieldLabel("solicitudes","Observaciones");
 	$fdata["FieldType"] = 201;
 
 
@@ -983,12 +983,12 @@ $tdatasolicitudes[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "Descripcion";
+		$fdata["strField"] = "Observaciones";
 
-		$fdata["sourceSingle"] = "Descripcion";
+		$fdata["sourceSingle"] = "Observaciones";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Descripcion";
+	$fdata["FullName"] = "Observaciones";
 
 	
 	
@@ -1106,8 +1106,8 @@ $tdatasolicitudes[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatasolicitudes["Descripcion"] = $fdata;
-		$tdatasolicitudes[".searchableFields"][] = "Descripcion";
+	$tdatasolicitudes["Observaciones"] = $fdata;
+		$tdatasolicitudes[".searchableFields"][] = "Observaciones";
 //	TipoSolicitud
 //	Custom field settings
 	$fdata = array();
@@ -1185,6 +1185,7 @@ $tdatasolicitudes[".hideMobileList"] = array();
 	
 		$edata["LookupValues"] = array();
 	$edata["LookupValues"][] = "SERVICIO";
+	$edata["LookupValues"][] = "COTIZACIÓN";
 	$edata["LookupValues"][] = "CONTACTO";
 
 	
@@ -1316,7 +1317,7 @@ $tdatasolicitudes[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1326,6 +1327,34 @@ $tdatasolicitudes[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "servicios";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Servicio";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Nombre_Servicio";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1340,17 +1369,14 @@ $tdatasolicitudes[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -1370,7 +1396,7 @@ $tdatasolicitudes[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1380,7 +1406,8 @@ $tdatasolicitudes[".hideMobileList"] = array();
 //Filters settings
 	$fdata["filterTotals"] = 0;
 		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
+		$fdata["filterTotalFields"] = "id_Solicitudes";
+		$fdata["filterFormat"] = "Values list";
 		$fdata["showCollapsed"] = false;
 
 		$fdata["sortValueType"] = 0;
@@ -1561,24 +1588,6 @@ $masterTablesData["solicitudes"] = array();
 
 	
 	//if !@t.bReportCrossTab
-			$strOriginalDetailsTable="servicios";
-	$masterParams = array();
-	$masterParams["mDataSourceTable"]="servicios";
-	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
-	$masterParams["mShortTable"]= "servicios";
-	$masterParams["masterKeys"]= array();
-	$masterParams["detailKeys"]= array();
-
-	$masterParams["type"] = PAGE_LIST;
-					$masterTablesData["solicitudes"][0] = $masterParams;
-				$masterTablesData["solicitudes"][0]["masterKeys"] = array();
-	$masterTablesData["solicitudes"][0]["masterKeys"][]="id_Servicio";
-				$masterTablesData["solicitudes"][0]["detailKeys"] = array();
-	$masterTablesData["solicitudes"][0]["detailKeys"][]="fk_id_Servicio";
-		
-	//endif
-	
-	//if !@t.bReportCrossTab
 			$strOriginalDetailsTable="cliente";
 	$masterParams = array();
 	$masterParams["mDataSourceTable"]="cliente";
@@ -1588,11 +1597,11 @@ $masterTablesData["solicitudes"] = array();
 	$masterParams["detailKeys"]= array();
 
 	$masterParams["type"] = PAGE_LIST;
-					$masterTablesData["solicitudes"][1] = $masterParams;
-				$masterTablesData["solicitudes"][1]["masterKeys"] = array();
-	$masterTablesData["solicitudes"][1]["masterKeys"][]="id_Cliente";
-				$masterTablesData["solicitudes"][1]["detailKeys"] = array();
-	$masterTablesData["solicitudes"][1]["detailKeys"][]="fk_id_Cliente";
+					$masterTablesData["solicitudes"][0] = $masterParams;
+				$masterTablesData["solicitudes"][0]["masterKeys"] = array();
+	$masterTablesData["solicitudes"][0]["masterKeys"][]="id_Cliente";
+				$masterTablesData["solicitudes"][0]["detailKeys"] = array();
+	$masterTablesData["solicitudes"][0]["detailKeys"][]="fk_id_Cliente";
 		
 	//endif
 // -----------------end  prepare master-details data arrays ------------------------------//
@@ -1615,7 +1624,7 @@ function createSqlQuery_solicitudes()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_Solicitudes,  	Fecha,  	Hora,  	Estado,  	Cantidad,  	Descripcion,  	TipoSolicitud,  	fk_id_Servicio,  	fk_id_Cliente";
+$proto0["m_strFieldList"] = "id_Solicitudes,  	Fecha,  	Hora,  	Estado,  	Cantidad,  	Observaciones,  	TipoSolicitud,  	fk_id_Servicio,  	fk_id_Cliente";
 $proto0["m_strFrom"] = "FROM solicitudes";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1727,12 +1736,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Descripcion",
+	"m_strName" => "Observaciones",
 	"m_strTable" => "solicitudes",
 	"m_srcTableName" => "solicitudes"
 ));
 
-$proto16["m_sql"] = "Descripcion";
+$proto16["m_sql"] = "Observaciones";
 $proto16["m_srcTableName"] = "solicitudes";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -1793,7 +1802,7 @@ $proto25["m_columns"][] = "Fecha";
 $proto25["m_columns"][] = "Hora";
 $proto25["m_columns"][] = "Estado";
 $proto25["m_columns"][] = "Cantidad";
-$proto25["m_columns"][] = "Descripcion";
+$proto25["m_columns"][] = "Observaciones";
 $proto25["m_columns"][] = "TipoSolicitud";
 $proto25["m_columns"][] = "fk_id_Servicio";
 $proto25["m_columns"][] = "fk_id_Cliente";
@@ -1841,6 +1850,7 @@ $tdatasolicitudes[".sqlquery"] = $queryData_solicitudes;
 
 
 
-$tdatasolicitudes[".hasEvents"] = false;
+include_once(getabspath("include/solicitudes_events.php"));
+$tdatasolicitudes[".hasEvents"] = true;
 
 ?>

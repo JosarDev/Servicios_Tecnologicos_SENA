@@ -205,8 +205,6 @@ function checkTableName($shortTName )
 
 	if ("casos_exito" == $shortTName )
 		return true;
-	if ("centro" == $shortTName )
-		return true;
 	if ("cliente" == $shortTName )
 		return true;
 	if ("cotizacion" == $shortTName )
@@ -227,9 +225,25 @@ function checkTableName($shortTName )
 		return true;
 	if ("nodos" == $shortTName )
 		return true;
-	if ("municipio" == $shortTName )
-		return true;
 	if ("centros" == $shortTName )
+		return true;
+	if ("tipo_material" == $shortTName )
+		return true;
+	if ("instrumento" == $shortTName )
+		return true;
+	if ("fabricante" == $shortTName )
+		return true;
+	if ("ensayo" == $shortTName )
+		return true;
+	if ("calibracion" == $shortTName )
+		return true;
+	if ("departamento" == $shortTName )
+		return true;
+	if ("tiposervicio" == $shortTName )
+		return true;
+	if ("detalles_servico" == $shortTName )
+		return true;
+	if ("descripcion_servicios" == $shortTName )
 		return true;
 	return false;
 }
@@ -289,15 +303,6 @@ function GetTablesList($pdfMode = false)
 	}
 	if( $tableAvailable ) {
 		$arr[]="casos_exito";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("centro");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="centro";
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
@@ -391,21 +396,93 @@ function GetTablesList($pdfMode = false)
 	}
 	$tableAvailable = true;
 	if( $checkPermissions ) {
-		$strPerm = GetUserPermissions("municipio");
-		$tableAvailable = ( strpos($strPerm, "P") !== false
-			|| $pdfMode && strpos($strPerm, "S") !== false );
-	}
-	if( $tableAvailable ) {
-		$arr[]="municipio";
-	}
-	$tableAvailable = true;
-	if( $checkPermissions ) {
 		$strPerm = GetUserPermissions("centros");
 		$tableAvailable = ( strpos($strPerm, "P") !== false
 			|| $pdfMode && strpos($strPerm, "S") !== false );
 	}
 	if( $tableAvailable ) {
 		$arr[]="centros";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tipo_material");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tipo_material";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("instrumento");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="instrumento";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("fabricante");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="fabricante";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("ensayo");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="ensayo";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("calibracion");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="calibracion";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("departamento");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="departamento";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("tiposervicio");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="tiposervicio";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("detalles_servico");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="detalles_servico";
+	}
+	$tableAvailable = true;
+	if( $checkPermissions ) {
+		$strPerm = GetUserPermissions("descripcion_servicios");
+		$tableAvailable = ( strpos($strPerm, "P") !== false
+			|| $pdfMode && strpos($strPerm, "S") !== false );
+	}
+	if( $tableAvailable ) {
+		$arr[]="descripcion_servicios";
 	}
 	return $arr;
 }
@@ -417,7 +494,6 @@ function GetTablesListWithoutSecurity()
 {
 	$arr = array();
 	$arr[]="casos_exito";
-	$arr[]="centro";
 	$arr[]="cliente";
 	$arr[]="cotizacion";
 	$arr[]="detalles_cotizacion";
@@ -428,8 +504,16 @@ function GetTablesListWithoutSecurity()
 	$arr[]="solicitudes";
 	$arr[]="usuario";
 	$arr[]="nodos";
-	$arr[]="municipio";
 	$arr[]="centros";
+	$arr[]="tipo_material";
+	$arr[]="instrumento";
+	$arr[]="fabricante";
+	$arr[]="ensayo";
+	$arr[]="calibracion";
+	$arr[]="departamento";
+	$arr[]="tiposervicio";
+	$arr[]="detalles_servico";
+	$arr[]="descripcion_servicios";
 	return $arr;
 }
 
@@ -1059,24 +1143,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
-		}
-		if( $sUserGroup=="SuperAdmin" )
-		{
-						return "AEDSPI".$extraPerm;
-		}
-//	default permissions
-		return "ADESPI".$extraPerm;
-	}
-	if( $table=="centro" )
-	{
-		if( $sUserGroup=="Cliente" )
-		{
 						return "".$extraPerm;
-		}
-		if( $sUserGroup=="LabAdmin" )
-		{
-						return "AEDSPI".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1093,7 +1160,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "S".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1110,7 +1177,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1127,7 +1194,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1144,7 +1211,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "SAEDPI".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1161,7 +1228,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1178,7 +1245,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1212,7 +1279,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "SAEDPI".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1229,7 +1296,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "AEDSPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1246,7 +1313,7 @@ function GetUserPermissionsStatic( $table )
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{
-						return "ADESPI".$extraPerm;
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="SuperAdmin" )
 		{
@@ -1255,7 +1322,126 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="municipio" )
+	if( $table=="centros" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tipo_material" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="instrumento" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="fabricante" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="ensayo" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="calibracion" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="departamento" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="tiposervicio" )
 	{
 		if( $sUserGroup=="Cliente" )
 		{
@@ -1272,11 +1458,28 @@ function GetUserPermissionsStatic( $table )
 //	default permissions
 		return "ADESPI".$extraPerm;
 	}
-	if( $table=="centros" )
+	if( $table=="detalles_servico" )
 	{
 		if( $sUserGroup=="Cliente" )
 		{
-						return "S".$extraPerm;
+						return "".$extraPerm;
+		}
+		if( $sUserGroup=="LabAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+		if( $sUserGroup=="SuperAdmin" )
+		{
+						return "ADESPI".$extraPerm;
+		}
+//	default permissions
+		return "ADESPI".$extraPerm;
+	}
+	if( $table=="descripcion_servicios" )
+	{
+		if( $sUserGroup=="Cliente" )
+		{
+						return "".$extraPerm;
 		}
 		if( $sUserGroup=="LabAdmin" )
 		{

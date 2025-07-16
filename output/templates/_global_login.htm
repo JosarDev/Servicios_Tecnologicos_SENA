@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -30,7 +31,7 @@
 		</style>
 
 		<div class="r-pretty-login-page"
-						 data-image-shadow 					>
+						 data-image-shadow 			 data-left-image 		>
 			<div class="r-controls">
 				<div class="r-mainform">
 													{BEGIN top_block}
@@ -74,27 +75,18 @@ Inicie sesión en su cuenta</span>
 				<div class="row">
 			 
 				<div 
-	data-cellId="above-grid_c2" data-pageid="{$pageid}"	{$cell_above-grid_c2}
-	class=" r-ori-vert			col-md-12
-	
-">
-		{BEGIN firstAboveGridCell}
-				{END firstAboveGridCell}	
-	</div>					</div>
-			 
-				<div class="row">
-			 
-				<div 
 	data-cellId="above-grid_c1" data-pageid="{$pageid}"	{$cell_above-grid_c1}
 	class=" r-ori-vert			col-md-12
 	
 ">
+		{BEGIN firstAboveGridCell}
 		 
 		{BEGIN message_block}
 <div data-itemtype="login_message" data-itemid="login_message" {$item_login_message} data-pageid="{$pageid}" class="alert {$message_class}" role="alert">
 {$message}
 	</div>
-{END message_block}		</div>					</div>
+{END message_block}			{END firstAboveGridCell}	
+	</div>					</div>
 			</div>		
 {END above-grid_block}
 									{BEGIN grid_block}
@@ -107,10 +99,15 @@ Inicie sesión en su cuenta</span>
 	colspan="2"		 
 	data-cellId="grid_c1" data-pageid="{$pageid}">
  
-<label data-itemtype="username_label" data-itemid="username_label" {$item_username_label} data-pageid="{$pageid}" data-small class="r-edit-label control-label" for="username">
-	{BEGIN username_label}Nombre de usuario{END username_label}
-</label> 
-<div class="r-edit-field" data-itemtype="username" data-itemid="username" {$item_username} data-pageid="{$pageid}" >
+{BEGIN Usuario_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="Usuario{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label" {$item_edit_field_label} data-pageid="{$pageid}" data-page="_global_login" data-field="Usuario" data-fieldname="Usuario">
+		<label class="r-edit-label control-label" for="{$labelfor_Usuario}">
+			{BEGIN Usuario_label}{$label usuario Usuario }{END Usuario_label}
+		</label>
+	</div>
+{END Usuario_fieldblock}
+ 
+<div class="r-edit-field" data-itemtype="username" data-itemid="username" {$item_username} data-pageid="{$pageid}" data-page="_global_login" >
 	<input type="text" class="form-control" name="username" {$username_attrs} id="username">
 </div></td>
 							</tr>
@@ -120,35 +117,23 @@ Inicie sesión en su cuenta</span>
 	colspan="2"		 
 	data-cellId="grid_c2" data-pageid="{$pageid}">
  
-<label data-itemtype="password_label" data-itemid="password_label" {$item_password_label} data-pageid="{$pageid}" data-small class="r-edit-label control-label" for="password">
-	{BEGIN password_label}Contraseña{END password_label}
-</label> 
-<div class="r-edit-field" data-itemtype="password" data-itemid="password" {$item_password} data-pageid="{$pageid}" >
+{BEGIN Password_fieldblock}
+	<div class="r-edit-label" data-signal-error-for="Password{$id}" data-itemtype="edit_field_label" data-itemid="edit_field_label2" {$item_edit_field_label2} data-pageid="{$pageid}" data-page="_global_login" data-field="Password" data-fieldname="Password">
+		<label class="r-edit-label control-label" for="{$labelfor_Password}">
+			{BEGIN Password_label}{$label usuario Password }{END Password_label}
+		</label>
+	</div>
+{END Password_fieldblock}
+ 
+<div class="r-edit-field" data-itemtype="password" data-itemid="password" {$item_password} data-pageid="{$pageid}" data-page="_global_login" >
 	<input type="password" class="form-control" name="password" {$password_attrs} id="password">
 </div></td>
 							</tr>
 											<tr {$row_grid_2} >
 									<td 
 	class=" r-ori-vert			"
-			 
-	data-cellId="grid_c4" data-pageid="{$pageid}">
- 
-<div class="checkbox r-edit-field" data-itemtype="remember_password" data-itemid="remember_password" {$item_remember_password} data-pageid="{$pageid}" >
-	<label>
-		<input type="checkbox" id="remember_password{$id}" name="remember_password" value="1" {$rememberbox_attrs}> Recordarme	</label>
-</div></td>
-									<td 
-	class="r-align-right r-ori-vert			"
-			 
-	data-cellId="grid_c6" data-pageid="{$pageid}">
- 
-{BEGIN guestlink_block}
-<span data-itemtype="guest_login" data-itemid="guest_login" {$item_guest_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-link   
-	" {$guestlink_attrs} >
-							Conectar como invitado			</a>
-</span>
-{END guestlink_block}
+	colspan="2"		 
+	data-cellId="grid_c5" data-pageid="{$pageid}">
 </td>
 							</tr>
 					
@@ -167,7 +152,7 @@ Inicie sesión en su cuenta</span>
  
 {BEGIN signin_button}
 <span data-itemtype="login_button" data-itemid="login_button" {$item_login_button} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
+	<a type="button" title="" class="btn btn-success   
 	" {$loginlink_attrs} >
 							Aceptar			</a>
 </span>
@@ -177,6 +162,14 @@ Inicie sesión en su cuenta</span>
 	class="r-align-right r-ori-vert			"
 			 
 	data-cellId="footer_c2" data-pageid="{$pageid}">
+ 
+{BEGIN guestlink_block}
+<span data-itemtype="guest_login" data-itemid="guest_login" {$item_guest_login} data-pageid="{$pageid}" data-small data-button-item>
+	<a type="button" title="" class="btn btn-success   
+	" {$guestlink_attrs} >
+							Conectar como invitado			</a>
+</span>
+{END guestlink_block}
 </td>
 							</tr>
 					
@@ -195,7 +188,7 @@ Inicie sesión en su cuenta</span>
 			</div>
 			<div class="r-sideimage">
 							<div class="r-image"  >
-					<img data-itemtype="page_image" data-itemid="page_image_ash8f23hr" {$item_page_image_ash8f23hr} data-pageid="{$pageid}" data-page="_global_login" src="images/clipart/drawing/race-cars-on-the-road-publicdomainvectors.org.png" />
+					<img data-itemtype="page_image" data-itemid="page_image_ash8f23hr" {$item_page_image_ash8f23hr} data-pageid="{$pageid}" data-page="_global_login" src="images/Login2.png" />
 				</div>
 						</div>
 		</div>

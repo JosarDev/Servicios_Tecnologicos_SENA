@@ -324,7 +324,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas id_Oferta }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
+			{"text":"{$jslabel ofertas id_Oferta }","hidden":"{$item_hide_simple_grid_field4}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -353,7 +353,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas Imagen }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
+			{"text":"{$jslabel ofertas Imagen }","hidden":"{$item_hide_simple_grid_field6}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -382,7 +382,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas Fecha_Inicio }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
+			{"text":"{$jslabel ofertas Fecha_Inicio }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -411,7 +411,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas Fecha_Fin }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
+			{"text":"{$jslabel ofertas Fecha_Fin }","hidden":"{$item_hide_simple_grid_field8}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -440,7 +440,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas Valor_Oferta }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel ofertas Valor_Oferta }","hidden":"{$item_hide_grid_field_label}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -469,7 +469,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel ofertas fk_id_Servicio }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+			{"text":"{$jslabel ofertas fk_id_Servicio }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -685,7 +685,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$Valor_Oferta_pdfvalue},"hidden":"{$item_hide_simple_grid_field4}"},
+			{"text":{$Valor_Oferta_pdfvalue},"hidden":"{$item_hide_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],

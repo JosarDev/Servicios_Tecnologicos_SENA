@@ -1,0 +1,9 @@
+.panel-primary > .panel-heading {
+    color: #fff;
+    background-color: #39a900;
+    border-color: transparent;
+}
+
+.badge.badge.servicios_badge {
+    background-color: #39a900;
+}

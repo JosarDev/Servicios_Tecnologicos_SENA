@@ -169,55 +169,10 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel servicios id_Servicio }","bold":true},{"text":{$id_Servicio_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
+			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel servicios Tipolog_a }","bold":true},{"text":{$Tipolog_a_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel servicios Nombre_Servicio }","bold":true},{"text":{$Nombre_Servicio_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel servicios Normatividad }","bold":true},{"text":{$Normatividad_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel servicios Descripcion }","bold":true},{"text":{$Descripcion_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel servicios Valor_Servicio }","bold":true},{"text":{$Valor_Servicio_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field5}","stack":[{"text":"{$jslabel servicios TipoServicio }","bold":true},{"text":{$TipoServicio_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel servicios Instrumento }","bold":true},{"text":{$Instrumento_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel servicios Fabricante }","bold":true},{"text":{$Fabricante_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel servicios Modelo }","bold":true},{"text":{$Modelo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field9}","stack":[{"text":"{$jslabel servicios Serie }","bold":true},{"text":{$Serie_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field10}","stack":[{"text":"{$jslabel servicios Cog_Interno }","bold":true},{"text":{$Cog_Interno_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field11}","stack":[{"text":"{$jslabel servicios IRPC }","bold":true},{"text":{$IRPC_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field12}","stack":[{"text":"{$jslabel servicios Nom_Material }","bold":true},{"text":{$Nom_Material_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field13}","stack":[{"text":"{$jslabel servicios Tipo_Material }","bold":true},{"text":{$Tipo_Material_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field14}","stack":[{"text":"{$jslabel servicios Report_Results }","bold":true},{"text":{$Report_Results_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field15}","stack":[{"text":"{$jslabel servicios Cantidad }","bold":true},{"text":{$Cantidad_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field16}","stack":[{"text":"{$jslabel servicios Tipo_Probeta }","bold":true},{"text":{$Tipo_Probeta_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field17}","stack":[{"text":"{$jslabel servicios fk_id_Laboratorio }","bold":true},{"text":{$fk_id_Laboratorio_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

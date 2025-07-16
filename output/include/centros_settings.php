@@ -6,11 +6,11 @@ $tdatacentros[".OwnerID"] = "";
 $tdatacentros[".OriginalTable"] = "centros";
 
 
-$tdatacentros[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatacentros[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdatacentros[".originalPagesByType"] = $tdatacentros[".pagesByType"];
-$tdatacentros[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatacentros[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdatacentros[".originalPages"] = $tdatacentros[".pages"];
-$tdatacentros[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdatacentros[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdatacentros[".originalDefaultPages"] = $tdatacentros[".defaultPages"];
 
 //	field labels
@@ -31,25 +31,25 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscentros["Spanish"]["nom_centro"] = "Nombre Centro";
 	$fieldToolTipscentros["Spanish"]["nom_centro"] = "";
 	$placeHolderscentros["Spanish"]["nom_centro"] = "";
-	$fieldLabelscentros["Spanish"]["id_municipio"] = "Id Municipio";
+	$fieldLabelscentros["Spanish"]["id_municipio"] = "Municipio";
 	$fieldToolTipscentros["Spanish"]["id_municipio"] = "";
 	$placeHolderscentros["Spanish"]["id_municipio"] = "";
 	$fieldLabelscentros["Spanish"]["barrio_centro"] = "Barrio Centro";
 	$fieldToolTipscentros["Spanish"]["barrio_centro"] = "";
 	$placeHolderscentros["Spanish"]["barrio_centro"] = "";
-	$fieldLabelscentros["Spanish"]["direc_centro"] = "Direc Centro";
+	$fieldLabelscentros["Spanish"]["direc_centro"] = "Dirección Centro";
 	$fieldToolTipscentros["Spanish"]["direc_centro"] = "";
 	$placeHolderscentros["Spanish"]["direc_centro"] = "";
-	$fieldLabelscentros["Spanish"]["img_centro"] = "Img Centro";
+	$fieldLabelscentros["Spanish"]["img_centro"] = "Imagen de Centro";
 	$fieldToolTipscentros["Spanish"]["img_centro"] = "";
 	$placeHolderscentros["Spanish"]["img_centro"] = "";
-	$fieldLabelscentros["Spanish"]["fecha_reg_centro"] = "Fecha Reg Centro";
+	$fieldLabelscentros["Spanish"]["fecha_reg_centro"] = "Fecha de Registro";
 	$fieldToolTipscentros["Spanish"]["fecha_reg_centro"] = "";
 	$placeHolderscentros["Spanish"]["fecha_reg_centro"] = "";
-	$fieldLabelscentros["Spanish"]["extension"] = "Extension";
+	$fieldLabelscentros["Spanish"]["extension"] = "Extensión";
 	$fieldToolTipscentros["Spanish"]["extension"] = "";
 	$placeHolderscentros["Spanish"]["extension"] = "";
-	$fieldLabelscentros["Spanish"]["id_regional"] = "Id Regional";
+	$fieldLabelscentros["Spanish"]["id_regional"] = "Regional";
 	$fieldToolTipscentros["Spanish"]["id_regional"] = "";
 	$placeHolderscentros["Spanish"]["id_regional"] = "";
 	$fieldLabelscentros["Spanish"]["departamento"] = "Departamento";
@@ -152,7 +152,7 @@ $tdatacentros[".isUseAjaxSuggest"] = true;
 
 
 
-
+			
 
 $tdatacentros[".ajaxCodeSnippetAdded"] = false;
 
@@ -1163,7 +1163,7 @@ $tdatacentros[".hideMobileList"] = array();
 	$edata = array("EditFormat" => "Date");
 
 	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+		$edata["weekdayMessage"] = array("message" => "Invalid week day", "messageType" => "Text");
 	$edata["weekdays"] = "[]";
 
 
@@ -1183,7 +1183,7 @@ $tdatacentros[".hideMobileList"] = array();
 
 	
 	
-		$edata["DateEditType"] = 13;
+		$edata["DateEditType"] = 2;
 	$edata["InitialYearFactor"] = 100;
 	$edata["LastYearFactor"] = 10;
 
@@ -1438,7 +1438,7 @@ $tdatacentros[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1448,6 +1448,34 @@ $tdatacentros[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "departamento";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Departamento";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Departamento";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1462,11 +1490,8 @@ $tdatacentros[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=50";
-
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -1492,7 +1517,7 @@ $tdatacentros[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1674,6 +1699,36 @@ changeTextControlsToDate( "centros" );
 //if !@TABLE.bReportCrossTab
 
 $detailsTablesData["centros"] = array();
+//	laboratorio
+	
+	
+
+		$dIndex = 0;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="laboratorio";
+		$detailsParam["dOriginalTable"] = "laboratorio";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "laboratorio";
+	$detailsParam["dCaptionTable"] = GetTableCaption("laboratorio");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["centros"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["centros"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["centros"][$dIndex]["masterKeys"][]="id_centro";
+
+				$detailsTablesData["centros"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["centros"][$dIndex]["detailKeys"][]="fk_id_centro";
 //endif
 
 // tables which are master tables for current table (detail)

@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsdetalles_cotizacion["Spanish"]["id_Det_Cot"] = "Id Det Cot";
 	$fieldToolTipsdetalles_cotizacion["Spanish"]["id_Det_Cot"] = "";
 	$placeHoldersdetalles_cotizacion["Spanish"]["id_Det_Cot"] = "";
-	$fieldLabelsdetalles_cotizacion["Spanish"]["fk_id_Cotizacion"] = "Fk Id Cotizacion";
+	$fieldLabelsdetalles_cotizacion["Spanish"]["fk_id_Cotizacion"] = "Numero de Cotización";
 	$fieldToolTipsdetalles_cotizacion["Spanish"]["fk_id_Cotizacion"] = "";
 	$placeHoldersdetalles_cotizacion["Spanish"]["fk_id_Cotizacion"] = "";
-	$fieldLabelsdetalles_cotizacion["Spanish"]["fk_id_Servicio"] = "Fk Id Servicio";
+	$fieldLabelsdetalles_cotizacion["Spanish"]["fk_id_Servicio"] = "Servicio para la Cotización";
 	$fieldToolTipsdetalles_cotizacion["Spanish"]["fk_id_Servicio"] = "";
 	$placeHoldersdetalles_cotizacion["Spanish"]["fk_id_Servicio"] = "";
 	if (count($fieldToolTipsdetalles_cotizacion["Spanish"]))
@@ -131,7 +131,7 @@ $tdatadetalles_cotizacion[".isUseAjaxSuggest"] = true;
 
 
 
-
+									
 
 $tdatadetalles_cotizacion[".ajaxCodeSnippetAdded"] = false;
 
@@ -433,7 +433,7 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -443,6 +443,34 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "cotizacion";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Cotizacion";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "id_Cotizacion";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -457,17 +485,14 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -487,7 +512,7 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -571,7 +596,7 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -581,6 +606,34 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "servicios";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Servicio";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Nombre_Servicio";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -595,17 +648,14 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -625,7 +675,7 @@ $tdatadetalles_cotizacion[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

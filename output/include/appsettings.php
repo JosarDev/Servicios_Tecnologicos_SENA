@@ -749,9 +749,9 @@ $suggestAllContent = true;
 $strLastSQL = "";
 $showCustomMarkerOnPrint = false;
 
-$projectBuildKey = "10_1718910437";
+$projectBuildKey = "361_1720211805";
 $wizardBuildKey = "40608";
-$projectBuildNumber = "10";
+$projectBuildNumber = "361";
 
 $mlang_messages = array();
 $mlang_charsets = array();
@@ -778,7 +778,6 @@ $tableCaptions = array();
 $tableCaptions["Spanish"] = array();
 $tableCaptions["Spanish"][""] = "";
 $tableCaptions["Spanish"]["casos_exito"] = "Casos Exito";
-$tableCaptions["Spanish"]["centro"] = "Centro";
 $tableCaptions["Spanish"]["cliente"] = "Cliente";
 $tableCaptions["Spanish"]["cotizacion"] = "Cotizacion";
 $tableCaptions["Spanish"]["detalles_cotizacion"] = "Detalles Cotizacion";
@@ -789,8 +788,16 @@ $tableCaptions["Spanish"]["servicios"] = "Servicios";
 $tableCaptions["Spanish"]["solicitudes"] = "Solicitudes";
 $tableCaptions["Spanish"]["usuario"] = "Usuario";
 $tableCaptions["Spanish"]["nodos"] = "Nodos";
-$tableCaptions["Spanish"]["municipio"] = "Municipio";
 $tableCaptions["Spanish"]["centros"] = "Centros";
+$tableCaptions["Spanish"]["tipo_material"] = "Tipo Material";
+$tableCaptions["Spanish"]["instrumento"] = "Instrumento";
+$tableCaptions["Spanish"]["fabricante"] = "Fabricante";
+$tableCaptions["Spanish"]["ensayo"] = "Ensayo";
+$tableCaptions["Spanish"]["calibracion"] = "Calibracion";
+$tableCaptions["Spanish"]["departamento"] = "Departamento";
+$tableCaptions["Spanish"]["tiposervicio"] = "Tipo De Servicio";
+$tableCaptions["Spanish"]["detalles_servico"] = "Detalles Servico";
+$tableCaptions["Spanish"]["descripcion_servicios"] = "Descripcion Servicios";
 
 
 $globalEvents = new class_GlobalEvents;

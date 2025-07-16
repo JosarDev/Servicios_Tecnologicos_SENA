@@ -380,8 +380,6 @@ class Chart
 
 		if("casos_exito" == $this->chrt_array['tables'][0])
 			return true;
-		if("centro" == $this->chrt_array['tables'][0])
-			return true;
 		if("cliente" == $this->chrt_array['tables'][0])
 			return true;
 		if("cotizacion" == $this->chrt_array['tables'][0])
@@ -402,9 +400,25 @@ class Chart
 			return true;
 		if("nodos" == $this->chrt_array['tables'][0])
 			return true;
-		if("municipio" == $this->chrt_array['tables'][0])
-			return true;
 		if("centros" == $this->chrt_array['tables'][0])
+			return true;
+		if("tipo_material" == $this->chrt_array['tables'][0])
+			return true;
+		if("instrumento" == $this->chrt_array['tables'][0])
+			return true;
+		if("fabricante" == $this->chrt_array['tables'][0])
+			return true;
+		if("ensayo" == $this->chrt_array['tables'][0])
+			return true;
+		if("calibracion" == $this->chrt_array['tables'][0])
+			return true;
+		if("departamento" == $this->chrt_array['tables'][0])
+			return true;
+		if("tiposervicio" == $this->chrt_array['tables'][0])
+			return true;
+		if("detalles_servico" == $this->chrt_array['tables'][0])
+			return true;
+		if("descripcion_servicios" == $this->chrt_array['tables'][0])
 			return true;
 		return false;
 	}

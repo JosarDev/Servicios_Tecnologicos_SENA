@@ -360,10 +360,6 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="centro")
-		{
-			return false;
-		}
 		if($table=="cliente")
 		{
 			return false;
@@ -404,11 +400,43 @@ class AuditTrailTable
 		{
 			return false;
 		}
-		if($table=="municipio")
+		if($table=="centros")
 		{
 			return false;
 		}
-		if($table=="centros")
+		if($table=="tipo_material")
+		{
+			return false;
+		}
+		if($table=="instrumento")
+		{
+			return false;
+		}
+		if($table=="fabricante")
+		{
+			return false;
+		}
+		if($table=="ensayo")
+		{
+			return false;
+		}
+		if($table=="calibracion")
+		{
+			return false;
+		}
+		if($table=="departamento")
+		{
+			return false;
+		}
+		if($table=="tiposervicio")
+		{
+			return false;
+		}
+		if($table=="detalles_servico")
+		{
+			return false;
+		}
+		if($table=="descripcion_servicios")
 		{
 			return false;
 		}
@@ -724,10 +752,6 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="centro")
-		{
-			return false;
-		}
 		if($table=="cliente")
 		{
 			return false;
@@ -768,11 +792,43 @@ class AuditTrailFile
 		{
 			return false;
 		}
-		if($table=="municipio")
+		if($table=="centros")
 		{
 			return false;
 		}
-		if($table=="centros")
+		if($table=="tipo_material")
+		{
+			return false;
+		}
+		if($table=="instrumento")
+		{
+			return false;
+		}
+		if($table=="fabricante")
+		{
+			return false;
+		}
+		if($table=="ensayo")
+		{
+			return false;
+		}
+		if($table=="calibracion")
+		{
+			return false;
+		}
+		if($table=="departamento")
+		{
+			return false;
+		}
+		if($table=="tiposervicio")
+		{
+			return false;
+		}
+		if($table=="detalles_servico")
+		{
+			return false;
+		}
+		if($table=="descripcion_servicios")
 		{
 			return false;
 		}

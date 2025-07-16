@@ -333,7 +333,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes id_Solicitudes }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
+			{"text":"{$jslabel solicitudes id_Solicitudes }","hidden":"{$item_hide_simple_grid_field7}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -362,7 +362,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes Fecha }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
+			{"text":"{$jslabel solicitudes Fecha }","hidden":"{$item_hide_simple_grid_field9}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -391,7 +391,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes Hora }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
+			{"text":"{$jslabel solicitudes Hora }","hidden":"{$item_hide_simple_grid_field10}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -420,7 +420,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes Estado }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
+			{"text":"{$jslabel solicitudes Estado }","hidden":"{$item_hide_simple_grid_field11}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -449,7 +449,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes Cantidad }","hidden":"{$item_hide_simple_grid_field13}","bold":true},
+			{"text":"{$jslabel solicitudes Cantidad }","hidden":"{$item_hide_simple_grid_field12}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -459,35 +459,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field4}
-																							{BEGIN cellblock_grid_headcell_field5}
-{
-	cellId: 'headcell_field5',
-	col:0,
-	row:0,
-			fieldName: 'Descripcion',
-				style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel solicitudes Descripcion }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$Descripcion_align}',
-     
-      
-      },
-
-{END cellblock_grid_headcell_field5}
 																							{BEGIN cellblock_grid_headcell_field6}
 {
 	cellId: 'headcell_field6',
@@ -507,7 +478,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes TipoSolicitud }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel solicitudes TipoSolicitud }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -536,7 +507,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes fk_id_Servicio }","hidden":"{$item_hide_simple_grid_field16}","bold":true},
+			{"text":"{$jslabel solicitudes fk_id_Servicio }","hidden":"{$item_hide_grid_field_label}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -565,7 +536,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes fk_id_Cliente }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel solicitudes fk_id_Cliente }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -575,6 +546,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_headcell_field8}
+																							{BEGIN cellblock_grid_headcell_field5}
+{
+	cellId: 'headcell_field5',
+	col:0,
+	row:0,
+			fieldName: 'Observaciones',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel solicitudes Observaciones }","hidden":"{$item_hide_grid_field_label1}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$Observaciones_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field5}
 											],
 				{END row_grid_0}
 		
@@ -791,35 +791,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field4}
-																							{BEGIN cellblock_grid_cell_field5}
-{
-	cellId: 'cell_field5',
-	col:0,
-	row:0,
-			fieldName: 'Descripcion',
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":{$Descripcion_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$Descripcion_align}',
-     
-      
-      },
-
-{END cellblock_grid_cell_field5}
 																							{BEGIN cellblock_grid_cell_field6}
 {
 	cellId: 'cell_field6',
@@ -868,7 +839,7 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$fk_id_Servicio_pdfvalue},"hidden":"{$item_hide_simple_grid_field7}"},
+			{"text":{$fk_id_Servicio_pdfvalue},"hidden":"{$item_hide_grid_field}"},
 				
 		  ],
   "border": [ true, true, true, true ],
@@ -907,6 +878,35 @@ pdfDocument = {
       },
 
 {END cellblock_grid_cell_field8}
+																							{BEGIN cellblock_grid_cell_field5}
+{
+	cellId: 'cell_field5',
+	col:0,
+	row:0,
+			fieldName: 'Observaciones',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$Observaciones_pdfvalue},"hidden":"{$item_hide_grid_field1}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$Observaciones_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field5}
 											],
 				{END row_grid_1}
 		
@@ -1098,32 +1098,6 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field4}
-																							{BEGIN cellblock_grid_footcell_field5}
-{
-	cellId: 'footcell_field5',
-	col:0,
-	row:0,
-				style: 'footcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				'',
-	  ],
-  "border": [ true, true, true, true ],
-              "alignment": 'left',
-     
-      
-      },
-
-{END cellblock_grid_footcell_field5}
 																							{BEGIN cellblock_grid_footcell_field6}
 {
 	cellId: 'footcell_field6',
@@ -1202,6 +1176,32 @@ pdfDocument = {
       },
 
 {END cellblock_grid_footcell_field8}
+																							{BEGIN cellblock_grid_footcell_field5}
+{
+	cellId: 'footcell_field5',
+	col:0,
+	row:0,
+				style: 'footcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				'',
+	  ],
+  "border": [ true, true, true, true ],
+              "alignment": 'left',
+     
+      
+      },
+
+{END cellblock_grid_footcell_field5}
 											],
 				{END row_grid_2}
 		

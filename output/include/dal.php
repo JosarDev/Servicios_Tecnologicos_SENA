@@ -47,19 +47,26 @@ function DBLookup($sql)
   */
 class tDAL
 {
+	var $tblproject_pst_sena_at_localhost__calibracion;
 	var $tblproject_pst_sena_at_localhost__casos_exito;
-	var $tblproject_pst_sena_at_localhost__centro;
 	var $tblproject_pst_sena_at_localhost__centros;
 	var $tblproject_pst_sena_at_localhost__cliente;
 	var $tblproject_pst_sena_at_localhost__cotizacion;
+	var $tblproject_pst_sena_at_localhost__departamento;
+	var $tblproject_pst_sena_at_localhost__descripcion_servicios;
 	var $tblproject_pst_sena_at_localhost__detalles_cotizacion;
+	var $tblproject_pst_sena_at_localhost__detalles_servico;
+	var $tblproject_pst_sena_at_localhost__ensayo;
+	var $tblproject_pst_sena_at_localhost__fabricante;
+	var $tblproject_pst_sena_at_localhost__instrumento;
 	var $tblproject_pst_sena_at_localhost__laboratorio;
-	var $tblproject_pst_sena_at_localhost__municipio;
 	var $tblproject_pst_sena_at_localhost__nodos;
 	var $tblproject_pst_sena_at_localhost__noticias;
 	var $tblproject_pst_sena_at_localhost__ofertas;
 	var $tblproject_pst_sena_at_localhost__servicios;
 	var $tblproject_pst_sena_at_localhost__solicitudes;
+	var $tblproject_pst_sena_at_localhost__tipo_material;
+	var $tblproject_pst_sena_at_localhost__tiposervicio;
 	var $tblproject_pst_sena_at_localhost__usuario;
 	var $lstTables;
 	var $Table = array();
@@ -68,19 +75,26 @@ class tDAL
 	{
 		if($this->lstTables)
 			return;
+		$this->lstTables[] = array("name" => "calibracion", "varname" => "project_pst_sena_at_localhost__calibracion", "altvarname" => "calibracion", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "casos_exito", "varname" => "project_pst_sena_at_localhost__casos_exito", "altvarname" => "casos_exito", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
-		$this->lstTables[] = array("name" => "centro", "varname" => "project_pst_sena_at_localhost__centro", "altvarname" => "centro", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "centros", "varname" => "project_pst_sena_at_localhost__centros", "altvarname" => "centros", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "cliente", "varname" => "project_pst_sena_at_localhost__cliente", "altvarname" => "cliente", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "cotizacion", "varname" => "project_pst_sena_at_localhost__cotizacion", "altvarname" => "cotizacion", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "departamento", "varname" => "project_pst_sena_at_localhost__departamento", "altvarname" => "departamento", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "descripcion_servicios", "varname" => "project_pst_sena_at_localhost__descripcion_servicios", "altvarname" => "descripcion_servicios", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "detalles_cotizacion", "varname" => "project_pst_sena_at_localhost__detalles_cotizacion", "altvarname" => "detalles_cotizacion", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "detalles_servico", "varname" => "project_pst_sena_at_localhost__detalles_servico", "altvarname" => "detalles_servico", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "ensayo", "varname" => "project_pst_sena_at_localhost__ensayo", "altvarname" => "ensayo", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "fabricante", "varname" => "project_pst_sena_at_localhost__fabricante", "altvarname" => "fabricante", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "instrumento", "varname" => "project_pst_sena_at_localhost__instrumento", "altvarname" => "instrumento", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "laboratorio", "varname" => "project_pst_sena_at_localhost__laboratorio", "altvarname" => "laboratorio", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
-		$this->lstTables[] = array("name" => "municipio", "varname" => "project_pst_sena_at_localhost__municipio", "altvarname" => "municipio", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "nodos", "varname" => "project_pst_sena_at_localhost__nodos", "altvarname" => "nodos", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "noticias", "varname" => "project_pst_sena_at_localhost__noticias", "altvarname" => "noticias", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "ofertas", "varname" => "project_pst_sena_at_localhost__ofertas", "altvarname" => "ofertas", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "servicios", "varname" => "project_pst_sena_at_localhost__servicios", "altvarname" => "servicios", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "solicitudes", "varname" => "project_pst_sena_at_localhost__solicitudes", "altvarname" => "solicitudes", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "tipo_material", "varname" => "project_pst_sena_at_localhost__tipo_material", "altvarname" => "tipo_material", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
+		$this->lstTables[] = array("name" => "tiposervicio", "varname" => "project_pst_sena_at_localhost__tiposervicio", "altvarname" => "tiposervicio", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 		$this->lstTables[] = array("name" => "usuario", "varname" => "project_pst_sena_at_localhost__usuario", "altvarname" => "usuario", "connId" => "project_pst_sena_at_localhost", "schema" => "", "connName" => "project_pst_sena at localhost");
 	}
 

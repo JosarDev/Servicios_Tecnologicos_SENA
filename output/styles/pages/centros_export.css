@@ -4,6 +4,11 @@
 [data-cellid="footer_c2"][data-page="centros_export"][data-cellid="footer_c2"][data-page="centros_export"][data-cellid="footer_c2"][data-page="centros_export"] {
   width: 66.66666667%;
 }
+[data-page="centros_export"][data-itemid="export_export"] > .btn {
+  background-color: #39a900;
+  background-image: none;
+  text-shadow: none;
+}
 [data-page="centros_export"][data-itemid="page_image_ash8f23hr"] {
   width: 400px;
 }

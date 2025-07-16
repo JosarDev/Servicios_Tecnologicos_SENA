@@ -6,11 +6,11 @@ $tdataservicios[".OwnerID"] = "";
 $tdataservicios[".OriginalTable"] = "servicios";
 
 
-$tdataservicios[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdataservicios[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
 $tdataservicios[".originalPagesByType"] = $tdataservicios[".pagesByType"];
-$tdataservicios[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdataservicios[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"list\":[\"list\"],\"masterlist\":[\"masterlist\"],\"masterprint\":[\"masterprint\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
 $tdataservicios[".originalPages"] = $tdataservicios[".pages"];
-$tdataservicios[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdataservicios[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"list\":\"list\",\"masterlist\":\"masterlist\",\"masterprint\":\"masterprint\",\"search\":\"search\",\"view\":\"view\"}" );
 $tdataservicios[".originalDefaultPages"] = $tdataservicios[".defaultPages"];
 
 //	field labels
@@ -31,54 +31,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsservicios["Spanish"]["Nombre_Servicio"] = "Nombre Servicio";
 	$fieldToolTipsservicios["Spanish"]["Nombre_Servicio"] = "";
 	$placeHoldersservicios["Spanish"]["Nombre_Servicio"] = "";
-	$fieldLabelsservicios["Spanish"]["Normatividad"] = "Normatividad";
-	$fieldToolTipsservicios["Spanish"]["Normatividad"] = "";
-	$placeHoldersservicios["Spanish"]["Normatividad"] = "";
-	$fieldLabelsservicios["Spanish"]["Descripcion"] = "Descripcion";
-	$fieldToolTipsservicios["Spanish"]["Descripcion"] = "";
-	$placeHoldersservicios["Spanish"]["Descripcion"] = "";
-	$fieldLabelsservicios["Spanish"]["Valor_Servicio"] = "Valor Servicio";
-	$fieldToolTipsservicios["Spanish"]["Valor_Servicio"] = "";
-	$placeHoldersservicios["Spanish"]["Valor_Servicio"] = "";
-	$fieldLabelsservicios["Spanish"]["TipoServicio"] = "Tipo Servicio";
-	$fieldToolTipsservicios["Spanish"]["TipoServicio"] = "";
-	$placeHoldersservicios["Spanish"]["TipoServicio"] = "";
-	$fieldLabelsservicios["Spanish"]["Instrumento"] = "Instrumento";
-	$fieldToolTipsservicios["Spanish"]["Instrumento"] = "";
-	$placeHoldersservicios["Spanish"]["Instrumento"] = "";
-	$fieldLabelsservicios["Spanish"]["Fabricante"] = "Fabricante";
-	$fieldToolTipsservicios["Spanish"]["Fabricante"] = "";
-	$placeHoldersservicios["Spanish"]["Fabricante"] = "";
-	$fieldLabelsservicios["Spanish"]["Modelo"] = "Modelo";
-	$fieldToolTipsservicios["Spanish"]["Modelo"] = "";
-	$placeHoldersservicios["Spanish"]["Modelo"] = "";
-	$fieldLabelsservicios["Spanish"]["Serie"] = "Serie";
-	$fieldToolTipsservicios["Spanish"]["Serie"] = "";
-	$placeHoldersservicios["Spanish"]["Serie"] = "";
-	$fieldLabelsservicios["Spanish"]["Cog_Interno"] = "Cog Interno";
-	$fieldToolTipsservicios["Spanish"]["Cog_Interno"] = "";
-	$placeHoldersservicios["Spanish"]["Cog_Interno"] = "";
-	$fieldLabelsservicios["Spanish"]["IRPC"] = "IRPC";
-	$fieldToolTipsservicios["Spanish"]["IRPC"] = "";
-	$placeHoldersservicios["Spanish"]["IRPC"] = "";
-	$fieldLabelsservicios["Spanish"]["Nom_Material"] = "Nom Material";
-	$fieldToolTipsservicios["Spanish"]["Nom_Material"] = "";
-	$placeHoldersservicios["Spanish"]["Nom_Material"] = "";
-	$fieldLabelsservicios["Spanish"]["Tipo_Material"] = "Tipo Material";
-	$fieldToolTipsservicios["Spanish"]["Tipo_Material"] = "";
-	$placeHoldersservicios["Spanish"]["Tipo_Material"] = "";
-	$fieldLabelsservicios["Spanish"]["Report_Results"] = "Report Results";
-	$fieldToolTipsservicios["Spanish"]["Report_Results"] = "";
-	$placeHoldersservicios["Spanish"]["Report_Results"] = "";
-	$fieldLabelsservicios["Spanish"]["Cantidad"] = "Cantidad";
-	$fieldToolTipsservicios["Spanish"]["Cantidad"] = "";
-	$placeHoldersservicios["Spanish"]["Cantidad"] = "";
-	$fieldLabelsservicios["Spanish"]["Tipo_Probeta"] = "Tipo Probeta";
-	$fieldToolTipsservicios["Spanish"]["Tipo_Probeta"] = "";
-	$placeHoldersservicios["Spanish"]["Tipo_Probeta"] = "";
-	$fieldLabelsservicios["Spanish"]["fk_id_Laboratorio"] = "Fk Id Laboratorio";
-	$fieldToolTipsservicios["Spanish"]["fk_id_Laboratorio"] = "";
-	$placeHoldersservicios["Spanish"]["fk_id_Laboratorio"] = "";
+	$fieldLabelsservicios["Spanish"]["Tipolog_a"] = "Tipología";
+	$fieldToolTipsservicios["Spanish"]["Tipolog_a"] = "";
+	$placeHoldersservicios["Spanish"]["Tipolog_a"] = "";
+	$fieldLabelsservicios["Spanish"]["fk_laboratorio"] = "Fk Laboratorio";
+	$fieldToolTipsservicios["Spanish"]["fk_laboratorio"] = "";
+	$placeHoldersservicios["Spanish"]["fk_laboratorio"] = "";
 	if (count($fieldToolTipsservicios["Spanish"]))
 		$tdataservicios[".isUseToolTips"] = true;
 }
@@ -128,9 +86,9 @@ if( $pages[PAGE_EDIT] ) {
 
 if( $pages[PAGE_ADD] ) {
 $tdataservicios[".add"] = true;
-$tdataservicios[".afterAddAction"] = 1;
-$tdataservicios[".closePopupAfterAdd"] = 1;
-$tdataservicios[".afterAddActionDetTable"] = "";
+$tdataservicios[".afterAddAction"] = 3;
+$tdataservicios[".closePopupAfterAdd"] = 0;
+$tdataservicios[".afterAddActionDetTable"] = "calibracion";
 }
 
 if( $pages[PAGE_LIST] ) {
@@ -176,13 +134,13 @@ $tdataservicios[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdataservicios[".ajaxCodeSnippetAdded"] = false;
 
 $tdataservicios[".buttonsAdded"] = false;
 
-$tdataservicios[".addPageEvents"] = false;
+$tdataservicios[".addPageEvents"] = true;
 
 // use timepicker for search panel
 $tdataservicios[".isUseTimeForSearch"] = false;
@@ -197,23 +155,9 @@ $tdataservicios[".requiredSearchFields"] = array();
 
 $tdataservicios[".googleLikeFields"] = array();
 $tdataservicios[".googleLikeFields"][] = "id_Servicio";
+$tdataservicios[".googleLikeFields"][] = "Tipología";
 $tdataservicios[".googleLikeFields"][] = "Nombre_Servicio";
-$tdataservicios[".googleLikeFields"][] = "Normatividad";
-$tdataservicios[".googleLikeFields"][] = "Descripcion";
-$tdataservicios[".googleLikeFields"][] = "Valor_Servicio";
-$tdataservicios[".googleLikeFields"][] = "TipoServicio";
-$tdataservicios[".googleLikeFields"][] = "Instrumento";
-$tdataservicios[".googleLikeFields"][] = "Fabricante";
-$tdataservicios[".googleLikeFields"][] = "Modelo";
-$tdataservicios[".googleLikeFields"][] = "Serie";
-$tdataservicios[".googleLikeFields"][] = "Cog_Interno";
-$tdataservicios[".googleLikeFields"][] = "IRPC";
-$tdataservicios[".googleLikeFields"][] = "Nom_Material";
-$tdataservicios[".googleLikeFields"][] = "Tipo_Material";
-$tdataservicios[".googleLikeFields"][] = "Report_Results";
-$tdataservicios[".googleLikeFields"][] = "Cantidad";
-$tdataservicios[".googleLikeFields"][] = "Tipo_Probeta";
-$tdataservicios[".googleLikeFields"][] = "fk_id_Laboratorio";
+$tdataservicios[".googleLikeFields"][] = "fk_laboratorio";
 
 
 
@@ -247,11 +191,22 @@ $tdataservicios[".strOrderBy"] = $tstrOrderBy;
 $tdataservicios[".orderindexes"] = array();
 
 
-$tdataservicios[".sqlHead"] = "SELECT id_Servicio,  	Nombre_Servicio,  	Normatividad,  	Descripcion,  	Valor_Servicio,  	TipoServicio,  	Instrumento,  	Fabricante,  	Modelo,  	Serie,  	Cog_Interno,  	IRPC,  	Nom_Material,  	Tipo_Material,  	Report_Results,  	Cantidad,  	Tipo_Probeta,  	fk_id_Laboratorio";
+$tdataservicios[".sqlHead"] = "SELECT id_Servicio,  	`Tipología`,  	Nombre_Servicio,  	fk_laboratorio";
 $tdataservicios[".sqlFrom"] = "FROM servicios";
 $tdataservicios[".sqlWhereExpr"] = "";
 $tdataservicios[".sqlTail"] = "";
 
+//fill array of tabs for list page
+$arrGridTabs = array();
+$arrGridTabs[] = array(
+	'tabId' => "",
+	'name' => "All data",
+	'nameType' => 'Text',
+	'where' => "",
+	'showRowCount' => 0,
+	'hideEmpty' => 0,
+);
+$tdataservicios[".arrGridTabs"] = $arrGridTabs;
 
 
 
@@ -436,10 +391,173 @@ $tdataservicios[".hideMobileList"] = array();
 
 	$tdataservicios["id_Servicio"] = $fdata;
 		$tdataservicios[".searchableFields"][] = "id_Servicio";
-//	Nombre_Servicio
+//	Tipología
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 2;
+	$fdata["strName"] = "Tipología";
+	$fdata["GoodName"] = "Tipolog_a";
+	$fdata["ownerTable"] = "servicios";
+	$fdata["Label"] = GetFieldLabel("servicios","Tipolog_a");
+	$fdata["FieldType"] = 3;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "Tipología";
+
+		$fdata["sourceSingle"] = "Tipología";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "`Tipología`";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "tiposervicio";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_ts";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Tipología";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdataservicios["Tipología"] = $fdata;
+		$tdataservicios[".searchableFields"][] = "Tipología";
+//	Nombre_Servicio
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 3;
 	$fdata["strName"] = "Nombre_Servicio";
 	$fdata["GoodName"] = "Nombre_Servicio";
 	$fdata["ownerTable"] = "servicios";
@@ -574,1136 +692,14 @@ $tdataservicios[".hideMobileList"] = array();
 
 	$tdataservicios["Nombre_Servicio"] = $fdata;
 		$tdataservicios[".searchableFields"][] = "Nombre_Servicio";
-//	Normatividad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 3;
-	$fdata["strName"] = "Normatividad";
-	$fdata["GoodName"] = "Normatividad";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Normatividad");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Normatividad";
-
-		$fdata["sourceSingle"] = "Normatividad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Normatividad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Normatividad"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Normatividad";
-//	Descripcion
+//	fk_laboratorio
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 4;
-	$fdata["strName"] = "Descripcion";
-	$fdata["GoodName"] = "Descripcion";
+	$fdata["strName"] = "fk_laboratorio";
+	$fdata["GoodName"] = "fk_laboratorio";
 	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Descripcion");
-	$fdata["FieldType"] = 201;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Descripcion";
-
-		$fdata["sourceSingle"] = "Descripcion";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Descripcion";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text area");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 0;
-
-	
-	
-	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
-
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-		$edata["CreateThumbnail"] = true;
-	$edata["StrThumbnail"] = "th";
-			$edata["ThumbnailSize"] = 600;
-
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Descripcion"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Descripcion";
-//	Valor_Servicio
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 5;
-	$fdata["strName"] = "Valor_Servicio";
-	$fdata["GoodName"] = "Valor_Servicio";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Valor_Servicio");
-	$fdata["FieldType"] = 14;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Valor_Servicio";
-
-		$fdata["sourceSingle"] = "Valor_Servicio";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Valor_Servicio";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "Number");
-
-	
-	
-	
-	
-	
-	
-	
-		$vdata["DecimalDigits"] = 2;
-
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-		$edata["IsRequired"] = true;
-
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Valor_Servicio"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Valor_Servicio";
-//	TipoServicio
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 6;
-	$fdata["strName"] = "TipoServicio";
-	$fdata["GoodName"] = "TipoServicio";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","TipoServicio");
-	$fdata["FieldType"] = 129;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "TipoServicio";
-
-		$fdata["sourceSingle"] = "TipoServicio";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "TipoServicio";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Lookup wizard");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-// Begin Lookup settings
-		$edata["LookupType"] = 0;
-			$edata["autoCompleteFieldsOnEdit"] = 0;
-	$edata["autoCompleteFields"] = array();
-		$edata["LCType"] = 0;
-
-	
-	
-		$edata["LookupValues"] = array();
-	$edata["LookupValues"][] = "CALIBRACION";
-	$edata["LookupValues"][] = "ENSAYO";
-
-	
-		$edata["SelectSize"] = 1;
-
-// End Lookup Settings
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["TipoServicio"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "TipoServicio";
-//	Instrumento
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 7;
-	$fdata["strName"] = "Instrumento";
-	$fdata["GoodName"] = "Instrumento";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Instrumento");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Instrumento";
-
-		$fdata["sourceSingle"] = "Instrumento";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Instrumento";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Instrumento"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Instrumento";
-//	Fabricante
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "Fabricante";
-	$fdata["GoodName"] = "Fabricante";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Fabricante");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Fabricante";
-
-		$fdata["sourceSingle"] = "Fabricante";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Fabricante";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Fabricante"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Fabricante";
-//	Modelo
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 9;
-	$fdata["strName"] = "Modelo";
-	$fdata["GoodName"] = "Modelo";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Modelo");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Modelo";
-
-		$fdata["sourceSingle"] = "Modelo";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Modelo";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Modelo"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Modelo";
-//	Serie
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 10;
-	$fdata["strName"] = "Serie";
-	$fdata["GoodName"] = "Serie";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Serie");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Serie";
-
-		$fdata["sourceSingle"] = "Serie";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Serie";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Serie"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Serie";
-//	Cog_Interno
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 11;
-	$fdata["strName"] = "Cog_Interno";
-	$fdata["GoodName"] = "Cog_Interno";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Cog_Interno");
+	$fdata["Label"] = GetFieldLabel("servicios","fk_laboratorio");
 	$fdata["FieldType"] = 3;
 
 
@@ -1711,12 +707,12 @@ $tdataservicios[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "Cog_Interno";
+		$fdata["strField"] = "fk_laboratorio";
 
-		$fdata["sourceSingle"] = "Cog_Interno";
+		$fdata["sourceSingle"] = "fk_laboratorio";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Cog_Interno";
+	$fdata["FullName"] = "fk_laboratorio";
 
 	
 	
@@ -1832,976 +828,8 @@ $tdataservicios[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdataservicios["Cog_Interno"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Cog_Interno";
-//	IRPC
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 12;
-	$fdata["strName"] = "IRPC";
-	$fdata["GoodName"] = "IRPC";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","IRPC");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "IRPC";
-
-		$fdata["sourceSingle"] = "IRPC";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "IRPC";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["IRPC"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "IRPC";
-//	Nom_Material
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 13;
-	$fdata["strName"] = "Nom_Material";
-	$fdata["GoodName"] = "Nom_Material";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Nom_Material");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Nom_Material";
-
-		$fdata["sourceSingle"] = "Nom_Material";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Nom_Material";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Nom_Material"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Nom_Material";
-//	Tipo_Material
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 14;
-	$fdata["strName"] = "Tipo_Material";
-	$fdata["GoodName"] = "Tipo_Material";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Tipo_Material");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Tipo_Material";
-
-		$fdata["sourceSingle"] = "Tipo_Material";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Tipo_Material";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Tipo_Material"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Tipo_Material";
-//	Report_Results
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 15;
-	$fdata["strName"] = "Report_Results";
-	$fdata["GoodName"] = "Report_Results";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Report_Results");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Report_Results";
-
-		$fdata["sourceSingle"] = "Report_Results";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Report_Results";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Report_Results"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Report_Results";
-//	Cantidad
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 16;
-	$fdata["strName"] = "Cantidad";
-	$fdata["GoodName"] = "Cantidad";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Cantidad");
-	$fdata["FieldType"] = 201;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Cantidad";
-
-		$fdata["sourceSingle"] = "Cantidad";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Cantidad";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text area");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 0;
-
-	
-	
-	
-				$edata["nRows"] = 100;
-			$edata["nCols"] = 200;
-
-	
-	
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-		$edata["CreateThumbnail"] = true;
-	$edata["StrThumbnail"] = "th";
-			$edata["ThumbnailSize"] = 600;
-
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Cantidad"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Cantidad";
-//	Tipo_Probeta
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 17;
-	$fdata["strName"] = "Tipo_Probeta";
-	$fdata["GoodName"] = "Tipo_Probeta";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","Tipo_Probeta");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Tipo_Probeta";
-
-		$fdata["sourceSingle"] = "Tipo_Probeta";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Tipo_Probeta";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=255";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["Tipo_Probeta"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "Tipo_Probeta";
-//	fk_id_Laboratorio
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 18;
-	$fdata["strName"] = "fk_id_Laboratorio";
-	$fdata["GoodName"] = "fk_id_Laboratorio";
-	$fdata["ownerTable"] = "servicios";
-	$fdata["Label"] = GetFieldLabel("servicios","fk_id_Laboratorio");
-	$fdata["FieldType"] = 3;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "fk_id_Laboratorio";
-
-		$fdata["sourceSingle"] = "fk_id_Laboratorio";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "fk_id_Laboratorio";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdataservicios["fk_id_Laboratorio"] = $fdata;
-		$tdataservicios[".searchableFields"][] = "fk_id_Laboratorio";
+	$tdataservicios["fk_laboratorio"] = $fdata;
+		$tdataservicios[".searchableFields"][] = "fk_laboratorio";
 
 
 $tables_data["servicios"]=&$tdataservicios;
@@ -2819,41 +847,11 @@ changeTextControlsToDate( "servicios" );
 //if !@TABLE.bReportCrossTab
 
 $detailsTablesData["servicios"] = array();
-//	solicitudes
-	
-	
-
-		$dIndex = 0;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="solicitudes";
-		$detailsParam["dOriginalTable"] = "solicitudes";
-
-
-
-		
-		$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "solicitudes";
-	$detailsParam["dCaptionTable"] = GetTableCaption("solicitudes");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["servicios"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["servicios"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["servicios"][$dIndex]["masterKeys"][]="id_Servicio";
-
-				$detailsTablesData["servicios"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["servicios"][$dIndex]["detailKeys"][]="fk_id_Servicio";
 //	detalles_cotizacion
 	
 	
 
-		$dIndex = 1;
+		$dIndex = 0;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="detalles_cotizacion";
 		$detailsParam["dOriginalTable"] = "detalles_cotizacion";
@@ -2883,7 +881,7 @@ $detailsTablesData["servicios"] = array();
 	
 	
 
-		$dIndex = 2;
+		$dIndex = 1;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="ofertas";
 		$detailsParam["dOriginalTable"] = "ofertas";
@@ -2909,6 +907,96 @@ $detailsTablesData["servicios"] = array();
 				$detailsTablesData["servicios"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["servicios"][$dIndex]["detailKeys"][]="fk_id_Servicio";
+//	ensayo
+	
+	
+
+		$dIndex = 2;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="ensayo";
+		$detailsParam["dOriginalTable"] = "ensayo";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "ensayo";
+	$detailsParam["dCaptionTable"] = GetTableCaption("ensayo");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["servicios"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["servicios"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["masterKeys"][]="id_Servicio";
+
+				$detailsTablesData["servicios"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["detailKeys"][]="fk_id_Servicio";
+//	calibracion
+	
+	
+
+		$dIndex = 3;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="calibracion";
+		$detailsParam["dOriginalTable"] = "calibracion";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "calibracion";
+	$detailsParam["dCaptionTable"] = GetTableCaption("calibracion");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["servicios"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["servicios"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["masterKeys"][]="id_Servicio";
+
+				$detailsTablesData["servicios"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["detailKeys"][]="fk_id_Servicio";
+//	detalles_servico
+	
+	
+
+		$dIndex = 4;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="detalles_servico";
+		$detailsParam["dOriginalTable"] = "detalles_servico";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "detalles_servico";
+	$detailsParam["dCaptionTable"] = GetTableCaption("detalles_servico");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["servicios"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["servicios"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["masterKeys"][]="id_Servicio";
+
+				$detailsTablesData["servicios"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["servicios"][$dIndex]["detailKeys"][]="fk_T_Servicio";
 //endif
 
 // tables which are master tables for current table (detail)
@@ -2931,7 +1019,7 @@ $masterTablesData["servicios"] = array();
 				$masterTablesData["servicios"][0]["masterKeys"] = array();
 	$masterTablesData["servicios"][0]["masterKeys"][]="id_Laboratorio";
 				$masterTablesData["servicios"][0]["detailKeys"] = array();
-	$masterTablesData["servicios"][0]["detailKeys"][]="fk_id_Laboratorio";
+	$masterTablesData["servicios"][0]["detailKeys"][]="fk_laboratorio";
 		
 	//endif
 // -----------------end  prepare master-details data arrays ------------------------------//
@@ -2954,7 +1042,7 @@ function createSqlQuery_servicios()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_Servicio,  	Nombre_Servicio,  	Normatividad,  	Descripcion,  	Valor_Servicio,  	TipoServicio,  	Instrumento,  	Fabricante,  	Modelo,  	Serie,  	Cog_Interno,  	IRPC,  	Nom_Material,  	Tipo_Material,  	Report_Results,  	Cantidad,  	Tipo_Probeta,  	fk_id_Laboratorio";
+$proto0["m_strFieldList"] = "id_Servicio,  	`Tipología`,  	Nombre_Servicio,  	fk_laboratorio";
 $proto0["m_strFrom"] = "FROM servicios";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -3010,12 +1098,12 @@ $obj = new SQLFieldListItem($proto6);
 $proto0["m_fieldlist"][]=$obj;
 						$proto8=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Nombre_Servicio",
+	"m_strName" => "Tipología",
 	"m_strTable" => "servicios",
 	"m_srcTableName" => "servicios"
 ));
 
-$proto8["m_sql"] = "Nombre_Servicio";
+$proto8["m_sql"] = "`Tipología`";
 $proto8["m_srcTableName"] = "servicios";
 $proto8["m_expr"]=$obj;
 $proto8["m_alias"] = "";
@@ -3024,12 +1112,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Normatividad",
+	"m_strName" => "Nombre_Servicio",
 	"m_strTable" => "servicios",
 	"m_srcTableName" => "servicios"
 ));
 
-$proto10["m_sql"] = "Normatividad";
+$proto10["m_sql"] = "Nombre_Servicio";
 $proto10["m_srcTableName"] = "servicios";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -3038,262 +1126,52 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Descripcion",
+	"m_strName" => "fk_laboratorio",
 	"m_strTable" => "servicios",
 	"m_srcTableName" => "servicios"
 ));
 
-$proto12["m_sql"] = "Descripcion";
+$proto12["m_sql"] = "fk_laboratorio";
 $proto12["m_srcTableName"] = "servicios";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
 $obj = new SQLFieldListItem($proto12);
 
 $proto0["m_fieldlist"][]=$obj;
-						$proto14=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Valor_Servicio",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto14["m_sql"] = "Valor_Servicio";
-$proto14["m_srcTableName"] = "servicios";
-$proto14["m_expr"]=$obj;
-$proto14["m_alias"] = "";
-$obj = new SQLFieldListItem($proto14);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto16=array();
-			$obj = new SQLField(array(
-	"m_strName" => "TipoServicio",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto16["m_sql"] = "TipoServicio";
-$proto16["m_srcTableName"] = "servicios";
-$proto16["m_expr"]=$obj;
-$proto16["m_alias"] = "";
-$obj = new SQLFieldListItem($proto16);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto18=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Instrumento",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto18["m_sql"] = "Instrumento";
-$proto18["m_srcTableName"] = "servicios";
-$proto18["m_expr"]=$obj;
-$proto18["m_alias"] = "";
-$obj = new SQLFieldListItem($proto18);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto20=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Fabricante",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto20["m_sql"] = "Fabricante";
-$proto20["m_srcTableName"] = "servicios";
-$proto20["m_expr"]=$obj;
-$proto20["m_alias"] = "";
-$obj = new SQLFieldListItem($proto20);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto22=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Modelo",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto22["m_sql"] = "Modelo";
-$proto22["m_srcTableName"] = "servicios";
-$proto22["m_expr"]=$obj;
-$proto22["m_alias"] = "";
-$obj = new SQLFieldListItem($proto22);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto24=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Serie",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto24["m_sql"] = "Serie";
-$proto24["m_srcTableName"] = "servicios";
-$proto24["m_expr"]=$obj;
-$proto24["m_alias"] = "";
-$obj = new SQLFieldListItem($proto24);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto26=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Cog_Interno",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto26["m_sql"] = "Cog_Interno";
-$proto26["m_srcTableName"] = "servicios";
-$proto26["m_expr"]=$obj;
-$proto26["m_alias"] = "";
-$obj = new SQLFieldListItem($proto26);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto28=array();
-			$obj = new SQLField(array(
-	"m_strName" => "IRPC",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto28["m_sql"] = "IRPC";
-$proto28["m_srcTableName"] = "servicios";
-$proto28["m_expr"]=$obj;
-$proto28["m_alias"] = "";
-$obj = new SQLFieldListItem($proto28);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto30=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Nom_Material",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto30["m_sql"] = "Nom_Material";
-$proto30["m_srcTableName"] = "servicios";
-$proto30["m_expr"]=$obj;
-$proto30["m_alias"] = "";
-$obj = new SQLFieldListItem($proto30);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto32=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Tipo_Material",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto32["m_sql"] = "Tipo_Material";
-$proto32["m_srcTableName"] = "servicios";
-$proto32["m_expr"]=$obj;
-$proto32["m_alias"] = "";
-$obj = new SQLFieldListItem($proto32);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto34=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Report_Results",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto34["m_sql"] = "Report_Results";
-$proto34["m_srcTableName"] = "servicios";
-$proto34["m_expr"]=$obj;
-$proto34["m_alias"] = "";
-$obj = new SQLFieldListItem($proto34);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto36=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Cantidad",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto36["m_sql"] = "Cantidad";
-$proto36["m_srcTableName"] = "servicios";
-$proto36["m_expr"]=$obj;
-$proto36["m_alias"] = "";
-$obj = new SQLFieldListItem($proto36);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto38=array();
-			$obj = new SQLField(array(
-	"m_strName" => "Tipo_Probeta",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto38["m_sql"] = "Tipo_Probeta";
-$proto38["m_srcTableName"] = "servicios";
-$proto38["m_expr"]=$obj;
-$proto38["m_alias"] = "";
-$obj = new SQLFieldListItem($proto38);
-
-$proto0["m_fieldlist"][]=$obj;
-						$proto40=array();
-			$obj = new SQLField(array(
-	"m_strName" => "fk_id_Laboratorio",
-	"m_strTable" => "servicios",
-	"m_srcTableName" => "servicios"
-));
-
-$proto40["m_sql"] = "fk_id_Laboratorio";
-$proto40["m_srcTableName"] = "servicios";
-$proto40["m_expr"]=$obj;
-$proto40["m_alias"] = "";
-$obj = new SQLFieldListItem($proto40);
-
-$proto0["m_fieldlist"][]=$obj;
 $proto0["m_fromlist"] = array();
-												$proto42=array();
-$proto42["m_link"] = "SQLL_MAIN";
-			$proto43=array();
-$proto43["m_strName"] = "servicios";
-$proto43["m_srcTableName"] = "servicios";
-$proto43["m_columns"] = array();
-$proto43["m_columns"][] = "id_Servicio";
-$proto43["m_columns"][] = "Nombre_Servicio";
-$proto43["m_columns"][] = "Normatividad";
-$proto43["m_columns"][] = "Descripcion";
-$proto43["m_columns"][] = "Valor_Servicio";
-$proto43["m_columns"][] = "TipoServicio";
-$proto43["m_columns"][] = "Instrumento";
-$proto43["m_columns"][] = "Fabricante";
-$proto43["m_columns"][] = "Modelo";
-$proto43["m_columns"][] = "Serie";
-$proto43["m_columns"][] = "Cog_Interno";
-$proto43["m_columns"][] = "IRPC";
-$proto43["m_columns"][] = "Nom_Material";
-$proto43["m_columns"][] = "Tipo_Material";
-$proto43["m_columns"][] = "Report_Results";
-$proto43["m_columns"][] = "Cantidad";
-$proto43["m_columns"][] = "Tipo_Probeta";
-$proto43["m_columns"][] = "fk_id_Laboratorio";
-$obj = new SQLTable($proto43);
+												$proto14=array();
+$proto14["m_link"] = "SQLL_MAIN";
+			$proto15=array();
+$proto15["m_strName"] = "servicios";
+$proto15["m_srcTableName"] = "servicios";
+$proto15["m_columns"] = array();
+$proto15["m_columns"][] = "id_Servicio";
+$proto15["m_columns"][] = "Tipología";
+$proto15["m_columns"][] = "Nombre_Servicio";
+$proto15["m_columns"][] = "fk_laboratorio";
+$obj = new SQLTable($proto15);
 
-$proto42["m_table"] = $obj;
-$proto42["m_sql"] = "servicios";
-$proto42["m_alias"] = "";
-$proto42["m_srcTableName"] = "servicios";
-$proto44=array();
-$proto44["m_sql"] = "";
-$proto44["m_uniontype"] = "SQLL_UNKNOWN";
+$proto14["m_table"] = $obj;
+$proto14["m_sql"] = "servicios";
+$proto14["m_alias"] = "";
+$proto14["m_srcTableName"] = "servicios";
+$proto16=array();
+$proto16["m_sql"] = "";
+$proto16["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto44["m_column"]=$obj;
-$proto44["m_contained"] = array();
-$proto44["m_strCase"] = "";
-$proto44["m_havingmode"] = false;
-$proto44["m_inBrackets"] = false;
-$proto44["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto44);
+$proto16["m_column"]=$obj;
+$proto16["m_contained"] = array();
+$proto16["m_strCase"] = "";
+$proto16["m_havingmode"] = false;
+$proto16["m_inBrackets"] = false;
+$proto16["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto16);
 
-$proto42["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto42);
+$proto14["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto14);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -3309,12 +1187,38 @@ $queryData_servicios = createSqlQuery_servicios();
 	
 		;
 
-																		
+				
 
 $tdataservicios[".sqlquery"] = $queryData_servicios;
 
 
 
-$tdataservicios[".hasEvents"] = false;
+include_once(getabspath("include/servicios_events.php"));
+$tdataservicios[".hasEvents"] = true;
 
+$query = &$queryData_servicios;
+$table = "servicios";
+// here goes EVENT_INIT_TABLE event
+
+$user=$_SESSION['UserID'];
+$permiso=Security::getUserGroup();
+if($permiso=='SuperAdmin'){
+
+
+}else if($permiso=='LabAdmin'){
+$rs = DB::Query("select id_User FROM usuario WHERE Usuario='".$user."'");
+$data=$rs->fetchAssoc();
+
+$rs2 = DB::Query("select id_Laboratorio FROM laboratorio WHERE fk_id_User='".$data['id_User']."'");
+$data2=$rs2->fetchAssoc();
+
+$query->addWhere('fk_laboratorio='.$data2['id_Laboratorio']);
+} else if($permiso == 'Cliente') {
+
+
+}
+
+
+;
+unset($query);
 ?>

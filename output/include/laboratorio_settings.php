@@ -31,27 +31,27 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelslaboratorio["Spanish"]["Nombre_Laboratorio"] = "Nombre Laboratorio";
 	$fieldToolTipslaboratorio["Spanish"]["Nombre_Laboratorio"] = "";
 	$placeHolderslaboratorio["Spanish"]["Nombre_Laboratorio"] = "";
-	$fieldLabelslaboratorio["Spanish"]["Tipologia"] = "Tipologia";
-	$fieldToolTipslaboratorio["Spanish"]["Tipologia"] = "";
-	$placeHolderslaboratorio["Spanish"]["Tipologia"] = "";
-	$fieldLabelslaboratorio["Spanish"]["Descripcion"] = "Descripcion";
+	$fieldLabelslaboratorio["Spanish"]["Descripcion"] = "Descripción";
 	$fieldToolTipslaboratorio["Spanish"]["Descripcion"] = "";
 	$placeHolderslaboratorio["Spanish"]["Descripcion"] = "";
-	$fieldLabelslaboratorio["Spanish"]["Direccion"] = "Direccion";
+	$fieldLabelslaboratorio["Spanish"]["Direccion"] = "Dirección";
 	$fieldToolTipslaboratorio["Spanish"]["Direccion"] = "";
 	$placeHolderslaboratorio["Spanish"]["Direccion"] = "";
-	$fieldLabelslaboratorio["Spanish"]["Mision"] = "Mision";
+	$fieldLabelslaboratorio["Spanish"]["Mision"] = "Misión";
 	$fieldToolTipslaboratorio["Spanish"]["Mision"] = "";
 	$placeHolderslaboratorio["Spanish"]["Mision"] = "";
-	$fieldLabelslaboratorio["Spanish"]["Vision"] = "Vision";
+	$fieldLabelslaboratorio["Spanish"]["Vision"] = "Visión";
 	$fieldToolTipslaboratorio["Spanish"]["Vision"] = "";
 	$placeHolderslaboratorio["Spanish"]["Vision"] = "";
-	$fieldLabelslaboratorio["Spanish"]["fk_Codigo_Centro"] = "Fk Codigo Centro";
-	$fieldToolTipslaboratorio["Spanish"]["fk_Codigo_Centro"] = "";
-	$placeHolderslaboratorio["Spanish"]["fk_Codigo_Centro"] = "";
-	$fieldLabelslaboratorio["Spanish"]["fk_id_User"] = "Fk Id User";
+	$fieldLabelslaboratorio["Spanish"]["fk_id_User"] = "Administrador del Laboratorio";
 	$fieldToolTipslaboratorio["Spanish"]["fk_id_User"] = "";
 	$placeHolderslaboratorio["Spanish"]["fk_id_User"] = "";
+	$fieldLabelslaboratorio["Spanish"]["fk_id_centro"] = "Centro al que pertenece";
+	$fieldToolTipslaboratorio["Spanish"]["fk_id_centro"] = "";
+	$placeHolderslaboratorio["Spanish"]["fk_id_centro"] = "";
+	$fieldLabelslaboratorio["Spanish"]["fk_Regional"] = "Regional";
+	$fieldToolTipslaboratorio["Spanish"]["fk_Regional"] = "";
+	$placeHolderslaboratorio["Spanish"]["fk_Regional"] = "";
 	if (count($fieldToolTipslaboratorio["Spanish"]))
 		$tdatalaboratorio[".isUseToolTips"] = true;
 }
@@ -149,7 +149,7 @@ $tdatalaboratorio[".isUseAjaxSuggest"] = true;
 
 
 
-
+									
 
 $tdatalaboratorio[".ajaxCodeSnippetAdded"] = false;
 
@@ -171,12 +171,12 @@ $tdatalaboratorio[".requiredSearchFields"] = array();
 $tdatalaboratorio[".googleLikeFields"] = array();
 $tdatalaboratorio[".googleLikeFields"][] = "id_Laboratorio";
 $tdatalaboratorio[".googleLikeFields"][] = "Nombre_Laboratorio";
-$tdatalaboratorio[".googleLikeFields"][] = "Tipologia";
 $tdatalaboratorio[".googleLikeFields"][] = "Descripcion";
 $tdatalaboratorio[".googleLikeFields"][] = "Direccion";
 $tdatalaboratorio[".googleLikeFields"][] = "Mision";
 $tdatalaboratorio[".googleLikeFields"][] = "Vision";
-$tdatalaboratorio[".googleLikeFields"][] = "fk_Codigo_Centro";
+$tdatalaboratorio[".googleLikeFields"][] = "fk_Regional";
+$tdatalaboratorio[".googleLikeFields"][] = "fk_id_centro";
 $tdatalaboratorio[".googleLikeFields"][] = "fk_id_User";
 
 
@@ -211,7 +211,7 @@ $tdatalaboratorio[".strOrderBy"] = $tstrOrderBy;
 $tdatalaboratorio[".orderindexes"] = array();
 
 
-$tdatalaboratorio[".sqlHead"] = "SELECT id_Laboratorio,  	Nombre_Laboratorio,  	Tipologia,  	Descripcion,  	Direccion,  	Mision,  	Vision,  	fk_Codigo_Centro,  	fk_id_User";
+$tdatalaboratorio[".sqlHead"] = "SELECT id_Laboratorio,  	Nombre_Laboratorio,  	Descripcion,  	Direccion,  	Mision,  	Vision,  	fk_Regional,  	fk_id_centro,  	fk_id_User";
 $tdatalaboratorio[".sqlFrom"] = "FROM laboratorio";
 $tdatalaboratorio[".sqlWhereExpr"] = "";
 $tdatalaboratorio[".sqlTail"] = "";
@@ -538,148 +538,10 @@ $tdatalaboratorio[".hideMobileList"] = array();
 
 	$tdatalaboratorio["Nombre_Laboratorio"] = $fdata;
 		$tdatalaboratorio[".searchableFields"][] = "Nombre_Laboratorio";
-//	Tipologia
-//	Custom field settings
-	$fdata = array();
-	$fdata["Index"] = 3;
-	$fdata["strName"] = "Tipologia";
-	$fdata["GoodName"] = "Tipologia";
-	$fdata["ownerTable"] = "laboratorio";
-	$fdata["Label"] = GetFieldLabel("laboratorio","Tipologia");
-	$fdata["FieldType"] = 200;
-
-
-	
-	
-			
-
-		$fdata["strField"] = "Tipologia";
-
-		$fdata["sourceSingle"] = "Tipologia";
-
-		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "Tipologia";
-
-	
-	
-				$fdata["UploadFolder"] = "files";
-
-//  Begin View Formats
-	$fdata["ViewFormats"] = array();
-
-	$vdata = array("ViewFormat" => "");
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		$vdata["NeedEncode"] = true;
-
-	
-		$vdata["truncateText"] = true;
-	$vdata["NumberOfChars"] = 80;
-
-	$fdata["ViewFormats"]["view"] = $vdata;
-//  End View Formats
-
-//	Begin Edit Formats
-	$fdata["EditFormats"] = array();
-
-	$edata = array("EditFormat" => "Text field");
-
-	
-		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
-	$edata["weekdays"] = "[]";
-
-
-	
-	
-
-
-
-	
-	
-	
-	
-			$edata["acceptFileTypesHtml"] = "";
-
-		$edata["maxNumberOfFiles"] = 1;
-
-	
-	
-	
-	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=100";
-
-		$edata["controlWidth"] = 200;
-
-//	Begin validation
-	$edata["validateAs"] = array();
-	$edata["validateAs"]["basicValidate"] = array();
-	$edata["validateAs"]["customMessages"] = array();
-	
-	
-//	End validation
-
-	
-			
-	
-	
-	
-	$fdata["EditFormats"]["edit"] = $edata;
-//	End Edit Formats
-
-
-	$fdata["isSeparate"] = false;
-
-
-
-
-// the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
-
-			// the default search options list
-				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
-// the end of search options settings
-
-
-//Filters settings
-	$fdata["filterTotals"] = 0;
-		$fdata["filterMultiSelect"] = 0;
-			$fdata["filterFormat"] = "Values list";
-		$fdata["showCollapsed"] = false;
-
-		$fdata["sortValueType"] = 0;
-		$fdata["numberOfVisibleItems"] = 10;
-
-		$fdata["filterBy"] = 0;
-
-	
-
-	
-	
-//end of Filters settings
-
-
-	$tdatalaboratorio["Tipologia"] = $fdata;
-		$tdatalaboratorio[".searchableFields"][] = "Tipologia";
 //	Descripcion
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 4;
+	$fdata["Index"] = 3;
 	$fdata["strName"] = "Descripcion";
 	$fdata["GoodName"] = "Descripcion";
 	$fdata["ownerTable"] = "laboratorio";
@@ -819,7 +681,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //	Direccion
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 5;
+	$fdata["Index"] = 4;
 	$fdata["strName"] = "Direccion";
 	$fdata["GoodName"] = "Direccion";
 	$fdata["ownerTable"] = "laboratorio";
@@ -957,7 +819,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //	Mision
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 6;
+	$fdata["Index"] = 5;
 	$fdata["strName"] = "Mision";
 	$fdata["GoodName"] = "Mision";
 	$fdata["ownerTable"] = "laboratorio";
@@ -1097,7 +959,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //	Vision
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 7;
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "Vision";
 	$fdata["GoodName"] = "Vision";
 	$fdata["ownerTable"] = "laboratorio";
@@ -1234,27 +1096,27 @@ $tdatalaboratorio[".hideMobileList"] = array();
 
 	$tdatalaboratorio["Vision"] = $fdata;
 		$tdatalaboratorio[".searchableFields"][] = "Vision";
-//	fk_Codigo_Centro
+//	fk_Regional
 //	Custom field settings
 	$fdata = array();
-	$fdata["Index"] = 8;
-	$fdata["strName"] = "fk_Codigo_Centro";
-	$fdata["GoodName"] = "fk_Codigo_Centro";
+	$fdata["Index"] = 7;
+	$fdata["strName"] = "fk_Regional";
+	$fdata["GoodName"] = "fk_Regional";
 	$fdata["ownerTable"] = "laboratorio";
-	$fdata["Label"] = GetFieldLabel("laboratorio","fk_Codigo_Centro");
-	$fdata["FieldType"] = 3;
+	$fdata["Label"] = GetFieldLabel("laboratorio","fk_Regional");
+	$fdata["FieldType"] = 200;
 
 
 	
 	
 			
 
-		$fdata["strField"] = "fk_Codigo_Centro";
+		$fdata["strField"] = "fk_Regional";
 
-		$fdata["sourceSingle"] = "fk_Codigo_Centro";
+		$fdata["sourceSingle"] = "fk_Regional";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "fk_Codigo_Centro";
+	$fdata["FullName"] = "fk_Regional";
 
 	
 	
@@ -1291,7 +1153,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1301,6 +1163,38 @@ $tdatalaboratorio[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "centros";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+			$edata["LookupUnique"] = true;
+
+	$edata["LinkField"] = "id_regional";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "id_regional";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+				//dependent dropdowns @deprecated data ?
+	$edata["DependentLookups"] = array();
+	$edata["DependentLookups"][] = "fk_id_centro";
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1315,18 +1209,15 @@ $tdatalaboratorio[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-							
+	
 	
 //	End validation
 
@@ -1345,7 +1236,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1370,8 +1261,175 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatalaboratorio["fk_Codigo_Centro"] = $fdata;
-		$tdatalaboratorio[".searchableFields"][] = "fk_Codigo_Centro";
+	$tdatalaboratorio["fk_Regional"] = $fdata;
+		$tdatalaboratorio[".searchableFields"][] = "fk_Regional";
+//	fk_id_centro
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 8;
+	$fdata["strName"] = "fk_id_centro";
+	$fdata["GoodName"] = "fk_id_centro";
+	$fdata["ownerTable"] = "laboratorio";
+	$fdata["Label"] = GetFieldLabel("laboratorio","fk_id_centro");
+	$fdata["FieldType"] = 3;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "fk_id_centro";
+
+		$fdata["sourceSingle"] = "fk_id_centro";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "fk_id_centro";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Lookup wizard");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "centros";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_centro";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "nom_centro";
+
+				$edata["LookupWhere"] = "nom_centro != 'Despacho Dirección'";
+
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+		$edata["UseCategory"] = true;
+	$edata["categoryFields"] = array();
+	$edata["categoryFields"][] = array( "main" => "fk_Regional", "lookup" => "id_regional" );
+
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+	
+	
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+							
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Equals";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatalaboratorio["fk_id_centro"] = $fdata;
+		$tdatalaboratorio[".searchableFields"][] = "fk_id_centro";
 //	fk_id_User
 //	Custom field settings
 	$fdata = array();
@@ -1429,7 +1487,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -1439,6 +1497,34 @@ $tdatalaboratorio[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "usuario";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_User";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Usuario";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -1453,17 +1539,14 @@ $tdatalaboratorio[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -1483,7 +1566,7 @@ $tdatalaboratorio[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
@@ -1527,41 +1610,11 @@ changeTextControlsToDate( "laboratorio" );
 //if !@TABLE.bReportCrossTab
 
 $detailsTablesData["laboratorio"] = array();
-//	servicios
-	
-	
-
-		$dIndex = 0;
-	$detailsParam = array();
-	$detailsParam["dDataSourceTable"]="servicios";
-		$detailsParam["dOriginalTable"] = "servicios";
-
-
-
-		
-		$detailsParam["dType"]=PAGE_LIST;
-	$detailsParam["dShortTable"] = "servicios";
-	$detailsParam["dCaptionTable"] = GetTableCaption("servicios");
-	$detailsParam["masterKeys"] =array();
-	$detailsParam["detailKeys"] =array();
-
-
-		
-	$detailsTablesData["laboratorio"][$dIndex] = $detailsParam;
-
-	
-		$detailsTablesData["laboratorio"][$dIndex]["masterKeys"] = array();
-
-	$detailsTablesData["laboratorio"][$dIndex]["masterKeys"][]="id_Laboratorio";
-
-				$detailsTablesData["laboratorio"][$dIndex]["detailKeys"] = array();
-
-	$detailsTablesData["laboratorio"][$dIndex]["detailKeys"][]="fk_id_Laboratorio";
 //	noticias
 	
 	
 
-		$dIndex = 1;
+		$dIndex = 0;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="noticias";
 		$detailsParam["dOriginalTable"] = "noticias";
@@ -1591,7 +1644,7 @@ $detailsTablesData["laboratorio"] = array();
 	
 	
 
-		$dIndex = 2;
+		$dIndex = 1;
 	$detailsParam = array();
 	$detailsParam["dDataSourceTable"]="casos_exito";
 		$detailsParam["dOriginalTable"] = "casos_exito";
@@ -1617,6 +1670,36 @@ $detailsTablesData["laboratorio"] = array();
 				$detailsTablesData["laboratorio"][$dIndex]["detailKeys"] = array();
 
 	$detailsTablesData["laboratorio"][$dIndex]["detailKeys"][]="fk_id_Laboratorio";
+//	servicios
+	
+	
+
+		$dIndex = 2;
+	$detailsParam = array();
+	$detailsParam["dDataSourceTable"]="servicios";
+		$detailsParam["dOriginalTable"] = "servicios";
+
+
+
+		
+		$detailsParam["dType"]=PAGE_LIST;
+	$detailsParam["dShortTable"] = "servicios";
+	$detailsParam["dCaptionTable"] = GetTableCaption("servicios");
+	$detailsParam["masterKeys"] =array();
+	$detailsParam["detailKeys"] =array();
+
+
+		
+	$detailsTablesData["laboratorio"][$dIndex] = $detailsParam;
+
+	
+		$detailsTablesData["laboratorio"][$dIndex]["masterKeys"] = array();
+
+	$detailsTablesData["laboratorio"][$dIndex]["masterKeys"][]="id_Laboratorio";
+
+				$detailsTablesData["laboratorio"][$dIndex]["detailKeys"] = array();
+
+	$detailsTablesData["laboratorio"][$dIndex]["detailKeys"][]="fk_laboratorio";
 //endif
 
 // tables which are master tables for current table (detail)
@@ -1624,24 +1707,6 @@ $masterTablesData["laboratorio"] = array();
 
 
 
-	
-	//if !@t.bReportCrossTab
-			$strOriginalDetailsTable="centro";
-	$masterParams = array();
-	$masterParams["mDataSourceTable"]="centro";
-	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
-	$masterParams["mShortTable"]= "centro";
-	$masterParams["masterKeys"]= array();
-	$masterParams["detailKeys"]= array();
-
-	$masterParams["type"] = PAGE_LIST;
-					$masterTablesData["laboratorio"][0] = $masterParams;
-				$masterTablesData["laboratorio"][0]["masterKeys"] = array();
-	$masterTablesData["laboratorio"][0]["masterKeys"][]="Codigo_Centro";
-				$masterTablesData["laboratorio"][0]["detailKeys"] = array();
-	$masterTablesData["laboratorio"][0]["detailKeys"][]="fk_Codigo_Centro";
-		
-	//endif
 	
 	//if !@t.bReportCrossTab
 			$strOriginalDetailsTable="usuario";
@@ -1653,11 +1718,29 @@ $masterTablesData["laboratorio"] = array();
 	$masterParams["detailKeys"]= array();
 
 	$masterParams["type"] = PAGE_LIST;
+					$masterTablesData["laboratorio"][0] = $masterParams;
+				$masterTablesData["laboratorio"][0]["masterKeys"] = array();
+	$masterTablesData["laboratorio"][0]["masterKeys"][]="id_User";
+				$masterTablesData["laboratorio"][0]["detailKeys"] = array();
+	$masterTablesData["laboratorio"][0]["detailKeys"][]="fk_id_User";
+		
+	//endif
+	
+	//if !@t.bReportCrossTab
+			$strOriginalDetailsTable="centros";
+	$masterParams = array();
+	$masterParams["mDataSourceTable"]="centros";
+	$masterParams["mOriginalTable"]= $strOriginalDetailsTable;
+	$masterParams["mShortTable"]= "centros";
+	$masterParams["masterKeys"]= array();
+	$masterParams["detailKeys"]= array();
+
+	$masterParams["type"] = PAGE_LIST;
 					$masterTablesData["laboratorio"][1] = $masterParams;
 				$masterTablesData["laboratorio"][1]["masterKeys"] = array();
-	$masterTablesData["laboratorio"][1]["masterKeys"][]="id_User";
+	$masterTablesData["laboratorio"][1]["masterKeys"][]="id_centro";
 				$masterTablesData["laboratorio"][1]["detailKeys"] = array();
-	$masterTablesData["laboratorio"][1]["detailKeys"][]="fk_id_User";
+	$masterTablesData["laboratorio"][1]["detailKeys"][]="fk_id_centro";
 		
 	//endif
 // -----------------end  prepare master-details data arrays ------------------------------//
@@ -1680,7 +1763,7 @@ function createSqlQuery_laboratorio()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id_Laboratorio,  	Nombre_Laboratorio,  	Tipologia,  	Descripcion,  	Direccion,  	Mision,  	Vision,  	fk_Codigo_Centro,  	fk_id_User";
+$proto0["m_strFieldList"] = "id_Laboratorio,  	Nombre_Laboratorio,  	Descripcion,  	Direccion,  	Mision,  	Vision,  	fk_Regional,  	fk_id_centro,  	fk_id_User";
 $proto0["m_strFrom"] = "FROM laboratorio";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -1750,12 +1833,12 @@ $obj = new SQLFieldListItem($proto8);
 $proto0["m_fieldlist"][]=$obj;
 						$proto10=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Tipologia",
+	"m_strName" => "Descripcion",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto10["m_sql"] = "Tipologia";
+$proto10["m_sql"] = "Descripcion";
 $proto10["m_srcTableName"] = "laboratorio";
 $proto10["m_expr"]=$obj;
 $proto10["m_alias"] = "";
@@ -1764,12 +1847,12 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Descripcion",
+	"m_strName" => "Direccion",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto12["m_sql"] = "Descripcion";
+$proto12["m_sql"] = "Direccion";
 $proto12["m_srcTableName"] = "laboratorio";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
@@ -1778,12 +1861,12 @@ $obj = new SQLFieldListItem($proto12);
 $proto0["m_fieldlist"][]=$obj;
 						$proto14=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Direccion",
+	"m_strName" => "Mision",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto14["m_sql"] = "Direccion";
+$proto14["m_sql"] = "Mision";
 $proto14["m_srcTableName"] = "laboratorio";
 $proto14["m_expr"]=$obj;
 $proto14["m_alias"] = "";
@@ -1792,12 +1875,12 @@ $obj = new SQLFieldListItem($proto14);
 $proto0["m_fieldlist"][]=$obj;
 						$proto16=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Mision",
+	"m_strName" => "Vision",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto16["m_sql"] = "Mision";
+$proto16["m_sql"] = "Vision";
 $proto16["m_srcTableName"] = "laboratorio";
 $proto16["m_expr"]=$obj;
 $proto16["m_alias"] = "";
@@ -1806,12 +1889,12 @@ $obj = new SQLFieldListItem($proto16);
 $proto0["m_fieldlist"][]=$obj;
 						$proto18=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Vision",
+	"m_strName" => "fk_Regional",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto18["m_sql"] = "Vision";
+$proto18["m_sql"] = "fk_Regional";
 $proto18["m_srcTableName"] = "laboratorio";
 $proto18["m_expr"]=$obj;
 $proto18["m_alias"] = "";
@@ -1820,12 +1903,12 @@ $obj = new SQLFieldListItem($proto18);
 $proto0["m_fieldlist"][]=$obj;
 						$proto20=array();
 			$obj = new SQLField(array(
-	"m_strName" => "fk_Codigo_Centro",
+	"m_strName" => "fk_id_centro",
 	"m_strTable" => "laboratorio",
 	"m_srcTableName" => "laboratorio"
 ));
 
-$proto20["m_sql"] = "fk_Codigo_Centro";
+$proto20["m_sql"] = "fk_id_centro";
 $proto20["m_srcTableName"] = "laboratorio";
 $proto20["m_expr"]=$obj;
 $proto20["m_alias"] = "";
@@ -1855,12 +1938,12 @@ $proto25["m_srcTableName"] = "laboratorio";
 $proto25["m_columns"] = array();
 $proto25["m_columns"][] = "id_Laboratorio";
 $proto25["m_columns"][] = "Nombre_Laboratorio";
-$proto25["m_columns"][] = "Tipologia";
 $proto25["m_columns"][] = "Descripcion";
 $proto25["m_columns"][] = "Direccion";
 $proto25["m_columns"][] = "Mision";
 $proto25["m_columns"][] = "Vision";
-$proto25["m_columns"][] = "fk_Codigo_Centro";
+$proto25["m_columns"][] = "fk_Regional";
+$proto25["m_columns"][] = "fk_id_centro";
 $proto25["m_columns"][] = "fk_id_User";
 $obj = new SQLTable($proto25);
 
@@ -1906,6 +1989,38 @@ $tdatalaboratorio[".sqlquery"] = $queryData_laboratorio;
 
 
 
-$tdatalaboratorio[".hasEvents"] = false;
+include_once(getabspath("include/laboratorio_events.php"));
+$tdatalaboratorio[".hasEvents"] = true;
 
+$query = &$queryData_laboratorio;
+$table = "laboratorio";
+// here goes EVENT_INIT_TABLE event
+$User = $_SESSION['UserID'];
+
+// Comprobar si existe un registro específico
+$consulta = DB::Query("SELECT id_User, Rol FROM usuario WHERE Usuario='$User'");
+$data = $consulta->fetchAssoc();
+
+$id_User = $data['id_User'];
+$Rol = $data['Rol'];
+
+if ($id_User == 2 || $id_User == 3) {
+    $query->addWhere("fk_id_User=".$id_User);
+} else {
+    // Consulta principal con JOIN
+    $query = "SELECT 
+                l.id_Laboratorio, l.Nombre_Laboratorio, l.Tipologia, l.Descripcion, 
+                l.Direccion, l.Mision, l.Vision, l.fk_id_centro, l.fk_id_User
+              FROM 
+                laboratorio l
+              JOIN 
+                usuario u ON l.fk_id_User = u.id_User
+              WHERE 
+                l.fk_id_User = '$id_User' AND u.Rol = '$Rol'";
+}
+
+// Ejecutar la consulta
+$result = DB::Query($query);
+;
+unset($query);
 ?>

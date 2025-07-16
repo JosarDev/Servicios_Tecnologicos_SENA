@@ -402,35 +402,6 @@ pdfDocument = {
 	cellId: 'headcell_field5',
 	col:0,
 	row:0,
-			fieldName: 'Descripcion',
-				style: 'headcell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":"{$jslabel solicitudes Descripcion }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$Descripcion_align}',
-     
-      
-      },
-
-{END cellblock_grid_headcell_field5}
-																							{BEGIN cellblock_grid_headcell_field6}
-{
-	cellId: 'headcell_field6',
-	col:0,
-	row:0,
 			fieldName: 'TipoSolicitud',
 				style: 'headcell',
 		
@@ -445,11 +416,40 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes TipoSolicitud }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+			{"text":"{$jslabel solicitudes TipoSolicitud }","hidden":"{$item_hide_simple_grid_field14}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$TipoSolicitud_align}',
+     
+      
+      },
+
+{END cellblock_grid_headcell_field5}
+																							{BEGIN cellblock_grid_headcell_field6}
+{
+	cellId: 'headcell_field6',
+	col:0,
+	row:0,
+			fieldName: 'fk_id_Cliente',
+				style: 'headcell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":"{$jslabel solicitudes fk_id_Cliente }","hidden":"{$item_hide_simple_grid_field15}","bold":true},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$fk_id_Cliente_align}',
      
       
       },
@@ -489,7 +489,7 @@ pdfDocument = {
 	cellId: 'headcell_field8',
 	col:0,
 	row:0,
-			fieldName: 'fk_id_Cliente',
+			fieldName: 'Observaciones',
 				style: 'headcell',
 		
 		
@@ -503,11 +503,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":"{$jslabel solicitudes fk_id_Cliente }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
+			{"text":"{$jslabel solicitudes Observaciones }","hidden":"{$item_hide_simple_grid_field17}","bold":true},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$fk_id_Cliente_align}',
+              "alignment": '{$Observaciones_align}',
      
       
       },
@@ -672,35 +672,6 @@ pdfDocument = {
 	cellId: 'cell_field5',
 	col:0,
 	row:0,
-			fieldName: 'Descripcion',
-				style: 'bodycell',
-		
-		
-	//	dynamic colspan/rowspan
-
-		
-		
-	
-			
-	
-			"text": [
-		
-				
-			{"text":{$Descripcion_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
-				
-		  ],
-  "border": [ true, true, true, true ],
-              "alignment": '{$Descripcion_align}',
-     
-      
-      },
-
-{END cellblock_grid_cell_field5}
-																							{BEGIN cellblock_grid_cell_field6}
-{
-	cellId: 'cell_field6',
-	col:0,
-	row:0,
 			fieldName: 'TipoSolicitud',
 				style: 'bodycell',
 		
@@ -720,6 +691,35 @@ pdfDocument = {
 		  ],
   "border": [ true, true, true, true ],
               "alignment": '{$TipoSolicitud_align}',
+     
+      
+      },
+
+{END cellblock_grid_cell_field5}
+																							{BEGIN cellblock_grid_cell_field6}
+{
+	cellId: 'cell_field6',
+	col:0,
+	row:0,
+			fieldName: 'fk_id_Cliente',
+				style: 'bodycell',
+		
+		
+	//	dynamic colspan/rowspan
+
+		
+		
+	
+			
+	
+			"text": [
+		
+				
+			{"text":{$fk_id_Cliente_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
+				
+		  ],
+  "border": [ true, true, true, true ],
+              "alignment": '{$fk_id_Cliente_align}',
      
       
       },
@@ -759,7 +759,7 @@ pdfDocument = {
 	cellId: 'cell_field8',
 	col:0,
 	row:0,
-			fieldName: 'fk_id_Cliente',
+			fieldName: 'Observaciones',
 				style: 'bodycell',
 		
 		
@@ -773,11 +773,11 @@ pdfDocument = {
 			"text": [
 		
 				
-			{"text":{$fk_id_Cliente_pdfvalue},"hidden":"{$item_hide_simple_grid_field8}"},
+			{"text":{$Observaciones_pdfvalue},"hidden":"{$item_hide_simple_grid_field5}"},
 				
 		  ],
   "border": [ true, true, true, true ],
-              "alignment": '{$fk_id_Cliente_align}',
+              "alignment": '{$Observaciones_align}',
      
       
       },

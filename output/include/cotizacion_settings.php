@@ -28,10 +28,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscotizacion["Spanish"]["id_Cotizacion"] = "Id Cotizacion";
 	$fieldToolTipscotizacion["Spanish"]["id_Cotizacion"] = "";
 	$placeHolderscotizacion["Spanish"]["id_Cotizacion"] = "";
-	$fieldLabelscotizacion["Spanish"]["Valor_Total_Cot"] = "Valor Total Cot";
+	$fieldLabelscotizacion["Spanish"]["Valor_Total_Cot"] = "Valor total de la Cotización";
 	$fieldToolTipscotizacion["Spanish"]["Valor_Total_Cot"] = "";
 	$placeHolderscotizacion["Spanish"]["Valor_Total_Cot"] = "";
-	$fieldLabelscotizacion["Spanish"]["fk_id_Cliente"] = "Fk Id Cliente";
+	$fieldLabelscotizacion["Spanish"]["fk_id_Cliente"] = "Cliente que realiza la Cotización";
 	$fieldToolTipscotizacion["Spanish"]["fk_id_Cliente"] = "";
 	$placeHolderscotizacion["Spanish"]["fk_id_Cliente"] = "";
 	if (count($fieldToolTipscotizacion["Spanish"]))
@@ -131,7 +131,7 @@ $tdatacotizacion[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdatacotizacion[".ajaxCodeSnippetAdded"] = false;
 

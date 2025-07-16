@@ -6,11 +6,11 @@ $tdatamunicipio[".OwnerID"] = "";
 $tdatamunicipio[".OriginalTable"] = "municipio";
 
 
-$tdatamunicipio[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" );
+$tdatamunicipio[".pagesByType"] = my_json_decode( "{\"add\":[\"add\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" );
 $tdatamunicipio[".originalPagesByType"] = $tdatamunicipio[".pagesByType"];
-$tdatamunicipio[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"edit\":[\"edit\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"],\"view\":[\"view\"]}" ) );
+$tdatamunicipio[".pages"] = types2pages( my_json_decode( "{\"add\":[\"add\"],\"export\":[\"export\"],\"import\":[\"import\"],\"list\":[\"list\"],\"print\":[\"print\"],\"search\":[\"search\"]}" ) );
 $tdatamunicipio[".originalPages"] = $tdatamunicipio[".pages"];
-$tdatamunicipio[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"edit\":\"edit\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\",\"view\":\"view\"}" );
+$tdatamunicipio[".defaultPages"] = my_json_decode( "{\"add\":\"add\",\"export\":\"export\",\"import\":\"import\",\"list\":\"list\",\"print\":\"print\",\"search\":\"search\"}" );
 $tdatamunicipio[".originalDefaultPages"] = $tdatamunicipio[".defaultPages"];
 
 //	field labels
@@ -25,9 +25,6 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldToolTipsmunicipio["Spanish"] = array();
 	$placeHoldersmunicipio["Spanish"] = array();
 	$pageTitlesmunicipio["Spanish"] = array();
-	$fieldLabelsmunicipio["Spanish"]["id"] = "Id";
-	$fieldToolTipsmunicipio["Spanish"]["id"] = "";
-	$placeHoldersmunicipio["Spanish"]["id"] = "";
 	$fieldLabelsmunicipio["Spanish"]["departamento"] = "Departamento";
 	$fieldToolTipsmunicipio["Spanish"]["departamento"] = "";
 	$placeHoldersmunicipio["Spanish"]["departamento"] = "";
@@ -37,6 +34,9 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelsmunicipio["Spanish"]["orden"] = "Orden";
 	$fieldToolTipsmunicipio["Spanish"]["orden"] = "";
 	$placeHoldersmunicipio["Spanish"]["orden"] = "";
+	$fieldLabelsmunicipio["Spanish"]["id_municipio"] = "Id Municipio";
+	$fieldToolTipsmunicipio["Spanish"]["id_municipio"] = "";
+	$placeHoldersmunicipio["Spanish"]["id_municipio"] = "";
 	if (count($fieldToolTipsmunicipio["Spanish"]))
 		$tdatamunicipio[".isUseToolTips"] = true;
 }
@@ -134,7 +134,7 @@ $tdatamunicipio[".isUseAjaxSuggest"] = true;
 
 
 
-
+			
 
 $tdatamunicipio[".ajaxCodeSnippetAdded"] = false;
 
@@ -154,7 +154,7 @@ $tdatamunicipio[".filterFields"] = array();
 $tdatamunicipio[".requiredSearchFields"] = array();
 
 $tdatamunicipio[".googleLikeFields"] = array();
-$tdatamunicipio[".googleLikeFields"][] = "id";
+$tdatamunicipio[".googleLikeFields"][] = "id_municipio";
 $tdatamunicipio[".googleLikeFields"][] = "departamento";
 $tdatamunicipio[".googleLikeFields"][] = "municipio";
 $tdatamunicipio[".googleLikeFields"][] = "orden";
@@ -191,7 +191,7 @@ $tdatamunicipio[".strOrderBy"] = $tstrOrderBy;
 $tdatamunicipio[".orderindexes"] = array();
 
 
-$tdatamunicipio[".sqlHead"] = "SELECT id,  	departamento,  	municipio,  	orden";
+$tdatamunicipio[".sqlHead"] = "SELECT id_municipio,  	departamento,  	municipio,  	orden";
 $tdatamunicipio[".sqlFrom"] = "FROM municipio";
 $tdatamunicipio[".sqlWhereExpr"] = "";
 $tdatamunicipio[".sqlTail"] = "";
@@ -230,7 +230,6 @@ $tdatamunicipio[".arrGroupsPerPage"] = $arrGPP;
 $tdatamunicipio[".highlightSearchResults"] = true;
 
 $tableKeysmunicipio = array();
-$tableKeysmunicipio[] = "id";
 $tdatamunicipio[".Keys"] = $tableKeysmunicipio;
 
 
@@ -239,14 +238,14 @@ $tdatamunicipio[".hideMobileList"] = array();
 
 
 
-//	id
+//	id_municipio
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 1;
-	$fdata["strName"] = "id";
-	$fdata["GoodName"] = "id";
+	$fdata["strName"] = "id_municipio";
+	$fdata["GoodName"] = "id_municipio";
 	$fdata["ownerTable"] = "municipio";
-	$fdata["Label"] = GetFieldLabel("municipio","id");
+	$fdata["Label"] = GetFieldLabel("municipio","id_municipio");
 	$fdata["FieldType"] = 3;
 
 
@@ -255,12 +254,12 @@ $tdatamunicipio[".hideMobileList"] = array();
 	
 			
 
-		$fdata["strField"] = "id";
+		$fdata["strField"] = "id_municipio";
 
-		$fdata["sourceSingle"] = "id";
+		$fdata["sourceSingle"] = "id_municipio";
 
 		$fdata["isSQLExpression"] = true;
-	$fdata["FullName"] = "id";
+	$fdata["FullName"] = "id_municipio";
 
 	
 	
@@ -378,8 +377,8 @@ $tdatamunicipio[".hideMobileList"] = array();
 //end of Filters settings
 
 
-	$tdatamunicipio["id"] = $fdata;
-		$tdatamunicipio[".searchableFields"][] = "id";
+	$tdatamunicipio["id_municipio"] = $fdata;
+		$tdatamunicipio[".searchableFields"][] = "id_municipio";
 //	departamento
 //	Custom field settings
 	$fdata = array();
@@ -838,7 +837,7 @@ function createSqlQuery_municipio()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "id,  	departamento,  	municipio,  	orden";
+$proto0["m_strFieldList"] = "id_municipio,  	departamento,  	municipio,  	orden";
 $proto0["m_strFrom"] = "FROM municipio";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -880,12 +879,12 @@ $proto0["m_having"] = $obj;
 $proto0["m_fieldlist"] = array();
 						$proto6=array();
 			$obj = new SQLField(array(
-	"m_strName" => "id",
+	"m_strName" => "id_municipio",
 	"m_strTable" => "municipio",
 	"m_srcTableName" => "municipio"
 ));
 
-$proto6["m_sql"] = "id";
+$proto6["m_sql"] = "id_municipio";
 $proto6["m_srcTableName"] = "municipio";
 $proto6["m_expr"]=$obj;
 $proto6["m_alias"] = "";
@@ -941,7 +940,7 @@ $proto14["m_link"] = "SQLL_MAIN";
 $proto15["m_strName"] = "municipio";
 $proto15["m_srcTableName"] = "municipio";
 $proto15["m_columns"] = array();
-$proto15["m_columns"][] = "id";
+$proto15["m_columns"][] = "id_municipio";
 $proto15["m_columns"][] = "departamento";
 $proto15["m_columns"][] = "municipio";
 $proto15["m_columns"][] = "orden";

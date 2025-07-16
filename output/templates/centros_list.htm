@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -246,19 +247,19 @@
 				<span class="rnr-searchcontrol">{$searchcontrol1}</span>
 		</div>
 		{END searchCtrlBlock}
-																		{BEGIN searchCtrlBlock_barrio_centro}
+																		{BEGIN searchCtrlBlock_id_centro}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_barrio_centro}" {$filterRow_attrs_barrio_centro}>
-			<label>{$label centros barrio_centro }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_id_centro}" {$filterRow_attrs_id_centro}>
+			<label>{$label centros id_centro }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_barrio_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_barrio_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_barrio_centro}</span>
+								<span class="rnr-searchtype">{$searchtype_id_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_centro}</span>
 						</div>
-		{END searchCtrlBlock_barrio_centro}
+		{END searchCtrlBlock_id_centro}
 																{BEGIN searchCtrlBlock_nom_centro}
 
 
@@ -272,19 +273,45 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_nom_centro}</span>
 						</div>
 		{END searchCtrlBlock_nom_centro}
-																{BEGIN searchCtrlBlock_id_regional}
+																{BEGIN searchCtrlBlock_direc_centro}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_id_regional}" {$filterRow_attrs_id_regional}>
-			<label>{$label centros id_regional }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_direc_centro}" {$filterRow_attrs_direc_centro}>
+			<label>{$label centros direc_centro }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_id_regional}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_id_regional}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_id_regional}</span>
+								<span class="rnr-searchtype">{$searchtype_direc_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_direc_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_direc_centro}</span>
 						</div>
-		{END searchCtrlBlock_id_regional}
+		{END searchCtrlBlock_direc_centro}
+																{BEGIN searchCtrlBlock_barrio_centro}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_barrio_centro}" {$filterRow_attrs_barrio_centro}>
+			<label>{$label centros barrio_centro }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_barrio_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_barrio_centro}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_barrio_centro}</span>
+						</div>
+		{END searchCtrlBlock_barrio_centro}
+																{BEGIN searchCtrlBlock_departamento}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_departamento}" {$filterRow_attrs_departamento}>
+			<label>{$label centros departamento }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_departamento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_departamento}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_departamento}</span>
+						</div>
+		{END searchCtrlBlock_departamento}
 																{BEGIN searchCtrlBlock_id_municipio}
 
 
@@ -298,19 +325,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_id_municipio}</span>
 						</div>
 		{END searchCtrlBlock_id_municipio}
-																{BEGIN searchCtrlBlock_id_centro}
+																{BEGIN searchCtrlBlock_id_regional}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_id_centro}" {$filterRow_attrs_id_centro}>
-			<label>{$label centros id_centro }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_id_regional}" {$filterRow_attrs_id_regional}>
+			<label>{$label centros id_regional }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_id_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_id_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_id_centro}</span>
+								<span class="rnr-searchtype">{$searchtype_id_regional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_regional}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_regional}</span>
 						</div>
-		{END searchCtrlBlock_id_centro}
+		{END searchCtrlBlock_id_regional}
 																{BEGIN searchCtrlBlock_fecha_reg_centro}
 
 
@@ -337,32 +364,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_extension}</span>
 						</div>
 		{END searchCtrlBlock_extension}
-																{BEGIN searchCtrlBlock_direc_centro}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_direc_centro}" {$filterRow_attrs_direc_centro}>
-			<label>{$label centros direc_centro }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_direc_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_direc_centro}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_direc_centro}</span>
-						</div>
-		{END searchCtrlBlock_direc_centro}
-																{BEGIN searchCtrlBlock_departamento}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_departamento}" {$filterRow_attrs_departamento}>
-			<label>{$label centros departamento }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_departamento}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_departamento}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_departamento}</span>
-						</div>
-		{END searchCtrlBlock_departamento}
 		
 
 	</div>
@@ -516,7 +517,7 @@
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
 				{BEGIN guestloginbutton}
 <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
+	<a type="button" title="" class="btn btn-success   
 	" href="#" {$guestloginlink_attrs} >
 							Conectar			</a>
 </span>
@@ -590,8 +591,8 @@
 		 
 		{BEGIN add_link}
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" {$addlink_attrs} href="centros_add.php{$stateLink_full}" >
+	<a type="button" title="" class="btn btn-success   
+	" {$addlink_attrs} href="centros_add.php{$stateLink_full}" data-popup >
 							Añadir nuevo			</a>
 </span>
 {END add_link}
@@ -669,6 +670,29 @@
 				 
 					<li class="container-fluid 
 										">
+									{BEGIN print_details}
+<div>
+	<label for="printDetailsToggler{$id}">
+		<input type="checkbox" id="printDetailsToggler{$id}">
+		Detalles de impresión	</label>
+	<div  id="printdetailstables{$id}" style="display:none;">
+											{BEGIN print_details_laboratorio}
+			<div>
+				<label for="printDetailslaboratorio{$id}">
+					<input type="checkbox" value="laboratorio" id="printDetailslaboratorio{$id}" checked>
+					Laboratorio				</label>
+			</div>
+			{END print_details_laboratorio}
+						</div>
+</div>
+{END print_details}
+				 
+					</li>
+											<li class="divider" role="separator"></li>
+																				 
+				 
+					<li class="container-fluid 
+										">
 									<div>
 	<label for="printPerPage{$id}">
 					Resultados por página							
@@ -736,12 +760,12 @@
 </style>
 <table data-location="grid" id="form_grid_{$pageid}" data-makeup="leftbar" {$form_grid} data-pageid="{$pageid}" class=" table table-striped table-hover table-bordered r-horizontal-grid  r-flexgrid rnr-b-grid rnr-gridtable"
 	cellpadding="0"
-	data-body-height="1"
+	data-body-height="2"
 >
 						<thead>
 			{BEGIN grid_header}
 			
-																									<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
+																														<tr {$rowattrs} {$row_grid_0} class="{$rowclass}
 									{$gridHeader_class}
 					
 								r-gridrow
@@ -784,6 +808,21 @@
 	
 	</th>
 	{END cellblock_grid_headcell_checkbox}
+									{BEGIN cellblock_grid_headcell_details}
+	<th
+	
+	{$cell_grid_headcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_headcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</th>
+	{END cellblock_grid_headcell_details}
 									{BEGIN cellblock_grid_headcell_field}
 	<th
 	
@@ -858,45 +897,11 @@
 	{$cell_grid_headcell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_municipio_class}	"
-
-			data-field="id_municipio"
-	
-	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_municipio_fieldheadercolumn}
-	{BEGIN id_municipio_fieldheader}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" 
-
-			{$id_municipio_orderlinkattrs}
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label centros id_municipio }</span>
-					{$arrow_icon_id_municipio}
-			</span>
-	</span>
-	{END id_municipio_fieldheader}
-{END id_municipio_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field2}
-									{BEGIN cellblock_grid_headcell_field3}
-	<th
-	
-	{$cell_grid_headcell_field3}
-	{$recordattrs}
-	class="
 		 r-ori-vert		 {$barrio_centro_class}	"
 
 			data-field="barrio_centro"
 	
-	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -919,18 +924,18 @@
 
 	
 	</th>
-	{END cellblock_grid_headcell_field3}
-									{BEGIN cellblock_grid_headcell_field4}
+	{END cellblock_grid_headcell_field2}
+									{BEGIN cellblock_grid_headcell_field8}
 	<th
 	
-	{$cell_grid_headcell_field4}
+	{$cell_grid_headcell_field8}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$direc_centro_class}	"
 
 			data-field="direc_centro"
 	
-	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -953,6 +958,74 @@
 
 	
 	</th>
+	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field3}
+	<th
+	
+	{$cell_grid_headcell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_regional_class}	"
+
+			data-field="id_regional"
+	
+	data-cellId="grid_headcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_regional_fieldheadercolumn}
+	{BEGIN id_regional_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_regional" data-fieldname="id_regional" 
+
+			{$id_regional_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label centros id_regional }</span>
+					{$arrow_icon_id_regional}
+			</span>
+	</span>
+	{END id_regional_fieldheader}
+{END id_regional_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field3}
+									{BEGIN cellblock_grid_headcell_field4}
+	<th
+	
+	{$cell_grid_headcell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_municipio_class}	"
+
+			data-field="id_municipio"
+	
+	data-cellId="grid_headcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_municipio_fieldheadercolumn}
+	{BEGIN id_municipio_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" 
+
+			{$id_municipio_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label centros id_municipio }</span>
+					{$arrow_icon_id_municipio}
+			</span>
+	</span>
+	{END id_municipio_fieldheader}
+{END id_municipio_fieldheadercolumn}
+
+	
+	</th>
 	{END cellblock_grid_headcell_field4}
 									{BEGIN cellblock_grid_headcell_field5}
 	<th
@@ -960,26 +1033,30 @@
 	{$cell_grid_headcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$img_centro_class}	"
+		 r-ori-vert		 {$departamento_class}	"
 
-			data-field="img_centro"
+			data-field="departamento"
 	
 	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN img_centro_fieldheadercolumn}
+		{BEGIN departamento_fieldheadercolumn}
+	{BEGIN departamento_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="img_centro" data-fieldname="img_centro" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" 
 
+			{$departamento_orderlinkattrs}
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label centros img_centro }</span>
+		<span>{$label centros departamento }</span>
+					{$arrow_icon_departamento}
 			</span>
 	</span>
-{END img_centro_fieldheadercolumn}
+	{END departamento_fieldheader}
+{END departamento_fieldheadercolumn}
 
 	
 	</th>
@@ -1052,82 +1129,44 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field7}
-									{BEGIN cellblock_grid_headcell_field8}
-	<th
-	
-	{$cell_grid_headcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$id_regional_class}	"
-
-			data-field="id_regional"
-	
-	data-cellId="grid_headcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_regional_fieldheadercolumn}
-	{BEGIN id_regional_fieldheader}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field18" {$item_simple_grid_field18} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_regional" data-fieldname="id_regional" 
-
-			{$id_regional_orderlinkattrs}
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label centros id_regional }</span>
-					{$arrow_icon_id_regional}
-			</span>
-	</span>
-	{END id_regional_fieldheader}
-{END id_regional_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field8}
 									{BEGIN cellblock_grid_headcell_field9}
 	<th
 	
 	{$cell_grid_headcell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
+		 r-ori-vert		 {$img_centro_class}	"
 
-			data-field="departamento"
+			data-field="img_centro"
 	
 	data-cellId="grid_headcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN departamento_fieldheadercolumn}
-	{BEGIN departamento_fieldheader}
+		{BEGIN img_centro_fieldheadercolumn}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field19" {$item_simple_grid_field19} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="img_centro" data-fieldname="img_centro" 
 
-			{$departamento_orderlinkattrs}
 	
 	
 	>
 	<span class="text-label">
-		<span>{$label centros departamento }</span>
-					{$arrow_icon_departamento}
+		<span>{$label centros img_centro }</span>
 			</span>
 	</span>
-	{END departamento_fieldheader}
-{END departamento_fieldheadercolumn}
+{END img_centro_fieldheadercolumn}
 
 	
 	</th>
 	{END cellblock_grid_headcell_field9}
 							</tr>
-															
+																				
 					{END grid_header}
 			</thead>
 															<tbody>
 					{BEGIN grid_row}
 							
-																														<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
+																																			<tr {$rowattrs} {$row_grid_1} class="{$rowclass}
 				
 								r-gridrow
 							">
@@ -1149,7 +1188,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
 	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="centros_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+	 glyphicon glyphicon-pencil" href="centros_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
 				
 								</a>
 </span>
@@ -1193,6 +1232,41 @@
 	
 	</td>
 	{END cellblock_grid_cell_checkbox}
+									{BEGIN cellblock_grid_cell_details}
+	<td
+	
+	{$cell_grid_cell_details}
+	{$recordattrs}
+	class="
+					"
+
+	
+	data-cellId="grid_cell_details" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"		data-control-cell
+	
+	>
+
+	 
+			 
+		
+	{BEGIN dtables_link}
+				<span data-itemtype="grid_details_link" data-itemid="grid_details_link" {$item_grid_details_link} data-pageid="{$pageid}" data-record-id="{$recId}">
+		<a 
+			{$laboratorio_link_attrs} 
+			class="{$dtables_link_class} details-badge badge laboratorio_badge" 
+			title="Mostrar detalles"
+						
+		>
+							<span class="glyphicon glyphicon-th-list"></span>
+									<span class="{$laboratorio_cntspan_class}" {$laboratorio_childnumber_attr}>
+				{$laboratorio_childnumber}				
+			</span>
+		</a>
+		</span>
+	{END dtables_link}
+
+	
+	</td>
+	{END cellblock_grid_cell_details}
 									{BEGIN cellblock_grid_cell_field}
 	<td
 	
@@ -1241,32 +1315,11 @@
 	{$cell_grid_cell_field2}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_municipio_class}	"
-
-			data-field="id_municipio"
-	
-	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_municipio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" data-default-width >
-{$id_municipio_value}
-</span>
-{END id_municipio_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field2}
-									{BEGIN cellblock_grid_cell_field3}
-	<td
-	
-	{$cell_grid_cell_field3}
-	{$recordattrs}
-	class="
 		 r-ori-vert		 {$barrio_centro_class}	"
 
 			data-field="barrio_centro"
 	
-	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_cell_field2" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1276,18 +1329,18 @@
 </span>
 {END barrio_centro_fieldcolumn}	
 	</td>
-	{END cellblock_grid_cell_field3}
-									{BEGIN cellblock_grid_cell_field4}
+	{END cellblock_grid_cell_field2}
+									{BEGIN cellblock_grid_headcell_field10}
 	<td
 	
-	{$cell_grid_cell_field4}
+	{$cell_grid_headcell_field10}
 	{$recordattrs}
 	class="
 		 r-ori-vert		 {$direc_centro_class}	"
 
 			data-field="direc_centro"
 	
-	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	data-cellId="grid_headcell_field10" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
@@ -1297,6 +1350,48 @@
 </span>
 {END direc_centro_fieldcolumn}	
 	</td>
+	{END cellblock_grid_headcell_field10}
+									{BEGIN cellblock_grid_cell_field3}
+	<td
+	
+	{$cell_grid_cell_field3}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_regional_class}	"
+
+			data-field="id_regional"
+	
+	data-cellId="grid_cell_field3" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_regional_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_regional" data-fieldname="id_regional" data-default-width >
+{$id_regional_value}
+</span>
+{END id_regional_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field3}
+									{BEGIN cellblock_grid_cell_field4}
+	<td
+	
+	{$cell_grid_cell_field4}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$id_municipio_class}	"
+
+			data-field="id_municipio"
+	
+	data-cellId="grid_cell_field4" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN id_municipio_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field2" {$item_simple_grid_field2} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_municipio" data-fieldname="id_municipio" data-default-width >
+{$id_municipio_value}
+</span>
+{END id_municipio_fieldcolumn}	
+	</td>
 	{END cellblock_grid_cell_field4}
 									{BEGIN cellblock_grid_cell_field5}
 	<td
@@ -1304,19 +1399,19 @@
 	{$cell_grid_cell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$img_centro_class}	"
+		 r-ori-vert		 {$departamento_class}	"
 
-			data-field="img_centro"
+			data-field="departamento"
 	
 	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN img_centro_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="img_centro" data-fieldname="img_centro" data-default-width >
-{$img_centro_value}
+		{BEGIN departamento_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" data-default-width >
+{$departamento_value}
 </span>
-{END img_centro_fieldcolumn}	
+{END departamento_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field5}
 									{BEGIN cellblock_grid_cell_field6}
@@ -1361,55 +1456,62 @@
 {END extension_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field7}
-									{BEGIN cellblock_grid_cell_field8}
-	<td
-	
-	{$cell_grid_cell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$id_regional_class}	"
-
-			data-field="id_regional"
-	
-	data-cellId="grid_cell_field8" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN id_regional_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field8" {$item_simple_grid_field8} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_regional" data-fieldname="id_regional" data-default-width >
-{$id_regional_value}
-</span>
-{END id_regional_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field8}
 									{BEGIN cellblock_grid_cell_field9}
 	<td
 	
 	{$cell_grid_cell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
+		 r-ori-vert		 {$img_centro_class}	"
 
-			data-field="departamento"
+			data-field="img_centro"
 	
 	data-cellId="grid_cell_field9" data-pageid="{$pageid}" data-record-id="{$recId}"	
 	>
 
 	 
-		{BEGIN departamento_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="departamento" data-fieldname="departamento" data-default-width >
-{$departamento_value}
+		{BEGIN img_centro_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="img_centro" data-fieldname="img_centro" data-default-width >
+{$img_centro_value}
 </span>
-{END departamento_fieldcolumn}	
+{END img_centro_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field9}
+							</tr>
+											<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+				
+							">
+									{BEGIN cellblock_grid_cell_dpreview}
+	<td
+	
+	{$cell_grid_cell_dpreview}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_cell_dpreview" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+			<div data-itemtype="details_preview" data-itemid="details_preview" {$item_details_preview} data-pageid="{$pageid}" data-record-id="{$recId}" 
+	data-orders="laboratorio"
+			data-details-laboratorio	>
+		<span data-details-inside data-short-table="laboratorio">
+			</span>
+		<div data-details-preview>
+	</div>
+</div>
+	
+	</td>
+	{END cellblock_grid_cell_dpreview}
 							</tr>
 										
 											{END grid_row}
 					</tbody>
 													<tfoot>
 			
-																																			<tr {$rowattrs} {$row_grid_2} class="{$rowclass}
+																																													<tr {$rowattrs} {$row_grid_3} class="{$rowclass}
 									{$gridFooter_class}
 					
 								r-gridrow
@@ -1444,6 +1546,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_checkbox}
+									{BEGIN cellblock_grid_footcell_details}
+	<td
+	
+	{$cell_grid_footcell_details}
+	{$recordattrs}
+	class="
+		 r-ori-vert			"
+
+	
+	data-cellId="grid_footcell_details" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_details}
 									{BEGIN cellblock_grid_footcell_field}
 	<td
 	
@@ -1474,28 +1591,43 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field1}
-									{BEGIN cellblock_grid_footcell_field2}
+									{BEGIN cellblock_grid_footcell_field8}
 	<td
 	
-	{$cell_grid_footcell_field2}
+	{$cell_grid_footcell_field8}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$id_municipio_class}	"
+		 r-ori-vert		 {$barrio_centro_class}	"
 
 	
-	data-cellId="grid_footcell_field2" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
+	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
 	>
 
 	
 	</td>
-	{END cellblock_grid_footcell_field2}
+	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_headcell_field11}
+	<td
+	
+	{$cell_grid_headcell_field11}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$direc_centro_class}	"
+
+	
+	data-cellId="grid_headcell_field11" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_headcell_field11}
 									{BEGIN cellblock_grid_footcell_field3}
 	<td
 	
 	{$cell_grid_footcell_field3}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$barrio_centro_class}	"
+		 r-ori-vert		 {$id_regional_class}	"
 
 	
 	data-cellId="grid_footcell_field3" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
@@ -1510,7 +1642,7 @@
 	{$cell_grid_footcell_field4}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$direc_centro_class}	"
+		 r-ori-vert		 {$id_municipio_class}	"
 
 	
 	data-cellId="grid_footcell_field4" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
@@ -1525,7 +1657,7 @@
 	{$cell_grid_footcell_field5}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$img_centro_class}	"
+		 r-ori-vert		 {$departamento_class}	"
 
 	
 	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
@@ -1564,28 +1696,13 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field7}
-									{BEGIN cellblock_grid_footcell_field8}
-	<td
-	
-	{$cell_grid_footcell_field8}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$id_regional_class}	"
-
-	
-	data-cellId="grid_footcell_field8" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field8}
 									{BEGIN cellblock_grid_footcell_field9}
 	<td
 	
 	{$cell_grid_footcell_field9}
 	{$recordattrs}
 	class="
-		 r-ori-vert		 {$departamento_class}	"
+		 r-ori-vert		 {$img_centro_class}	"
 
 	
 	data-cellId="grid_footcell_field9" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="centros_list"	

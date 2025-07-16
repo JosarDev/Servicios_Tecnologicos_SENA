@@ -34,10 +34,10 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscasos_exito["Spanish"]["Titulo"] = "Titulo";
 	$fieldToolTipscasos_exito["Spanish"]["Titulo"] = "";
 	$placeHolderscasos_exito["Spanish"]["Titulo"] = "";
-	$fieldLabelscasos_exito["Spanish"]["Descripcion"] = "Descripcion";
+	$fieldLabelscasos_exito["Spanish"]["Descripcion"] = "Descripción";
 	$fieldToolTipscasos_exito["Spanish"]["Descripcion"] = "";
 	$placeHolderscasos_exito["Spanish"]["Descripcion"] = "";
-	$fieldLabelscasos_exito["Spanish"]["fk_id_Laboratorio"] = "Fk Id Laboratorio";
+	$fieldLabelscasos_exito["Spanish"]["fk_id_Laboratorio"] = "Laboratorio al que pertenece";
 	$fieldToolTipscasos_exito["Spanish"]["fk_id_Laboratorio"] = "";
 	$placeHolderscasos_exito["Spanish"]["fk_id_Laboratorio"] = "";
 	if (count($fieldToolTipscasos_exito["Spanish"]))
@@ -137,7 +137,7 @@ $tdatacasos_exito[".isUseAjaxSuggest"] = true;
 
 
 
-
+						
 
 $tdatacasos_exito[".ajaxCodeSnippetAdded"] = false;
 
@@ -392,7 +392,7 @@ $tdatacasos_exito[".hideMobileList"] = array();
 	$fdata["GoodName"] = "Video";
 	$fdata["ownerTable"] = "casos_exito";
 	$fdata["Label"] = GetFieldLabel("casos_exito","Video");
-	$fdata["FieldType"] = 200;
+	$fdata["FieldType"] = 201;
 
 
 	
@@ -857,7 +857,7 @@ $tdatacasos_exito[".hideMobileList"] = array();
 //	Begin Edit Formats
 	$fdata["EditFormats"] = array();
 
-	$edata = array("EditFormat" => "Text field");
+	$edata = array("EditFormat" => "Lookup wizard");
 
 	
 		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
@@ -867,6 +867,34 @@ $tdatacasos_exito[".hideMobileList"] = array();
 	
 	
 
+// Begin Lookup settings
+				$edata["LookupType"] = 2;
+	$edata["LookupTable"] = "laboratorio";
+			$edata["autoCompleteFieldsOnEdit"] = 0;
+	$edata["autoCompleteFields"] = array();
+		$edata["LCType"] = 0;
+
+	
+		
+	$edata["LinkField"] = "id_Laboratorio";
+	$edata["LinkFieldType"] = 0;
+	$edata["DisplayField"] = "Nombre_Laboratorio";
+
+	
+
+	
+	$edata["LookupOrderBy"] = "";
+
+	
+	
+	
+	
+
+	
+	
+		$edata["SelectSize"] = 1;
+
+// End Lookup Settings
 
 
 	
@@ -881,17 +909,14 @@ $tdatacasos_exito[".hideMobileList"] = array();
 	
 	
 	
-			$edata["HTML5InuptType"] = "text";
-
-		$edata["EditParams"] = "";
-		
+	
+	
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
 	$edata["validateAs"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
-				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
 							
 	
 //	End validation
@@ -911,7 +936,7 @@ $tdatacasos_exito[".hideMobileList"] = array();
 
 
 // the field's search options settings
-		$fdata["defaultSearchOption"] = "Contains";
+		$fdata["defaultSearchOption"] = "Equals";
 
 			// the default search options list
 				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);

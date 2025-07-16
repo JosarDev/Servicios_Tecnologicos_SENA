@@ -166,16 +166,13 @@ pdfDocument = {
 			"stack": [
 		
 				
+			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel nodos id_centro }","bold":true},{"text":{$id_centro_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
 			{"hidden":"{$item_hide_integrated_edit_field}","stack":[{"text":"{$jslabel nodos id_nodo }","bold":true},{"text":{$id_nodo_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field1}","stack":[{"text":"{$jslabel nodos nom_nodo }","bold":true},{"text":{$nom_nodo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field2}","stack":[{"text":"{$jslabel nodos id_centro }","bold":true},{"text":{$id_centro_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
-			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel nodos matricula_inmobiliario }","bold":true},{"text":{$matricula_inmobiliario_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
 			{"hidden":"{$item_hide_integrated_edit_field4}","stack":[{"text":"{$jslabel nodos barrio_nodo }","bold":true},{"text":{$barrio_nodo_pdfvalue}}],"margin":[0,0,0,15]},
@@ -187,10 +184,13 @@ pdfDocument = {
 			{"hidden":"{$item_hide_integrated_edit_field6}","stack":[{"text":"{$jslabel nodos localidad }","bold":true},{"text":{$localidad_pdfvalue}}],"margin":[0,0,0,15]},
 				
 				
-			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel nodos img_nodo }","bold":true},{"text":{$img_nodo_pdfvalue}}],"margin":[0,0,0,15]},
-				
-				
 			{"hidden":"{$item_hide_integrated_edit_field8}","stack":[{"text":"{$jslabel nodos fecha_reg_nodo }","bold":true},{"text":{$fecha_reg_nodo_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field3}","stack":[{"text":"{$jslabel nodos matricula_inmobiliario }","bold":true},{"text":{$matricula_inmobiliario_pdfvalue}}],"margin":[0,0,0,15]},
+				
+				
+			{"hidden":"{$item_hide_integrated_edit_field7}","stack":[{"text":"{$jslabel nodos img_nodo }","bold":true},{"text":{$img_nodo_pdfvalue}}],"margin":[0,0,0,15]},
 				
 		  ],
   "border": [ false, false, false, false ],

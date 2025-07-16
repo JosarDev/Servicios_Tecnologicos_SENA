@@ -37,6 +37,12 @@ if(mlang_getcurrentlang()=="Spanish")
 	$fieldLabelscentro["Spanish"]["Celular"] = "Celular";
 	$fieldToolTipscentro["Spanish"]["Celular"] = "";
 	$placeHolderscentro["Spanish"]["Celular"] = "";
+	$fieldLabelscentro["Spanish"]["Departamento"] = "Departamento";
+	$fieldToolTipscentro["Spanish"]["Departamento"] = "";
+	$placeHolderscentro["Spanish"]["Departamento"] = "";
+	$fieldLabelscentro["Spanish"]["Municipio"] = "Municipio";
+	$fieldToolTipscentro["Spanish"]["Municipio"] = "";
+	$placeHolderscentro["Spanish"]["Municipio"] = "";
 	if (count($fieldToolTipscentro["Spanish"]))
 		$tdatacentro[".isUseToolTips"] = true;
 }
@@ -157,6 +163,8 @@ $tdatacentro[".googleLikeFields"] = array();
 $tdatacentro[".googleLikeFields"][] = "Codigo_Centro";
 $tdatacentro[".googleLikeFields"][] = "Nombre_Centro";
 $tdatacentro[".googleLikeFields"][] = "Direccion";
+$tdatacentro[".googleLikeFields"][] = "Departamento";
+$tdatacentro[".googleLikeFields"][] = "Municipio";
 $tdatacentro[".googleLikeFields"][] = "Celular";
 
 
@@ -191,7 +199,7 @@ $tdatacentro[".strOrderBy"] = $tstrOrderBy;
 $tdatacentro[".orderindexes"] = array();
 
 
-$tdatacentro[".sqlHead"] = "SELECT Codigo_Centro,  	Nombre_Centro,  	Direccion,  	Celular";
+$tdatacentro[".sqlHead"] = "SELECT Codigo_Centro,  	Nombre_Centro,  	Direccion,  	Departamento,  	Municipio,  	Celular";
 $tdatacentro[".sqlFrom"] = "FROM centro";
 $tdatacentro[".sqlWhereExpr"] = "";
 $tdatacentro[".sqlTail"] = "";
@@ -602,7 +610,7 @@ $tdatacentro[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-			$edata["EditParams"].= " maxlength=40";
+			$edata["EditParams"].= " maxlength=255";
 
 		$edata["controlWidth"] = 200;
 
@@ -656,15 +664,291 @@ $tdatacentro[".hideMobileList"] = array();
 
 	$tdatacentro["Direccion"] = $fdata;
 		$tdatacentro[".searchableFields"][] = "Direccion";
-//	Celular
+//	Departamento
 //	Custom field settings
 	$fdata = array();
 	$fdata["Index"] = 4;
+	$fdata["strName"] = "Departamento";
+	$fdata["GoodName"] = "Departamento";
+	$fdata["ownerTable"] = "centro";
+	$fdata["Label"] = GetFieldLabel("centro","Departamento");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "Departamento";
+
+		$fdata["sourceSingle"] = "Departamento";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Departamento";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatacentro["Departamento"] = $fdata;
+		$tdatacentro[".searchableFields"][] = "Departamento";
+//	Municipio
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 5;
+	$fdata["strName"] = "Municipio";
+	$fdata["GoodName"] = "Municipio";
+	$fdata["ownerTable"] = "centro";
+	$fdata["Label"] = GetFieldLabel("centro","Municipio");
+	$fdata["FieldType"] = 200;
+
+
+	
+	
+			
+
+		$fdata["strField"] = "Municipio";
+
+		$fdata["sourceSingle"] = "Municipio";
+
+		$fdata["isSQLExpression"] = true;
+	$fdata["FullName"] = "Municipio";
+
+	
+	
+				$fdata["UploadFolder"] = "files";
+
+//  Begin View Formats
+	$fdata["ViewFormats"] = array();
+
+	$vdata = array("ViewFormat" => "");
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+		$vdata["NeedEncode"] = true;
+
+	
+		$vdata["truncateText"] = true;
+	$vdata["NumberOfChars"] = 80;
+
+	$fdata["ViewFormats"]["view"] = $vdata;
+//  End View Formats
+
+//	Begin Edit Formats
+	$fdata["EditFormats"] = array();
+
+	$edata = array("EditFormat" => "Text field");
+
+	
+		$edata["weekdayMessage"] = array("message" => "", "messageType" => "Text");
+	$edata["weekdays"] = "[]";
+
+
+	
+	
+
+
+
+	
+	
+	
+	
+			$edata["acceptFileTypesHtml"] = "";
+
+		$edata["maxNumberOfFiles"] = 1;
+
+	
+	
+	
+	
+			$edata["HTML5InuptType"] = "text";
+
+		$edata["EditParams"] = "";
+			$edata["EditParams"].= " maxlength=100";
+
+		$edata["controlWidth"] = 200;
+
+//	Begin validation
+	$edata["validateAs"] = array();
+	$edata["validateAs"]["basicValidate"] = array();
+	$edata["validateAs"]["customMessages"] = array();
+	
+	
+//	End validation
+
+	
+			
+	
+	
+	
+	$fdata["EditFormats"]["edit"] = $edata;
+//	End Edit Formats
+
+
+	$fdata["isSeparate"] = false;
+
+
+
+
+// the field's search options settings
+		$fdata["defaultSearchOption"] = "Contains";
+
+			// the default search options list
+				$fdata["searchOptionsList"] = array("Contains", "Equals", "Starts with", "More than", "Less than", "Between", "Empty", NOT_EMPTY);
+// the end of search options settings
+
+
+//Filters settings
+	$fdata["filterTotals"] = 0;
+		$fdata["filterMultiSelect"] = 0;
+			$fdata["filterFormat"] = "Values list";
+		$fdata["showCollapsed"] = false;
+
+		$fdata["sortValueType"] = 0;
+		$fdata["numberOfVisibleItems"] = 10;
+
+		$fdata["filterBy"] = 0;
+
+	
+
+	
+	
+//end of Filters settings
+
+
+	$tdatacentro["Municipio"] = $fdata;
+		$tdatacentro[".searchableFields"][] = "Municipio";
+//	Celular
+//	Custom field settings
+	$fdata = array();
+	$fdata["Index"] = 6;
 	$fdata["strName"] = "Celular";
 	$fdata["GoodName"] = "Celular";
 	$fdata["ownerTable"] = "centro";
 	$fdata["Label"] = GetFieldLabel("centro","Celular");
-	$fdata["FieldType"] = 3;
+	$fdata["FieldType"] = 200;
 
 
 	
@@ -725,8 +1009,7 @@ $tdatacentro[".hideMobileList"] = array();
 
 
 
-		$edata["IsRequired"] = true;
-
+	
 	
 	
 	
@@ -741,7 +1024,8 @@ $tdatacentro[".hideMobileList"] = array();
 			$edata["HTML5InuptType"] = "text";
 
 		$edata["EditParams"] = "";
-		
+			$edata["EditParams"].= " maxlength=20";
+
 		$edata["controlWidth"] = 200;
 
 //	Begin validation
@@ -749,8 +1033,7 @@ $tdatacentro[".hideMobileList"] = array();
 	$edata["validateAs"]["basicValidate"] = array();
 	$edata["validateAs"]["customMessages"] = array();
 				$edata["validateAs"]["basicValidate"][] = getJsValidatorName("Number");
-						$edata["validateAs"]["basicValidate"][] = "IsRequired";
-		
+							
 	
 //	End validation
 
@@ -870,7 +1153,7 @@ function createSqlQuery_centro()
 {
 $proto0=array();
 $proto0["m_strHead"] = "SELECT";
-$proto0["m_strFieldList"] = "Codigo_Centro,  	Nombre_Centro,  	Direccion,  	Celular";
+$proto0["m_strFieldList"] = "Codigo_Centro,  	Nombre_Centro,  	Direccion,  	Departamento,  	Municipio,  	Celular";
 $proto0["m_strFrom"] = "FROM centro";
 $proto0["m_strWhere"] = "";
 $proto0["m_strOrderBy"] = "";
@@ -954,52 +1237,82 @@ $obj = new SQLFieldListItem($proto10);
 $proto0["m_fieldlist"][]=$obj;
 						$proto12=array();
 			$obj = new SQLField(array(
-	"m_strName" => "Celular",
+	"m_strName" => "Departamento",
 	"m_strTable" => "centro",
 	"m_srcTableName" => "centro"
 ));
 
-$proto12["m_sql"] = "Celular";
+$proto12["m_sql"] = "Departamento";
 $proto12["m_srcTableName"] = "centro";
 $proto12["m_expr"]=$obj;
 $proto12["m_alias"] = "";
 $obj = new SQLFieldListItem($proto12);
 
 $proto0["m_fieldlist"][]=$obj;
-$proto0["m_fromlist"] = array();
-												$proto14=array();
-$proto14["m_link"] = "SQLL_MAIN";
-			$proto15=array();
-$proto15["m_strName"] = "centro";
-$proto15["m_srcTableName"] = "centro";
-$proto15["m_columns"] = array();
-$proto15["m_columns"][] = "Codigo_Centro";
-$proto15["m_columns"][] = "Nombre_Centro";
-$proto15["m_columns"][] = "Direccion";
-$proto15["m_columns"][] = "Celular";
-$obj = new SQLTable($proto15);
+						$proto14=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Municipio",
+	"m_strTable" => "centro",
+	"m_srcTableName" => "centro"
+));
 
-$proto14["m_table"] = $obj;
-$proto14["m_sql"] = "centro";
-$proto14["m_alias"] = "";
+$proto14["m_sql"] = "Municipio";
 $proto14["m_srcTableName"] = "centro";
-$proto16=array();
-$proto16["m_sql"] = "";
-$proto16["m_uniontype"] = "SQLL_UNKNOWN";
+$proto14["m_expr"]=$obj;
+$proto14["m_alias"] = "";
+$obj = new SQLFieldListItem($proto14);
+
+$proto0["m_fieldlist"][]=$obj;
+						$proto16=array();
+			$obj = new SQLField(array(
+	"m_strName" => "Celular",
+	"m_strTable" => "centro",
+	"m_srcTableName" => "centro"
+));
+
+$proto16["m_sql"] = "Celular";
+$proto16["m_srcTableName"] = "centro";
+$proto16["m_expr"]=$obj;
+$proto16["m_alias"] = "";
+$obj = new SQLFieldListItem($proto16);
+
+$proto0["m_fieldlist"][]=$obj;
+$proto0["m_fromlist"] = array();
+												$proto18=array();
+$proto18["m_link"] = "SQLL_MAIN";
+			$proto19=array();
+$proto19["m_strName"] = "centro";
+$proto19["m_srcTableName"] = "centro";
+$proto19["m_columns"] = array();
+$proto19["m_columns"][] = "Codigo_Centro";
+$proto19["m_columns"][] = "Nombre_Centro";
+$proto19["m_columns"][] = "Direccion";
+$proto19["m_columns"][] = "Departamento";
+$proto19["m_columns"][] = "Municipio";
+$proto19["m_columns"][] = "Celular";
+$obj = new SQLTable($proto19);
+
+$proto18["m_table"] = $obj;
+$proto18["m_sql"] = "centro";
+$proto18["m_alias"] = "";
+$proto18["m_srcTableName"] = "centro";
+$proto20=array();
+$proto20["m_sql"] = "";
+$proto20["m_uniontype"] = "SQLL_UNKNOWN";
 	$obj = new SQLNonParsed(array(
 	"m_sql" => ""
 ));
 
-$proto16["m_column"]=$obj;
-$proto16["m_contained"] = array();
-$proto16["m_strCase"] = "";
-$proto16["m_havingmode"] = false;
-$proto16["m_inBrackets"] = false;
-$proto16["m_useAlias"] = false;
-$obj = new SQLLogicalExpr($proto16);
+$proto20["m_column"]=$obj;
+$proto20["m_contained"] = array();
+$proto20["m_strCase"] = "";
+$proto20["m_havingmode"] = false;
+$proto20["m_inBrackets"] = false;
+$proto20["m_useAlias"] = false;
+$obj = new SQLLogicalExpr($proto20);
 
-$proto14["m_joinon"] = $obj;
-$obj = new SQLFromListItem($proto14);
+$proto18["m_joinon"] = $obj;
+$obj = new SQLFromListItem($proto18);
 
 $proto0["m_fromlist"][]=$obj;
 $proto0["m_groupby"] = array();
@@ -1015,7 +1328,7 @@ $queryData_centro = createSqlQuery_centro();
 	
 		;
 
-				
+						
 
 $tdatacentro[".sqlquery"] = $queryData_centro;
 

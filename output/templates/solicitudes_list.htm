@@ -3,6 +3,7 @@
 	<head>
 				<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="images/Logo_Pestaña.png" type="image/png">
 	<title>{$pagetitle}</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<base href="{$projectPath}">
@@ -259,19 +260,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Cantidad}</span>
 						</div>
 		{END searchCtrlBlock_Cantidad}
-																{BEGIN searchCtrlBlock_id_Solicitudes}
+																{BEGIN searchCtrlBlock_Observaciones}
 
 
-		<div class="form-group srchPanelRow {$filterRow_class_id_Solicitudes}" {$filterRow_attrs_id_Solicitudes}>
-			<label>{$label solicitudes id_Solicitudes }</label>
+		<div class="form-group srchPanelRow {$filterRow_class_Observaciones}" {$filterRow_attrs_Observaciones}>
+			<label>{$label solicitudes Observaciones }</label>
 
 							{$delCtrlButt}
 			
-								<span class="rnr-searchtype">{$searchtype_id_Solicitudes}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_id_Solicitudes}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_id_Solicitudes}</span>
+								<span class="rnr-searchtype">{$searchtype_Observaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_Observaciones}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_Observaciones}</span>
 						</div>
-		{END searchCtrlBlock_id_Solicitudes}
+		{END searchCtrlBlock_Observaciones}
 																{BEGIN searchCtrlBlock_fk_id_Servicio}
 
 
@@ -285,6 +286,19 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_fk_id_Servicio}</span>
 						</div>
 		{END searchCtrlBlock_fk_id_Servicio}
+																{BEGIN searchCtrlBlock_id_Solicitudes}
+
+
+		<div class="form-group srchPanelRow {$filterRow_class_id_Solicitudes}" {$filterRow_attrs_id_Solicitudes}>
+			<label>{$label solicitudes id_Solicitudes }</label>
+
+							{$delCtrlButt}
+			
+								<span class="rnr-searchtype">{$searchtype_id_Solicitudes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol_id_Solicitudes}</span>
+								<span class="rnr-searchcontrol">{$searchcontrol1_id_Solicitudes}</span>
+						</div>
+		{END searchCtrlBlock_id_Solicitudes}
 																{BEGIN searchCtrlBlock_fk_id_Cliente}
 
 
@@ -350,19 +364,6 @@
 								<span class="rnr-searchcontrol">{$searchcontrol1_Estado}</span>
 						</div>
 		{END searchCtrlBlock_Estado}
-																{BEGIN searchCtrlBlock_Descripcion}
-
-
-		<div class="form-group srchPanelRow {$filterRow_class_Descripcion}" {$filterRow_attrs_Descripcion}>
-			<label>{$label solicitudes Descripcion }</label>
-
-							{$delCtrlButt}
-			
-								<span class="rnr-searchtype">{$searchtype_Descripcion}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol_Descripcion}</span>
-								<span class="rnr-searchcontrol">{$searchcontrol1_Descripcion}</span>
-						</div>
-		{END searchCtrlBlock_Descripcion}
 		
 
 	</div>
@@ -516,7 +517,7 @@
 				<span class="navbar-form r-align-right navbar-collapse" data-cellId="supertop_c2" data-pageid="{$pageid}" data-itemid="loginform_login" {$item_loginform_login} data-topcell-item-type="loginform_login" >
 				{BEGIN guestloginbutton}
 <span data-itemtype="loginform_login" data-itemid="loginform_login" {$item_loginform_login} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
+	<a type="button" title="" class="btn btn-success   
 	" href="#" {$guestloginlink_attrs} >
 							Conectar			</a>
 </span>
@@ -604,8 +605,8 @@
 		 
 		{BEGIN add_link}
 <span data-itemtype="add" data-itemid="add" {$item_add} data-pageid="{$pageid}" data-small data-button-item>
-	<a type="button" title="" class="btn btn-primary   
-	" {$addlink_attrs} href="solicitudes_add.php{$stateLink_full}" >
+	<a type="button" title="" class="btn btn-success   
+	" {$addlink_attrs} href="solicitudes_add.php{$stateLink_full}" data-popup >
 							Añadir nuevo			</a>
 </span>
 {END add_link}
@@ -739,8 +740,8 @@
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Cantidad"]:before {
 		content: "{$label solicitudes Cantidad}";
 	}
-			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Descripcion"]:before {
-		content: "{$label solicitudes Descripcion}";
+			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="Observaciones"]:before {
+		content: "{$label solicitudes Observaciones}";
 	}
 			[data-pageid="{$pageid}"][data-itemtype="grid_field"][data-field="TipoSolicitud"]:before {
 		content: "{$label solicitudes TipoSolicitud}";
@@ -820,7 +821,7 @@
 		{BEGIN id_Solicitudes_fieldheadercolumn}
 	{BEGIN id_Solicitudes_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Solicitudes" data-fieldname="id_Solicitudes" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="id_Solicitudes" data-fieldname="id_Solicitudes" 
 
 			{$id_Solicitudes_orderlinkattrs}
 	
@@ -854,7 +855,7 @@
 		{BEGIN Fecha_fieldheadercolumn}
 	{BEGIN Fecha_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha" data-fieldname="Fecha" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field9" {$item_simple_grid_field9} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Fecha" data-fieldname="Fecha" 
 
 			{$Fecha_orderlinkattrs}
 	
@@ -888,7 +889,7 @@
 		{BEGIN Hora_fieldheadercolumn}
 	{BEGIN Hora_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Hora" data-fieldname="Hora" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field10" {$item_simple_grid_field10} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Hora" data-fieldname="Hora" 
 
 			{$Hora_orderlinkattrs}
 	
@@ -922,7 +923,7 @@
 		{BEGIN Estado_fieldheadercolumn}
 	{BEGIN Estado_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Estado" data-fieldname="Estado" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field11" {$item_simple_grid_field11} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Estado" data-fieldname="Estado" 
 
 			{$Estado_orderlinkattrs}
 	
@@ -956,7 +957,7 @@
 		{BEGIN Cantidad_fieldheadercolumn}
 	{BEGIN Cantidad_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field13" {$item_simple_grid_field13} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cantidad" data-fieldname="Cantidad" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field12" {$item_simple_grid_field12} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Cantidad" data-fieldname="Cantidad" 
 
 			{$Cantidad_orderlinkattrs}
 	
@@ -973,40 +974,6 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field4}
-									{BEGIN cellblock_grid_headcell_field5}
-	<th
-	
-	{$cell_grid_headcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Descripcion_class}	"
-
-			data-field="Descripcion"
-	
-	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Descripcion_fieldheadercolumn}
-	{BEGIN Descripcion_fieldheader}
-<span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" 
-
-			{$Descripcion_orderlinkattrs}
-	
-	
-	>
-	<span class="text-label">
-		<span>{$label solicitudes Descripcion }</span>
-					{$arrow_icon_Descripcion}
-			</span>
-	</span>
-	{END Descripcion_fieldheader}
-{END Descripcion_fieldheadercolumn}
-
-	
-	</th>
-	{END cellblock_grid_headcell_field5}
 									{BEGIN cellblock_grid_headcell_field6}
 	<th
 	
@@ -1024,7 +991,7 @@
 		{BEGIN TipoSolicitud_fieldheadercolumn}
 	{BEGIN TipoSolicitud_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TipoSolicitud" data-fieldname="TipoSolicitud" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field14" {$item_simple_grid_field14} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="TipoSolicitud" data-fieldname="TipoSolicitud" 
 
 			{$TipoSolicitud_orderlinkattrs}
 	
@@ -1058,7 +1025,7 @@
 		{BEGIN fk_id_Servicio_fieldheadercolumn}
 	{BEGIN fk_id_Servicio_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field16" {$item_simple_grid_field16} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label" {$item_grid_field_label} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" 
 
 			{$fk_id_Servicio_orderlinkattrs}
 	
@@ -1092,7 +1059,7 @@
 		{BEGIN fk_id_Cliente_fieldheadercolumn}
 	{BEGIN fk_id_Cliente_fieldheader}
 <span 
-	data-itemtype="grid_field_label" data-itemid="simple_grid_field17" {$item_simple_grid_field17} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Cliente" data-fieldname="fk_id_Cliente" 
+	data-itemtype="grid_field_label" data-itemid="simple_grid_field15" {$item_simple_grid_field15} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Cliente" data-fieldname="fk_id_Cliente" 
 
 			{$fk_id_Cliente_orderlinkattrs}
 	
@@ -1109,6 +1076,40 @@
 	
 	</th>
 	{END cellblock_grid_headcell_field8}
+									{BEGIN cellblock_grid_headcell_field5}
+	<th
+	
+	{$cell_grid_headcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Observaciones_class}	"
+
+			data-field="Observaciones"
+	
+	data-cellId="grid_headcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Observaciones_fieldheadercolumn}
+	{BEGIN Observaciones_fieldheader}
+<span 
+	data-itemtype="grid_field_label" data-itemid="grid_field_label1" {$item_grid_field_label1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Observaciones" data-fieldname="Observaciones" 
+
+			{$Observaciones_orderlinkattrs}
+	
+	
+	>
+	<span class="text-label">
+		<span>{$label solicitudes Observaciones }</span>
+					{$arrow_icon_Observaciones}
+			</span>
+	</span>
+	{END Observaciones_fieldheader}
+{END Observaciones_fieldheadercolumn}
+
+	
+	</th>
+	{END cellblock_grid_headcell_field5}
 							</tr>
 															
 					{END grid_header}
@@ -1138,7 +1139,7 @@
 {BEGIN edit_link}
 <span data-itemtype="grid_edit" data-itemid="grid_edit" {$item_grid_edit} data-pageid="{$pageid}" data-record-id="{$recId}" data-small data-button-item>
 	<a type="button" title="Editar" class="btn-link   
-	 glyphicon glyphicon-pencil" href="solicitudes_edit.php?{$editlink}" {$editlink_attrs} title="Editar" >		
+	 glyphicon glyphicon-pencil" href="solicitudes_edit.php?{$editlink}" {$editlink_attrs} title="Editar" data-popup >		
 				
 								</a>
 </span>
@@ -1296,27 +1297,6 @@
 {END Cantidad_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field4}
-									{BEGIN cellblock_grid_cell_field5}
-	<td
-	
-	{$cell_grid_cell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Descripcion_class}	"
-
-			data-field="Descripcion"
-	
-	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
-	>
-
-	 
-		{BEGIN Descripcion_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field5" {$item_simple_grid_field5} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Descripcion" data-fieldname="Descripcion" data-default-width >
-{$Descripcion_value}
-</span>
-{END Descripcion_fieldcolumn}	
-	</td>
-	{END cellblock_grid_cell_field5}
 									{BEGIN cellblock_grid_cell_field6}
 	<td
 	
@@ -1353,7 +1333,7 @@
 
 	 
 		{BEGIN fk_id_Servicio_fieldcolumn}
-<span data-itemtype="grid_field" data-itemid="simple_grid_field7" {$item_simple_grid_field7} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" data-default-width >
+<span data-itemtype="grid_field" data-itemid="grid_field" {$item_grid_field} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="fk_id_Servicio" data-fieldname="fk_id_Servicio" data-default-width >
 {$fk_id_Servicio_value}
 </span>
 {END fk_id_Servicio_fieldcolumn}	
@@ -1380,6 +1360,27 @@
 {END fk_id_Cliente_fieldcolumn}	
 	</td>
 	{END cellblock_grid_cell_field8}
+									{BEGIN cellblock_grid_cell_field5}
+	<td
+	
+	{$cell_grid_cell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Observaciones_class}	"
+
+			data-field="Observaciones"
+	
+	data-cellId="grid_cell_field5" data-pageid="{$pageid}" data-record-id="{$recId}"	
+	>
+
+	 
+		{BEGIN Observaciones_fieldcolumn}
+<span data-itemtype="grid_field" data-itemid="grid_field1" {$item_grid_field1} data-pageid="{$pageid}" data-record-id="{$recId}" data-field="Observaciones" data-fieldname="Observaciones" data-default-width >
+{$Observaciones_value}
+</span>
+{END Observaciones_fieldcolumn}	
+	</td>
+	{END cellblock_grid_cell_field5}
 							</tr>
 										
 											{END grid_row}
@@ -1496,21 +1497,6 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field4}
-									{BEGIN cellblock_grid_footcell_field5}
-	<td
-	
-	{$cell_grid_footcell_field5}
-	{$recordattrs}
-	class="
-		 r-ori-vert		 {$Descripcion_class}	"
-
-	
-	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="solicitudes_list"	
-	>
-
-	
-	</td>
-	{END cellblock_grid_footcell_field5}
 									{BEGIN cellblock_grid_footcell_field6}
 	<td
 	
@@ -1556,6 +1542,21 @@
 	
 	</td>
 	{END cellblock_grid_footcell_field8}
+									{BEGIN cellblock_grid_footcell_field5}
+	<td
+	
+	{$cell_grid_footcell_field5}
+	{$recordattrs}
+	class="
+		 r-ori-vert		 {$Observaciones_class}	"
+
+	
+	data-cellId="grid_footcell_field5" data-pageid="{$pageid}" data-record-id="{$recId}" data-page="solicitudes_list"	
+	>
+
+	
+	</td>
+	{END cellblock_grid_footcell_field5}
 							</tr>
 					
 					</tfoot>

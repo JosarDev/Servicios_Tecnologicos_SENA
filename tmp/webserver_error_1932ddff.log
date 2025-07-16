@@ -1,0 +1,14 @@
+[Mon Jul 08 09:00:51.137518 2024] [core:warn] [pid 6352:tid 416] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/iMac004/Desktop/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Mon Jul 08 09:00:51.170981 2024] [mpm_winnt:notice] [pid 6352:tid 416] AH00455: Apache/2.4.54 (Win64) PHP/7.4.30 configured -- resuming normal operations
+[Mon Jul 08 09:00:51.170981 2024] [mpm_winnt:notice] [pid 6352:tid 416] AH00456: Server built: Jul 26 2022 23:58:26
+[Mon Jul 08 09:00:51.170981 2024] [core:notice] [pid 6352:tid 416] AH00094: Command line: 'C:\\Program Files\\PHPRunner10.9\\EmbeddedServer64\\bin\\httpd.exe -d C:/Program Files/PHPRunner10.9/EmbeddedServer64 -d C:\\Program Files\\PHPRunner10.9\\EmbeddedServer64 -f C:\\Users\\iMac004\\Desktop\\Projects\\SERVICIOS TECNOL\xc3\x93GICOS\\tmp\\webserver.conf'
+[Mon Jul 08 09:00:51.187589 2024] [mpm_winnt:notice] [pid 6352:tid 416] AH00418: Parent: Created child process 8176
+[Mon Jul 08 09:00:51.521289 2024] [core:warn] [pid 8176:tid 396] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/iMac004/Desktop/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Mon Jul 08 09:00:51.537918 2024] [core:warn] [pid 8176:tid 396] AH00117: Ignoring deprecated use of DefaultType in line 21 of C:/Users/iMac004/Desktop/Projects/SERVICIOS TECNOL\xc3\x93GICOS/tmp/webserver.conf.
+AH00558: httpd.exe: Could not reliably determine the server's fully qualified domain name, using fe80::39e0:3644:b449:53dc. Set the 'ServerName' directive globally to suppress this message
+[Mon Jul 08 09:00:51.584520 2024] [mpm_winnt:notice] [pid 8176:tid 396] AH00354: Child: Starting 64 worker threads.
+[Mon Jul 08 09:08:04.472647 2024] [mpm_winnt:notice] [pid 6352:tid 416] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Jul 08 09:08:20.682931 2024] [mpm_winnt:notice] [pid 8176:tid 396] AH00364: Child: All worker threads have exited.
+[Mon Jul 08 09:08:20.718925 2024] [mpm_winnt:notice] [pid 6352:tid 416] AH00430: Parent: Child process 8176 exited successfully.
